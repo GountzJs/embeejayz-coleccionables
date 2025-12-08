@@ -5,8 +5,7 @@ RUN npm install -g pnpm@10.22.0
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-COPY apps/web-blog/package.json ./apps/web-blog/
-COPY apps/back-blog/package.json ./apps/back-blog/
+COPY apps/gountz-bot/package.json ./apps/gountz-bot/
 
 RUN pnpm fetch
 
@@ -14,8 +13,6 @@ COPY . .
 
 RUN pnpm install --offline --frozen-lockfile
 
-RUN pnpm --filter back-blog build
+RUN pnpm nx build gountzbot
 
-EXPOSE 8080
-
-CMD ["pnpm", "back:start"]
+CMD ["pnpm", "nx", "start", "gountzbot"]
