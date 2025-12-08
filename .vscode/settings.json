@@ -5,5 +5,10 @@
     "source.organizeImports": "always"
   },
   "editor.formatOnSave": true,
-  "conventionalCommits.scopes": ["github", "gountz-bot", "workspace"]
+  "conventionalCommits.scopes": [
+    "github",
+    "gountz-bot",
+    "workspace",
+    "web-coleccionables"
+  ]
 }
