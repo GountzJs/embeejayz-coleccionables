@@ -20,7 +20,7 @@ jobs:
         id: filter
         with:
           filters: |
-            gountzbot:
+            gountz-bot:
               - 'apps/gountz-bot/**'
               - 'packages/**'
               - 'package.json'
@@ -56,7 +56,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-gountz-bot
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-gountzbot
 
       - name: Build and push Web Blog
         uses: docker/build-push-action@v5
