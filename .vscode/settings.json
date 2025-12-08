@@ -5,5 +5,5 @@
     "source.organizeImports": "always"
   },
   "editor.formatOnSave": true,
-  "conventionalCommits.scopes": ["github"]
+  "conventionalCommits.scopes": ["github", "gountz-bot"]
 }
