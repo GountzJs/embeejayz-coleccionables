@@ -1,5 +1,5 @@
-import { v4 as uuid } from 'uuid';
-import { turso } from '../db/client';
+import { v4 as uuid } from "uuid";
+import { turso } from "../db/client";
 
 export class AccountBorderQueries {
   async insertOrIncrement(accountId: string, borderId: string) {
@@ -36,7 +36,7 @@ export class AccountBorderQueries {
     });
 
     return {
-      quantity: Number(rows[0].quantity) + 1,
+      quantity: Number(rows[0]!.quantity) + 1,
       accountId,
       borderId,
     };
@@ -58,10 +58,10 @@ export class AccountBorderQueries {
     });
 
     if (!rows.length) {
-      throw new Error('No hay bordes disponibles');
+      throw new Error("No hay bordes disponibles");
     }
 
-    return rows[0].border_id as string;
+    return rows[0]!.border_id as string;
   }
 
   async assignSpecial(accountId: string, borderId: string) {
@@ -75,7 +75,7 @@ export class AccountBorderQueries {
     });
 
     if (rows.length) {
-      throw new Error('Ya tienes el borde especial asignado');
+      throw new Error("Ya tienes el borde especial asignado");
     }
 
     await turso.execute({

@@ -1,5 +1,5 @@
-import { v4 as uuid } from 'uuid';
-import { turso } from '../db/client';
+import { v4 as uuid } from "uuid";
+import { turso } from "../db/client";
 
 export class AccountStickerQueries {
   async insertOrIncrement(accountId: string, stickerId: string) {
@@ -36,7 +36,7 @@ export class AccountStickerQueries {
     });
 
     return {
-      quantity: Number(rows[0].quantity) + 1,
+      quantity: Number(rows[0]!.quantity) + 1,
       accountId,
       stickerId,
     };
@@ -55,6 +55,6 @@ export class AccountStickerQueries {
       args: [accountId],
     });
 
-    return rows[0].sticker_id as string;
+    return rows[0]!.sticker_id as string;
   }
 }

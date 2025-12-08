@@ -1,5 +1,5 @@
-import { v4 as uuid } from 'uuid';
-import { turso } from '../db/client';
+import { v4 as uuid } from "uuid";
+import { turso } from "../db/client";
 
 export class AccountEmbeeCardQueries {
   async assignSpecial(accountId: string, embeecardId: string) {
@@ -13,7 +13,7 @@ export class AccountEmbeeCardQueries {
     });
 
     if (rows.length) {
-      throw new Error('Ya tienes la carta especial asignada');
+      throw new Error("Ya tienes la carta especial asignada");
     }
 
     await turso.execute({
@@ -44,10 +44,10 @@ export class AccountEmbeeCardQueries {
     });
 
     if (!rows.length) {
-      throw new Error('No hay cartas disponibles');
+      throw new Error("No hay cartas disponibles");
     }
 
-    return rows[0].embeecard_id as string;
+    return rows[0]!.embeecard_id as string;
   }
 
   async insertOrIncrement(accountId: string, embeecardId: string) {
@@ -84,7 +84,7 @@ export class AccountEmbeeCardQueries {
     });
 
     return {
-      quantity: Number(rows[0].quantity) + 1,
+      quantity: Number(rows[0]!.quantity) + 1,
       accountId,
       embeecardId,
     };

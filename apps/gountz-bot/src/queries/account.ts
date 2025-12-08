@@ -1,5 +1,5 @@
-import { v4 as uuidv4 } from 'uuid';
-import { turso } from '../db/client';
+import { v4 as uuidv4 } from "uuid";
+import { turso } from "../db/client";
 
 export class AccountQueries {
   async getOrCreateAccount(ref: string): Promise<string> {
@@ -8,9 +8,9 @@ export class AccountQueries {
       sql: `
         SELECT id FROM platforms WHERE name = ?
       `,
-      args: ['TWITCH'],
+      args: ["TWITCH"],
     });
-    const platformId = platforms[0].id;
+    const platformId = platforms[0]!.id;
     const { rows } = await turso.execute({
       sql: `
         INSERT INTO accounts (id, ref, is_staff, quantity, platform_id, created_at, updated_at)
@@ -22,7 +22,7 @@ export class AccountQueries {
     });
 
     if (rows.length > 0) {
-      return rows[0].id as string;
+      return rows[0]!.id as string;
     }
 
     const { rows: existing } = await turso.execute({
@@ -30,6 +30,6 @@ export class AccountQueries {
       args: [ref],
     });
 
-    return existing[0].id as string;
+    return existing[0]!.id as string;
   }
 }
