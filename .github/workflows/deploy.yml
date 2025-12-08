@@ -12,8 +12,7 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
-      web: ${{ steps.filter.outputs.web }}
-      back: ${{ steps.filter.outputs.back }}
+      gountz-bot: ${{ steps.filter.outputs.gountz-bot }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -29,7 +28,7 @@ jobs:
 
   build-gountzbot:
     needs: changes
-    if: ${{ needs.changes.outputs.web == 'true' }}
+    if: ${{ needs.changes.outputs.gountz-bot == 'true' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -58,7 +57,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-gountzbot
 
-      - name: Build and push Web Blog
+      - name: Build and push Gountz Bot
         uses: docker/build-push-action@v5
         with:
           context: .
