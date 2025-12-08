@@ -1,0 +1,17 @@
+{
+  "name": "embeejayz-coleccionables",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Embeejayz Ecosistema de recompensas para twitch",
+  "scripts": {
+    "bot:serve": "pnpm nx serve gountzbot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.22.0",
+  "devDependencies": {
+    "nx": "22.1.3",
+    "typescript": "5.9.3"
+  }
+}
