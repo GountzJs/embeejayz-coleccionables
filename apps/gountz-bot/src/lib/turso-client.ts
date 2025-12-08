@@ -1,11 +1,11 @@
-import { createClient } from '@libsql/client';
-import { tursoToken, tursoUrl } from '../core/settings';
+import { createClient } from "@libsql/client";
+import { dbToken, dbUrl } from "../core/settings";
 
-if (!tursoUrl || !tursoToken) {
-  throw new Error('Missing environment variables');
+if (!dbUrl || !dbToken) {
+  throw new Error("Missing environment variables");
 }
 
 export const turso = createClient({
-  url: tursoUrl,
-  authToken: tursoToken,
+  url: dbUrl,
+  authToken: dbToken,
 });

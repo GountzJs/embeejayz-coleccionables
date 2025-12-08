@@ -1,9 +1,9 @@
-import { createClient } from '@libsql/client';
-import { tursoToken, tursoUrl } from '../core/settings';
+import { createClient } from "@libsql/client";
+import { dbToken, dbUrl } from "../core/settings";
 
 const config = {
-  url: tursoUrl,
-  authToken: tursoToken,
+  url: dbUrl,
+  authToken: dbToken,
 };
 
 export const turso = createClient(config);

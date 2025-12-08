@@ -11,8 +11,8 @@ const env = process.env;
 export const debug = env.DEBUG === "true";
 
 export const {
-  TURSO_URL: tursoUrl = "",
-  TURSO_TOKEN: tursoToken = "",
+  DB_URL: dbUrl = "",
+  DB_TOKEN: dbToken = "",
   TWITCH_CLIENT_ID: twitchClientId = "",
   TWITCH_TOKEN: twitchToken = "",
   TWITCH_USERNAME: twitchBotUsername = "",
