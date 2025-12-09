@@ -2,49 +2,49 @@ import { v4 as uuid } from "uuid";
 import { turso } from "../db/client";
 
 export class AccountBorderQueries {
-  async insertOrIncrement(accountId: string, borderId: string) {
-    const { rows } = await turso.execute({
-      sql: `
+	async insertOrIncrement(accountId: string, borderId: string) {
+		const { rows } = await turso.execute({
+			sql: `
         SELECT quantity
         FROM account_borders
         WHERE account_id = ? AND border_id = ?
         LIMIT 1;
       `,
-      args: [accountId, borderId],
-    });
+			args: [accountId, borderId],
+		});
 
-    if (!rows.length) {
-      await turso.execute({
-        sql: `
+		if (!rows.length) {
+			await turso.execute({
+				sql: `
           INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
           VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
         `,
-        args: [uuid(), accountId, borderId],
-      });
+				args: [uuid(), accountId, borderId],
+			});
 
-      return { quantity: 1, accountId, borderId };
-    }
+			return { quantity: 1, accountId, borderId };
+		}
 
-    await turso.execute({
-      sql: `
+		await turso.execute({
+			sql: `
         UPDATE account_borders
         SET quantity = quantity + 1,
             updated_at = CURRENT_TIMESTAMP
         WHERE account_id = ? AND border_id = ?;
       `,
-      args: [accountId, borderId],
-    });
+			args: [accountId, borderId],
+		});
 
-    return {
-      quantity: Number(rows[0]!.quantity) + 1,
-      accountId,
-      borderId,
-    };
-  }
+		return {
+			quantity: Number(rows[0]!.quantity) + 1,
+			accountId,
+			borderId,
+		};
+	}
 
-  async getRandom(accountId: string): Promise<string> {
-    const { rows } = await turso.execute({
-      sql: `
+	async getRandom(accountId: string): Promise<string> {
+		const { rows } = await turso.execute({
+			sql: `
         SELECT b.id AS border_id
         FROM borders b
         LEFT JOIN account_borders ab
@@ -54,38 +54,38 @@ export class AccountBorderQueries {
         ORDER BY RANDOM()
         LIMIT 1;
       `,
-      args: [accountId],
-    });
+			args: [accountId],
+		});
 
-    if (!rows.length) {
-      throw new Error("No hay bordes disponibles");
-    }
+		if (!rows.length) {
+			throw new Error("No hay bordes disponibles");
+		}
 
-    return rows[0]!.border_id as string;
-  }
+		return rows[0]!.border_id as string;
+	}
 
-  async assignSpecial(accountId: string, borderId: string) {
-    const { rows } = await turso.execute({
-      sql: `
+	async assignSpecial(accountId: string, borderId: string) {
+		const { rows } = await turso.execute({
+			sql: `
         SELECT id
         FROM account_borders
         WHERE account_id = ? AND border_id = ?;
       `,
-      args: [accountId, borderId],
-    });
+			args: [accountId, borderId],
+		});
 
-    if (rows.length) {
-      throw new Error("Ya tienes el borde especial asignado");
-    }
+		if (rows.length) {
+			throw new Error("Ya tienes el borde especial asignado");
+		}
 
-    await turso.execute({
-      sql: `
+		await turso.execute({
+			sql: `
         INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
         VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
       `,
-      args: [uuid(), accountId, borderId],
-    });
+			args: [uuid(), accountId, borderId],
+		});
 
-    return { accountId, borderId, quantity: 1 };
-  }
+		return { accountId, borderId, quantity: 1 };
+	}
 }

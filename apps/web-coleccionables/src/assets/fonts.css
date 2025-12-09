@@ -1,137 +1,137 @@
 /* Poppins */
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 /* Poppins Italic */
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-BlackItalic.woff2") format("woff2");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-BlackItalic.woff2") format("woff2");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-BoldItalic.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-SemiboldItalic.woff2") format("woff2");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-SemiboldItalic.woff2") format("woff2");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-MediumItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-MediumItalic.woff2") format("woff2");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins/Poppins-RegularItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-RegularItalic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 /* Montserrat */
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 /* Montserrat Italic */
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-MediumItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat/Montserrat-MediumItalic.woff2") format("woff2");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-RegularItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat/Montserrat-RegularItalic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 /* Sigmar */
 
 @font-face {
-  font-family: "Sigmar";
-  src: url("/fonts/Sigmar/Sigmar-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Sigmar";
+	src: url("/fonts/Sigmar/Sigmar-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 /* Haettenschweiler */
 @font-face {
-  font-family: "Haettenschweiler";
-  src: url("/fonts/Haettenschweiler/Haettenschweiler.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Haettenschweiler";
+	src: url("/fonts/Haettenschweiler/Haettenschweiler.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }

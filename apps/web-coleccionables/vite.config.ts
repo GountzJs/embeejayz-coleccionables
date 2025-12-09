@@ -5,23 +5,23 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        plugins: [["babel-plugin-react-compiler"]],
-      },
-    }),
-    tailwindcss(),
-  ],
-  server: {
-    port: 3000,
-  },
-  resolve: {
-    alias: [
-      {
-        find: "@",
-        replacement: resolve(__dirname, "src"),
-      },
-    ],
-  },
+	plugins: [
+		react({
+			babel: {
+				plugins: [["babel-plugin-react-compiler"]],
+			},
+		}),
+		tailwindcss(),
+	],
+	server: {
+		port: 3000,
+	},
+	resolve: {
+		alias: [
+			{
+				find: "@",
+				replacement: resolve(__dirname, "src"),
+			},
+		],
+	},
 });

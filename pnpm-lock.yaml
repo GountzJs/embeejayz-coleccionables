@@ -20,6 +20,9 @@ importers:
 
   apps/gountz-bot:
     dependencies:
+      '@biomejs/biome':
+        specifier: 2.3.8
+        version: 2.3.8
       '@libsql/client':
         specifier: 0.15.15
         version: 0.15.15
@@ -54,6 +57,9 @@ importers:
 
   apps/web-coleccionables:
     dependencies:
+      '@biomejs/biome':
+        specifier: 2.3.8
+        version: 2.3.8
       react:
         specifier: 19.2.1
         version: 19.2.1

@@ -1,24 +1,22 @@
 {
-  "name": "embeejayz-coleccionables",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Embeejayz Ecosistema de recompensas para twitch",
-  "scripts": {
-    "web:serve": "pnpm nx dev web-coleccionables",
-    "web:build": "pnpm nx build web-coleccionables",
-    "web:format": "biome format --write",
-    "web:lint": "biome lint --write",
-    "bot:serve": "pnpm nx serve gountzbot",
-    "bot:format": "biome format --write",
-    "bot:lint": "biome lint --write"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.22.0",
-  "devDependencies": {
-    "@biomejs/biome": "2.3.8",
-    "nx": "22.1.3",
-    "typescript": "5.9.3"
-  }
+	"name": "embeejayz-coleccionables",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Embeejayz Ecosistema de recompensas para twitch",
+	"scripts": {
+		"web:serve": "pnpm nx dev web-coleccionables",
+		"web:build": "pnpm nx build web-coleccionables",
+		"bot:serve": "pnpm nx serve gountzbot",
+		"format": "biome format --write",
+		"lint": "biome lint --write"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.22.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.3.8",
+		"nx": "22.1.3",
+		"typescript": "5.9.3"
+	}
 }

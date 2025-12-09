@@ -4,25 +4,25 @@ import { App } from "./app/app.tsx";
 import "./index.css";
 
 async function enableMocking() {
-  const isDevMode = import.meta.env.VITE_PUBLIC_NODE_ENV === "development";
+	const isDevMode = import.meta.env.VITE_PUBLIC_NODE_ENV === "development";
 
-  if (!isDevMode) return;
+	if (!isDevMode) return;
 
-  const { worker } = await import("./mocks/browser");
+	const { worker } = await import("./mocks/browser");
 
-  return worker.start();
+	return worker.start();
 }
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
 enableMocking()
-  .then(() => {
-    root.render(
-      <StrictMode>
-        <App />
-      </StrictMode>
-    );
-  })
-  .catch(() => {
-    throw new Error("Failed init mocks");
-  });
+	.then(() => {
+		root.render(
+			<StrictMode>
+				<App />
+			</StrictMode>,
+		);
+	})
+	.catch(() => {
+		throw new Error("Failed init mocks");
+	});

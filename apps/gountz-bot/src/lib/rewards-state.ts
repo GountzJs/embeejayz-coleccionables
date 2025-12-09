@@ -1,43 +1,43 @@
 export class RewardsState {
-  private _idBorder: string;
-  private _idCard: string;
-  borderSpecial: boolean;
-  cardSpecial: boolean;
+	private _idBorder: string;
+	private _idCard: string;
+	borderSpecial: boolean;
+	cardSpecial: boolean;
 
-  constructor() {
-    this.borderSpecial = false;
-    this.cardSpecial = false;
-  }
+	constructor() {
+		this.borderSpecial = false;
+		this.cardSpecial = false;
+	}
 
-  toggleBorderSpecial() {
-    this.borderSpecial = !this.borderSpecial;
-  }
+	toggleBorderSpecial() {
+		this.borderSpecial = !this.borderSpecial;
+	}
 
-  toggleCardSpecial() {
-    this.cardSpecial = !this.cardSpecial;
-  }
+	toggleCardSpecial() {
+		this.cardSpecial = !this.cardSpecial;
+	}
 
-  get isBorderActive() {
-    return this.borderSpecial;
-  }
+	get isBorderActive() {
+		return this.borderSpecial;
+	}
 
-  get isCardActive() {
-    return this.cardSpecial;
-  }
+	get isCardActive() {
+		return this.cardSpecial;
+	}
 
-  get idBorder() {
-    return this._idBorder;
-  }
+	get idBorder() {
+		return this._idBorder;
+	}
 
-  set idBorder(id: string) {
-    this._idBorder = id;
-  }
+	set idBorder(id: string) {
+		this._idBorder = id;
+	}
 
-  get idCard() {
-    return this._idCard;
-  }
+	get idCard() {
+		return this._idCard;
+	}
 
-  set idCard(id: string) {
-    this._idCard = id;
-  }
+	set idCard(id: string) {
+		this._idCard = id;
+	}
 }
