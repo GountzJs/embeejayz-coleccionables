@@ -3,8 +3,27 @@ import { createRoot } from "react-dom/client";
 import { App } from "./app/app.tsx";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+async function enableMocking() {
+  const isDevMode = import.meta.env.NODE_ENV === "development";
+  if (!isDevMode) {
+    return;
+  }
+
+  const { worker } = await import("./mocks/browser");
+
+  return worker.start();
+}
+
+const root = createRoot(document.getElementById("root") as HTMLElement);
+
+enableMocking()
+  .then(() => {
+    root.render(
+      <StrictMode>
+        <App />
+      </StrictMode>
+    );
+  })
+  .catch(() => {
+    throw new Error("Failed init mocks");
+  });
