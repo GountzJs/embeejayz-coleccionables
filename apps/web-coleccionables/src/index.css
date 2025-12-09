@@ -25,6 +25,9 @@
 	--text-4xl: 36px;
 	--text-5xl: 48px;
 	--text-6xl: 60px;
+	--padding-desktop: 190px;
+	--padding-tablet: 40px;
+	--padding-mobile: 40px;
 
 	--animate-bgfade: bgfade 2s ease-in-out infinite;
 
@@ -42,6 +45,7 @@
 }
 
 html {
+	background-color: #000;
 	scroll-behavior: smooth;
 	scrollbar-gutter: stable;
 	scrollbar-color: var(--color-primary) transparent;
