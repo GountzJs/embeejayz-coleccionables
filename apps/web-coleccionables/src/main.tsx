@@ -4,10 +4,9 @@ import { App } from "./app/app.tsx";
 import "./index.css";
 
 async function enableMocking() {
-  const isDevMode = import.meta.env.NODE_ENV === "development";
-  if (!isDevMode) {
-    return;
-  }
+  const isDevMode = import.meta.env.VITE_PUBLIC_NODE_ENV === "development";
+
+  if (!isDevMode) return;
 
   const { worker } = await import("./mocks/browser");
 
