@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node ./dist/main.js",
     "serve": "cross-env NODE_ENV=development tsx watch src/main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "format": "biome format --write",
+    "lint": "biome lint --write"
   },
   "keywords": [],
   "author": "",
