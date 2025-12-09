@@ -5,6 +5,7 @@
   "description": "Embeejayz Ecosistema de recompensas para twitch",
   "scripts": {
     "web:serve": "pnpm nx dev web-coleccionables",
+    "web:build": "pnpm nx build web-coleccionables",
     "bot:serve": "pnpm nx serve gountzbot"
   },
   "keywords": [],
