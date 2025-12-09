@@ -4,12 +4,8 @@ export function Header() {
 	return (
 		<header className="flex items-center justify-between py-6 px-mobile md:px-tablet lg:px-desktop w-full">
 			<nav className="flex gap-6">
-				<Link to="/">
-					<span>Inicio</span>
-				</Link>
-				<Link to="/clasificatoria">
-					<span>Clasificación</span>
-				</Link>
+				<NavLink to="/" label="Inicio" />
+				<NavLink to="/clasificatoria" label="Clasificación" />
 				{/* <DropdownBox>
 					<ButtonRewards />
 					<DropdownItems>
@@ -18,8 +14,23 @@ export function Header() {
 					</DropdownItems>
 				</DropdownBox> */}
 			</nav>
-
 			{/* <SearchAccount /> */}
 		</header>
 	);
 }
+
+interface Props {
+	to: string;
+	label: string;
+}
+
+const NavLink = ({ to, label }: Props) => {
+	return (
+		<Link
+			to={to}
+			className="text-white opacity-80 hover:opacity-100 transition-opacity duration-150 font-semibold text-xl"
+		>
+			{label}
+		</Link>
+	);
+};
