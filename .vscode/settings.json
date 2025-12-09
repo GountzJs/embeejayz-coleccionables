@@ -9,6 +9,7 @@
 		"github",
 		"gountz-bot",
 		"workspace",
-		"web-coleccionables"
+		"web-coleccionables",
+		"ui-kit"
 	]
 }
