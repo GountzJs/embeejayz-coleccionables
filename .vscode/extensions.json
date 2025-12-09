@@ -1,3 +1,8 @@
 {
-	"recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+	"recommendations": [
+		"biomejs.biome",
+		"vivaxy.vscode-conventional-commits",
+		"nrwl.angular-console",
+		"TimsExperiments.vscode-tailwindcss"
+	]
 }
