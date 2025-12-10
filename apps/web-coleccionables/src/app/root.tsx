@@ -5,6 +5,8 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router";
 import { HomePage } from ".";
 import { NotFound } from "./not-found";
+import { BordersPage } from "./recompensas/bordes";
+import { CardsPage } from "./recompensas/cartas";
 
 export function Root() {
 	return (
@@ -16,6 +18,22 @@ export function Root() {
 					element={
 						<Suspense fallback={<LoadingPage />}>
 							<HomePage />
+						</Suspense>
+					}
+				/>
+				<Route
+					path="/recompensas/bordes"
+					element={
+						<Suspense fallback={<LoadingPage />}>
+							<BordersPage />
+						</Suspense>
+					}
+				/>
+				<Route
+					path="/recompensas/cartas"
+					element={
+						<Suspense fallback={<LoadingPage />}>
+							<CardsPage />
 						</Suspense>
 					}
 				/>
