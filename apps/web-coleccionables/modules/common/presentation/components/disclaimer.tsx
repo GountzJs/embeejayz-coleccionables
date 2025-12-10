@@ -1,6 +1,6 @@
 export function Disclaimer() {
 	return (
-		<article className="flex flex-col items-center justify-center gap-2.5 my-11.5 w-[800px] outline-2 outline-primary rounded-2xl px-3 py-6">
+		<article className="flex flex-col items-center justify-center gap-2.5 my-11.5 w-[800px] max-w-3/4 outline-2 outline-primary rounded-2xl px-3 py-6">
 			<p className="font-bold text-xl text-center w-full text-pretty text-primary">
 				Aviso importante:
 			</p>
