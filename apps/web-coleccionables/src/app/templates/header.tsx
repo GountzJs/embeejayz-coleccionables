@@ -1,3 +1,4 @@
+import { SearchAccount } from "@modules/common/presentation/components/search-account";
 import { Link } from "react-router";
 
 export function Header() {
@@ -14,7 +15,7 @@ export function Header() {
 					</DropdownItems>
 				</DropdownBox> */}
 			</nav>
-			{/* <SearchAccount /> */}
+			<SearchAccount />
 		</header>
 	);
 }
