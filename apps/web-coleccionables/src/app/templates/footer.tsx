@@ -1,7 +1,8 @@
+// biome-ignore assist/source/organizeImports: Order for Auto Save
+import { cdnUrl } from "@/app/core/settings";
+import { Collaborator } from "@modules/common/presentation/components/collaborator";
 import type React from "react";
 import { Link } from "react-router";
-import { cdnUrl } from "../core/settings";
-import { Collaborator } from "./collaborator";
 
 const collaborators = [
 	{
@@ -79,7 +80,7 @@ export function Footer() {
 				</div>
 			</div>
 
-			<p className="text-xs font-regular text-pretty text-center mt-4 max-w-1/2 w-full">
+			<p className="text-xs font-regular text-pretty text-center mt-4 max-w-3/4 xl:max-w-1/2 w-full">
 				Embee Recompensas no cuenta con el respaldo de Riot games y no refleja
 				las opiniones ni los puntos de vista de Riot games ni de ninguna persona
 				involucrada oficialmente en la producción o administración de
