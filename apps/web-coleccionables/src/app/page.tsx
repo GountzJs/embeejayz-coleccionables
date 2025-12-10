@@ -1,11 +1,11 @@
 import * as Slider from "@modules/common/presentation/lib/slider";
-import { EmbeeBorders } from "./_sections/EmbeeBorders";
-import { EmbeeCards } from "./_sections/EmbeeCards";
-import { Presentation } from "./_sections/Presentation";
+import { EmbeeBorders } from "./sections/borders";
+import { EmbeeCards } from "./sections/cards";
+import { Presentation } from "./sections/presentation";
 
 export default function Page() {
 	return (
-		<main className="flex items-center gap-4 justify-center w-full min-h-[calc(100vh-75px)] px-mobile md:px-tablet lg:px-desktop">
+		<main className="flex items-center gap-4 justify-center w-full min-h-[calc(100vh-85px)] px-mobile md:px-tablet lg:px-desktop">
 			<Slider.Provider>
 				<Slider.Box>
 					<Slider.Item key="0">

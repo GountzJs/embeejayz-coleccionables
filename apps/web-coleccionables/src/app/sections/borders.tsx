@@ -1,11 +1,12 @@
-import { cdnUrl } from "@/app/core/settings";
+// biome-ignore assist/source/organizeImports: Auto save import
+import { cdnUrl } from "@/core/settings";
 import { Link } from "react-router";
 
 export function EmbeeBorders() {
 	return (
 		<section className="flex items-center md:justify-center flex-col 2xl:flex-row-reverse gap-8 py-4 pb-14 2xl:py-4 h-full w-full">
 			<img
-				className="object-contain aspect-640/661 w-[400px] max-w-3/4"
+				className="object-contain aspect-640/661 w-[450px] max-w-3/4"
 				src={`${cdnUrl}/images/banner/bordes.png`}
 				alt="Bordes clasificatorios de Embeejayz"
 				width={640}

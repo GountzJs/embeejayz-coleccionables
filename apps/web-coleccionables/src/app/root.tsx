@@ -1,10 +1,10 @@
 import { LoadingPage } from "@modules/common/presentation/components/loading-page";
+import { Footer } from "@modules/common/presentation/templates/footer";
+import { Header } from "@modules/common/presentation/templates/header";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router";
-import { HomePage } from "./pages/home";
-import { NotFound } from "./pages/not-found";
-import { Footer } from "./templates/footer";
-import { Header } from "./templates/header";
+import { HomePage } from ".";
+import { NotFound } from "./not-found";
 
 export function Root() {
 	return (

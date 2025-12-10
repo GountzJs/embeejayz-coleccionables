@@ -1,5 +1,5 @@
 // biome-ignore assist/source/organizeImports: Order for Auto Save
-import { cdnUrl } from "@/app/core/settings";
+import { cdnUrl } from "@/core/settings";
 import { Collaborator } from "@modules/common/presentation/components/collaborator";
 import type React from "react";
 import { Link } from "react-router";

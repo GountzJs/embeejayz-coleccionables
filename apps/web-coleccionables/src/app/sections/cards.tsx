@@ -1,4 +1,5 @@
-import { cdnUrl } from "@/app/core/settings";
+// biome-ignore assist/source/organizeImports: Auto save organization
+import { cdnUrl } from "@/core/settings";
 import { Link } from "react-router";
 
 export function EmbeeCards() {

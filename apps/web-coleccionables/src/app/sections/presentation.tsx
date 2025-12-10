@@ -1,5 +1,5 @@
 // biome-ignore assist/source/organizeImports: Auto save organization
-import { cdnUrl } from "@/app/core/settings";
+import { cdnUrl } from "@/core/settings";
 import { Link } from "react-router";
 import { Icon } from "ui-kit";
 
