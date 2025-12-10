@@ -13,7 +13,7 @@ export function Dots({ length }: Props) {
 				<li key={`dot-${index + 1}`}>
 					<button
 						type="button"
-						className={`${index === selected ? "bg-white" : "bg-gray-400"} cursor-pointer duration-150 hover:opacity-80 rounded-full h-6 w-6`}
+						className={`${index === selected ? "bg-white" : "bg-gray-600"} cursor-pointer duration-150 hover:opacity-80 rounded-full h-6 w-6`}
 						onClick={() => changeSelected(index)}
 					></button>
 				</li>
