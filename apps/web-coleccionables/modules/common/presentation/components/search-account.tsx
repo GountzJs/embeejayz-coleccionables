@@ -16,7 +16,7 @@ export function SearchAccount() {
 		setUsername(e.target.value);
 
 	return (
-		<form className="flex gap-4 w-full max-w-[400px]" onSubmit={goToProfile}>
+		<form className="flex gap-4 w-[400px]" onSubmit={goToProfile}>
 			<InputOutline
 				type="search"
 				name="username"
