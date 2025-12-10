@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export function Header() {
 	return (
 		<header className="flex items-center justify-between py-6 px-mobile md:px-tablet lg:px-desktop w-full">
-			<nav className="flex gap-6">
+			<nav className="hidden md:flex gap-6">
 				<NavLink to="/" label="Inicio" />
 				<NavLink to="/clasificatoria" label="Clasificación" />
 				{/* <DropdownBox>
@@ -15,7 +15,9 @@ export function Header() {
 					</DropdownItems>
 				</DropdownBox> */}
 			</nav>
-			<SearchAccount />
+			<div className="hidden md:block">
+				<SearchAccount />
+			</div>
 		</header>
 	);
 }

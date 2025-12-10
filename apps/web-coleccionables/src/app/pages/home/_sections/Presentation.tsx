@@ -5,37 +5,34 @@ import { Icon } from "ui-kit";
 
 export function Presentation() {
 	return (
-		<section className="flex items-center justify-center 2xl:justify-between flex-wrap-reverse gap-8 py-14 h-full w-full">
-			<article className="flex flex-col items-center gap-4 w-full 2xl:max-w-1/2">
-				<h1 className="text-center font-black text-white text-5xl w-full">
-					¡Bienvenido a nuestra comunidad!
-				</h1>
-				<p className="text-gray-light font-regular text-lg text-center w-full">
-					Gracias por cada aporte al canal. Creamos esta plataforma para que tu
-					ayuda <i>valga aún más</i>, en esta web vas a encontrar coleccionables
-					inspirados en la escena competitiva de{" "}
-					<strong className="text-primary">League of Legends</strong> y en{" "}
-					<strong className="text-primary">Embeejayz</strong>.
-				</p>
-				<p className="text-gray-light font-regular text-lg text-center w-full mt-4">
-					¡Los esperamos en las siguientes transmisiones del competitivo!
-				</p>
-				<EmbeeLink />
-				<RedesEmbee />
-			</article>
+		<section className="flex items-center md:justify-center flex-col 2xl:flex-row-reverse gap-8 py-4 pb-14 2xl:py-4 h-full w-full">
 			<img
+				className="object-contain aspect-square w-[400px] max-w-3/4"
 				src={`${cdnUrl}/images/svgs/embee-worlds.svg`}
 				alt="Ilustración embeejayz"
 				width={500}
 				height={500}
 				loading="eager"
 				decoding="sync"
-				style={{
-					objectFit: "contain",
-					aspectRatio: "1/1",
-					maxWidth: "50%",
-				}}
 			/>
+
+			<article className="flex flex-col items-center gap-4 w-full 2xl:max-w-1/2">
+				<h1 className="text-center font-black text-white text-3xl md:text-5xl w-full">
+					¡Bienvenido a nuestra comunidad!
+				</h1>
+				<p className="text-gray-light font-regular sm:text-base md:text-lg text-center w-full">
+					Gracias por cada aporte al canal. Creamos esta plataforma para que tu
+					ayuda <i>valga aún más</i>, en esta web vas a encontrar coleccionables
+					inspirados en la escena competitiva de{" "}
+					<strong className="text-primary">League of Legends</strong> y en{" "}
+					<strong className="text-primary">Embeejayz</strong>.
+				</p>
+				<p className="text-gray-light font-regular sm:text-base md:text-lg text-center w-full mt-4">
+					¡Los esperamos en las siguientes transmisiones del competitivo!
+				</p>
+				<EmbeeLink />
+				<RedesEmbee />
+			</article>
 		</section>
 	);
 }

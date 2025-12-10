@@ -22,13 +22,15 @@ export function Provider({ children }: Props) {
 	const changeSelected = (item: number) => setSelected(item);
 
 	return (
-		<SliderContext.Provider
-			value={{
-				selected,
-				changeSelected,
-			}}
-		>
-			<div className="relative h-full w-full">{children}</div>
-		</SliderContext.Provider>
+		<div className="flex-1 self-stretch w-full">
+			<SliderContext.Provider
+				value={{
+					selected,
+					changeSelected,
+				}}
+			>
+				<div className="relative h-full w-full">{children}</div>
+			</SliderContext.Provider>
+		</div>
 	);
 }

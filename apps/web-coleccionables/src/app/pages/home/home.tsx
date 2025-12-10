@@ -13,12 +13,13 @@ export default function Page() {
 					</Slider.Item>
 
 					<Slider.Item key="1">
-						<EmbeeBorders />
+						<EmbeeCards />
 					</Slider.Item>
 
 					<Slider.Item key="2">
-						<EmbeeCards />
+						<EmbeeBorders />
 					</Slider.Item>
+
 					<Slider.Dots length={3} />
 				</Slider.Box>
 			</Slider.Provider>

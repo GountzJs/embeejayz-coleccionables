@@ -3,19 +3,28 @@ import { Link } from "react-router";
 
 export function EmbeeBorders() {
 	return (
-		<section className="flex flex-1 items-center justify-center md:justify-between gap-4 py-12 px-mobile md:px-tablet lg:px-desktop w-full">
-			<article className="flex flex-col items-center gap-12 min-w-[350px] max-w-1/2 w-full">
-				<h1 className="text-5xl font-black text-center w-full">
+		<section className="flex items-center md:justify-center flex-col 2xl:flex-row-reverse gap-8 py-4 pb-14 2xl:py-4 h-full w-full">
+			<img
+				className="object-contain aspect-640/661 w-[400px] max-w-3/4"
+				src={`${cdnUrl}/images/banner/bordes.png`}
+				alt="Bordes clasificatorios de Embeejayz"
+				width={640}
+				height={661}
+				loading="eager"
+				decoding="sync"
+			/>
+			<article className="flex flex-col items-center gap-4 h-fit w-full max-w-[700px]">
+				<h1 className="text-3xl md:text-5xl font-black text-center text-balance w-full">
 					Bordes clasificatorios
 				</h1>
 				<div className="flex flex-col gap-4 w-full">
-					<p className="font-regular font-regular text-lg">
+					<p className="font-regular font-regular text-sm text-pretty md:text-lg">
 						Coleccionables con los distintos proplayers que han dejado su huella
 						en la escena competitiva, destacando sus mejores momentos en
 						diversas competencias internacionales y regionales.
 					</p>
 
-					<p className="font-regular font-regular text-lg">
+					<p className="font-regular font-regular text-sm text-pretty md:text-lg">
 						Ven al stream durante las retransmisiones del competitivo, <br />✨
 						¡entregamos bordes únicos en vivo! ✨
 					</p>
@@ -28,16 +37,6 @@ export function EmbeeBorders() {
 					Saber más
 				</Link>
 			</article>
-
-			<img
-				className="object-contain aspect-640/661 max-h-auto max-w-1/2"
-				src={`${cdnUrl}/images/banner/bordes.png`}
-				alt="Bordes clasificatorios de Embeejayz"
-				width={640}
-				height={661}
-				loading="eager"
-				decoding="sync"
-			/>
 		</section>
 	);
 }
