@@ -1,6 +1,6 @@
 export function Presentation() {
 	return (
-		<section className="flex justify-center flex-col flex-1 gap-5 h-full w-full">
+		<section className="flex justify-center flex-col flex-1 gap-5 min-h-full w-full">
 			<h1 className="font-bold text-4xl text-center w-full">
 				¡Los bordes de nuestra comunidad!
 			</h1>
