@@ -11,5 +11,5 @@
 		"noEmit": true,
 		"moduleDetection": "force"
 	},
-	"include": ["src/**/*.ts", "src/*.ts"]
+	"include": ["src/**/*.ts", "src/*.ts", "src/atoms/dropdown/box.tsx"]
 }

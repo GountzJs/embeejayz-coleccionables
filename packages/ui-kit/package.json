@@ -14,19 +14,23 @@
 			"require": "./dist/index.js"
 		},
 		"./fonts.css": "./dist/fonts.css",
-		"./styles.css": "./dist/styles.css",
 		"./assets/*": "./dist/assets/*"
 	},
 	"keywords": [],
 	"peerDependencies": {
+		"react": "19.2.1",
+		"react-dom": "19.2.1",
 		"typescript": "5.9.2"
 	},
 	"author": "",
 	"license": "ISC",
 	"packageManager": "pnpm@10.22.0",
 	"devDependencies": {
-		"tailwindcss": "4.1.17",
 		"@types/node": "^24.10.1",
+		"@types/react": "19.2.5",
 		"tsup": "8.5.1"
+	},
+	"dependencies": {
+		"isomorphic-dompurify": "2.34.0"
 	}
 }

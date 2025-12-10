@@ -8,10 +8,10 @@ export default defineConfig((options) => ({
 	clean: true,
 	sourcemap: true,
 	target: "es2022",
+	external: ["react", "react/jsx-runtime"],
 	minify: !options.watch,
 	async onSuccess() {
 		cpSync("src/assets", "dist/assets", { recursive: true });
 		copyFileSync("src/fonts.css", "dist/fonts.css");
-		copyFileSync("src/styles.css", "dist/styles.css");
 	},
 }));
