@@ -23,8 +23,7 @@ jobs:
               - 'apps/gountz-bot/**'
               - 'packages/**'
               - 'package.json'
-              - 'pnpm-lock.yaml'
-              - 'pnpm-workspace.yaml'
+              - 'bun.lock'
 
   build-gountzbot:
     needs: changes

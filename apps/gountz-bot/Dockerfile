@@ -1,18 +1,27 @@
-FROM node:20-alpine AS build
+FROM alpine:3.20
 
-RUN npm install -g pnpm@10.22.0
+RUN apk add --no-cache \
+    bash \
+    curl \
+    ca-certificates \
+    libc6-compat \
+    libstdc++ \
+    openssl
+
+ENV BUN_INSTALL=/opt/bun
+RUN curl -fsSL https://bun.sh/install | bash
+
+ENV PATH="$BUN_INSTALL/bin:$PATH"
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY package.json bun.lock nx.json ./
 COPY apps/gountz-bot/package.json ./apps/gountz-bot/
 
-RUN pnpm fetch
+RUN bun install --frozen-lockfile
 
 COPY . .
 
-RUN pnpm install --offline --frozen-lockfile
+RUN bun nx build gountzbot
 
-RUN pnpm nx build gountzbot
-
-CMD ["pnpm", "nx", "start", "gountzbot"]
+CMD ["bun", "nx", "start", "gountzbot"]
