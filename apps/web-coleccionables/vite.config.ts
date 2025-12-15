@@ -15,7 +15,7 @@ export default defineConfig({
 		tailwindcss(),
 	],
 	server: {
-		port: 3000,
+		port: 4200,
 	},
 	resolve: {
 		alias: [
