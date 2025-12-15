@@ -1,4 +1,5 @@
 import { SearchAccount } from "@modules/common/presentation/components/search-account";
+import * as Dropdown from "@modules/common/presentation/lib/dropdown";
 import { Link } from "react-router";
 import { Icon } from "ui-kit";
 
@@ -8,6 +9,13 @@ export function Header() {
 			<nav className="hidden md:flex gap-6">
 				<NavLink to="/" label="Inicio" />
 				<NavLink to="/clasificatoria" label="Clasificación" />
+				<Dropdown.Provider>
+					<Dropdown.Toggle>Recompensas</Dropdown.Toggle>
+					<Dropdown.Menu>
+						<Dropdown.Item to="/recompensas/bordes">Bordes</Dropdown.Item>
+						<Dropdown.Item to="/recompensas/cartas">Cartas</Dropdown.Item>
+					</Dropdown.Menu>
+				</Dropdown.Provider>
 			</nav>
 			<div className="hidden md:block">
 				<SearchAccount />
