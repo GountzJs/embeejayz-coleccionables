@@ -98,6 +98,8 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build web-coleccionables
+        env:
+          VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
         run: bun nx build web-coleccionables
 
       - name: Deploy to Cloudflare Pages
@@ -105,4 +107,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy apps/web-coleccionables/dist --project-name=web-coleccionables
+          command: pages deploy apps/web-coleccionables/dist --project-name=web-coleccionables --commit-dirty=true
