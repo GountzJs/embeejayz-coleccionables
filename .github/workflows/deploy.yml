@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       gountz-bot: ${{ steps.filter.outputs.gountz-bot }}
+      web-coleccionables: ${{ steps.filter.outputs.web-coleccionables }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -21,6 +22,11 @@ jobs:
           filters: |
             gountz-bot:
               - 'apps/gountz-bot/**'
+              - 'packages/**'
+              - 'package.json'
+              - 'bun.lock'
+            web-coleccionables:
+              - 'apps/web-coleccionables/**'
               - 'packages/**'
               - 'package.json'
               - 'bun.lock'
@@ -70,3 +76,33 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-build-cache
           cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-build-cache,mode=max
+
+  deploy-web-coleccionables:
+    needs: changes
+    if: ${{ needs.changes.outputs.web-coleccionables == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build web-coleccionables
+        run: bun nx build web-coleccionables
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy apps/web-coleccionables/dist --project-name=web-coleccionables
