@@ -1,5 +1,5 @@
 import type { TBorderSort, TBordersOrderBy } from "../consts/borders.const";
-import type { BorderEntity } from "../entities/boder.entity";
+import type { BorderEntity } from "../entities/border.entity";
 import type { TotalBorderEntity } from "../entities/total-border.entity";
 
 export interface GetPaginationBordersRequest {
