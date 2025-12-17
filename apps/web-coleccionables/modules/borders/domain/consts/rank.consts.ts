@@ -8,3 +8,5 @@ export const borderRank = {
 	master: "MASTER",
 	challenger: "CHALLENGER",
 } as const;
+
+export type TBorderRank = keyof typeof borderRank;
