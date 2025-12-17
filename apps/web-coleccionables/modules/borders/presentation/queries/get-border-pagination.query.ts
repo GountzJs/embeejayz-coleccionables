@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { GetBordersPagination } from "../DependencyInjection";
-import type { GetPaginationBordersRequest } from "../domain/interfaces/get-pagination-borders.interface";
+import { GetBordersPagination } from "../../DependencyInjection";
+import type { GetPaginationBordersRequest } from "../../domain/interfaces/get-pagination-borders.interface";
 
 export function useGetBordersPaginationQuery({
 	id,
@@ -20,7 +20,7 @@ export function useGetBordersPaginationQuery({
 	} = useInfiniteQuery({
 		initialPageParam: 1,
 		staleTime: 5 * 60 * 1000,
-		queryKey: ["borders", id, { orderBy, sort, name }],
+		queryKey: ["get-border-pagination", id, { orderBy, sort, name }],
 		queryFn: ({ pageParam }) =>
 			GetBordersPagination({
 				id,
