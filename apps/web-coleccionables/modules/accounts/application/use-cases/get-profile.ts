@@ -5,9 +5,13 @@ interface GetProfileCommand {
 	username: string;
 }
 
+type GetProfileResponse = (
+	command: GetProfileCommand,
+) => Promise<ProfileEntity>;
+
 export function getProfile(
 	apiAccountsRepository: ApiAccountsRepository,
-): (command: GetProfileCommand) => Promise<ProfileEntity> {
+): GetProfileResponse {
 	return ({ username }: GetProfileCommand) => {
 		return apiAccountsRepository.getProfile(username);
 	};
