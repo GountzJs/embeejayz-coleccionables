@@ -1,0 +1,34 @@
+.total {
+  color: oklch(92.4% 0.12 95.746);
+}
+
+.avatar {
+  position: absolute;
+  top: 9.5rem;
+  left: 4.3rem;
+}
+
+.summonerIconWrapper {
+  position: absolute;
+  top: 8.5rem;
+  left: 1.375rem;
+  height: 118px;
+  width: 180px;
+}
+
+.usernameCenteredBottom {
+  position: absolute;
+  bottom: 10.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quantitiesWrapper {
+  position: absolute;
+  bottom: 5.75rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}

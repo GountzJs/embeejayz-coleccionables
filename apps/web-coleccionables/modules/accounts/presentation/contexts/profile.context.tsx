@@ -5,11 +5,13 @@ import { useGetProfileQuery } from "../queries/get-profile.query";
 interface ContextProps {
 	data?: ProfileEntity;
 	isLoading: boolean;
+	error: Error | null;
 }
 
 const ProfileContext = createContext<ContextProps>({
 	data: undefined,
 	isLoading: false,
+	error: null,
 });
 
 export const useProfileContext = () => useContext(ProfileContext);
@@ -20,12 +22,12 @@ interface Props {
 }
 
 export function ProfileProvider({ children, username }: Props) {
-	const { data, isLoading } = useGetProfileQuery({
+	const { data, isLoading, error } = useGetProfileQuery({
 		username,
 	});
 
 	return (
-		<ProfileContext.Provider value={{ data, isLoading }}>
+		<ProfileContext.Provider value={{ data, isLoading, error }}>
 			{children}
 		</ProfileContext.Provider>
 	);

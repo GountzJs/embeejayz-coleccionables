@@ -64,3 +64,28 @@ export const rankingData = [
 		},
 	},
 ];
+
+export const profileMap = {
+	meldrekoski: {
+		id: "055b8c07-1839-48d7-977b-48e85b58bfbd",
+		avatar:
+			"https://static-cdn.jtvnw.net/jtv_user_pictures/acec5321-f291-4f97-91c3-f62498d68dbd-profile_image-300x300.png",
+		username: "Meldrekoski",
+		total: {
+			borders: 675,
+			cards: 100,
+			general: 775,
+		},
+	},
+	matintosh: {
+		id: "f1a61c1a-a252-4b56-b4da-f4e3c6f0e151",
+		avatar:
+			"https://static-cdn.jtvnw.net/jtv_user_pictures/ab72b23e-a084-4150-b757-386238484498-profile_image-300x300.png",
+		username: "matintosh",
+		total: {
+			borders: 423,
+			cards: 32,
+			general: 455,
+		},
+	},
+};
