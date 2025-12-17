@@ -1,9 +1,10 @@
-import { LoadingPage } from "@modules/common/presentation/components/loading-page";
+import { WrapperSuspense } from "@modules/common/presentation/components/wrapper-suspense";
 import { Footer } from "@modules/common/presentation/templates/footer";
 import { Header } from "@modules/common/presentation/templates/header";
-import { Suspense } from "react";
 import { Route, Routes } from "react-router";
 import { HomePage } from ".";
+import { ClasificatoriaPage } from "./clasificatoria";
+import { LoadingRankingPage } from "./clasificatoria/loading";
 import { NotFound } from "./not-found";
 import { BordersPage } from "./recompensas/bordes";
 import { CardsPage } from "./recompensas/cartas";
@@ -13,38 +14,25 @@ export function Root() {
 		<div className="bg-gray-ultra-dark text-white flex flex-1 flex-col font-poppins min-h-full w-full max-w-screen overflow-x-hidden">
 			<Header />
 			<Routes>
+				<Route path="/" element={<WrapperSuspense element={<HomePage />} />} />
 				<Route
-					path="/"
+					path="/clasificatoria"
 					element={
-						<Suspense fallback={<LoadingPage />}>
-							<HomePage />
-						</Suspense>
+						<WrapperSuspense
+							element={<ClasificatoriaPage />}
+							fallback={<LoadingRankingPage />}
+						/>
 					}
 				/>
 				<Route
 					path="/recompensas/bordes"
-					element={
-						<Suspense fallback={<LoadingPage />}>
-							<BordersPage />
-						</Suspense>
-					}
+					element={<WrapperSuspense element={<BordersPage />} />}
 				/>
 				<Route
 					path="/recompensas/cartas"
-					element={
-						<Suspense fallback={<LoadingPage />}>
-							<CardsPage />
-						</Suspense>
-					}
+					element={<WrapperSuspense element={<CardsPage />} />}
 				/>
-				<Route
-					path="*"
-					element={
-						<Suspense fallback={<LoadingPage />}>
-							<NotFound />
-						</Suspense>
-					}
-				/>
+				<Route path="*" element={<WrapperSuspense element={<NotFound />} />} />
 			</Routes>
 			<Footer />
 		</div>
