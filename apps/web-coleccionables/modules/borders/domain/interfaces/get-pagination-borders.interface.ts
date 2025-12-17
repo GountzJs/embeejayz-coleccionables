@@ -11,7 +11,7 @@ export interface GetPaginationBordersRequest {
 }
 
 export interface GetPaginationBordersResponse {
-	actualPage: string;
+	actualPage: number;
 	items: BorderEntity[];
 	total: TotalBorderEntity;
 }
