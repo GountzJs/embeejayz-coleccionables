@@ -1,41 +1,44 @@
-import { rank, type TRank } from "../../domain/consts/rank.consts";
+import {
+	rank as rankConsts,
+	type TRank,
+} from "../../domain/consts/rank.consts";
 
 export const getRankByIndex = (index: number) => {
 	switch (index) {
 		case 0:
-			return rank.challenger;
+			return rankConsts.challenger;
 		case 1:
-			return rank.master;
+			return rankConsts.master;
 		case 2:
-			return rank.diamond;
+			return rankConsts.diamond;
 		case 3:
-			return rank.platinum;
+			return rankConsts.platinum;
 		case 4:
-			return rank.gold;
+			return rankConsts.gold;
 		case 5:
-			return rank.silver;
+			return rankConsts.silver;
 		case 6:
-			return rank.bronze;
+			return rankConsts.bronze;
 		default:
-			return rank.unranked;
+			return rankConsts.unranked;
 	}
 };
 
 export const getColorRank = (rank: TRank) => {
 	switch (rank) {
-		case rank.Challenger:
+		case rankConsts.challenger:
 			return "#e7be5c";
-		case rank.Master:
+		case rankConsts.master:
 			return "#74857f";
-		case rank.Diamond:
+		case rankConsts.diamond:
 			return "#5579cf";
-		case rank.Platinum:
+		case rankConsts.platinum:
 			return "#114644";
-		case rank.Gold:
+		case rankConsts.gold:
 			return "#77070a";
-		case rank.Silver:
+		case rankConsts.silver:
 			return "#594b24";
-		case rank.Bronze:
+		case rankConsts.bronze:
 			return "#515760";
 		default:
 			return "#68a9a5";
@@ -44,19 +47,19 @@ export const getColorRank = (rank: TRank) => {
 
 export const getGradientRank = (rank: TRank) => {
 	switch (rank) {
-		case rank.Challenger:
+		case rankConsts.challenger:
 			return "linear-gradient(to right, #fff77f 0, #9a5c16 50%, #1ba4e3 100%)";
-		case rank.Master:
+		case rankConsts.master:
 			return "linear-gradient(to right, #4e5b54, #e9b766, #0bbba9)";
-		case rank.Diamond:
+		case rankConsts.diamond:
 			return "linear-gradient(to right, #5579cf, #e4cda5, #2d7050)";
-		case rank.Platinum:
+		case rankConsts.platinum:
 			return "linear-gradient(to left, #665e2e, #ede0a3, #016062)";
-		case rank.Gold:
+		case rankConsts.gold:
 			return "linear-gradient(to right, #f4efaa, #cc893b, #8a4d1d)";
-		case rank.Silver:
+		case rankConsts.silver:
 			return "linear-gradient(to right, #ccdccd, #769487, #60736c)";
-		case rank.Bronze:
+		case rankConsts.bronze:
 			return "linear-gradient(to right, #f5cc91, #956133, #281102)";
 		default:
 			return "var(--color-gray-light)";

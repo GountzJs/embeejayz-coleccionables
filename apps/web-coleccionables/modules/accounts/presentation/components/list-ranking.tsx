@@ -17,7 +17,7 @@ export function ListRanking() {
 	return (
 		<ul className="flex flex-col items-center gap-10 w-[700px] max-w-3/4">
 			{data.map((ranking, idx) => (
-				<UserRank key={ranking.id} rank={getRankByIndex(idx)} {...ranking} />
+				<UserRank key={ranking.id} {...ranking} rank={getRankByIndex(idx)} />
 			))}
 		</ul>
 	);
