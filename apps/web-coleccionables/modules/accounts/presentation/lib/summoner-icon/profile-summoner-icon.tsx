@@ -1,5 +1,5 @@
 import { cdnUrl } from "@/core/settings";
-import type { TRank } from "../../../domain/consts/rank.enum";
+import type { TRank } from "../../../domain/consts/rank.consts";
 
 interface Props {
 	rank: TRank;

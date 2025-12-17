@@ -1,4 +1,4 @@
-import type { TRank } from "../consts/rank.enum";
+import type { TRank } from "../consts/rank.consts";
 
 export type ProfileEntity = {
 	id: string;

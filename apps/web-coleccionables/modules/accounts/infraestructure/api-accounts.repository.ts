@@ -1,5 +1,5 @@
 import { apiUrl } from "@/core/settings";
-import { Rank } from "../domain/consts/rank.enum";
+import { rank } from "../domain/consts/rank.consts";
 import type { ProfileEntity } from "../domain/entities/profile.entity";
 import type { RankingEntity } from "../domain/entities/ranking.entity";
 import type { ApiAccountsRepository } from "../domain/repositories/api-accounts.repository";
@@ -25,6 +25,6 @@ export const apiAccountsImplRepository: ApiAccountsRepository = {
 			throw data;
 		}
 
-		return { rank: Rank.Unranked, ...data };
+		return { rank: rank.unranked, ...data };
 	},
 };

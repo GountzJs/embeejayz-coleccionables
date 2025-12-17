@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Rank } from "../../domain/consts/rank.enum";
+import { rank as rankConsts } from "../../domain/consts/rank.consts";
 import type { AccountRankingEntity } from "../../domain/entities/account-ranking.entity";
 import { getColorRank, getGradientRank } from "../utils/ranks";
 import { IconRank } from "./icon-rank";
@@ -23,7 +23,7 @@ export function UserRank({ rank, username, total }: AccountRankingEntity) {
 				<IconRank
 					rank={rank}
 					width={70}
-					height={rank === Rank.Unranked ? 55 : 70}
+					height={rank === rankConsts.unranked ? 55 : 70}
 				/>
 				<div
 					className="rounded-sm w-2.5 h-[70px] my-2 mx-6"

@@ -1,4 +1,4 @@
-import { Rank } from "../../domain/consts/rank.enum";
+import { rank } from "../../domain/consts/rank.consts";
 import type { ProfileEntity } from "../../domain/entities/profile.entity";
 import { useProfileContext } from "../contexts/profile.context";
 import { ProfileBronze } from "./profile-bronze/profile-bronze";
@@ -21,19 +21,19 @@ export function Profile() {
 
 const ViewProfile = ({ profile }: { profile: ProfileEntity }) => {
 	switch (profile.rank) {
-		case Rank.Unranked:
+		case rank.unranked:
 			return <ProfileUnranked profile={profile} />;
-		case Rank.Bronze:
+		case rank.bronze:
 			return <ProfileBronze profile={profile} />;
-		case Rank.Silver:
+		case rank.silver:
 			return <ProfileSilver profile={profile} />;
-		case Rank.Gold:
+		case rank.gold:
 			return <ProfileGold profile={profile} />;
-		case Rank.Platinum:
+		case rank.platinum:
 			return <ProfilePlatinum profile={profile} />;
-		case Rank.Diamond:
+		case rank.diamond:
 			return <ProfileDiamond profile={profile} />;
-		case Rank.Master:
+		case rank.master:
 			return <ProfileMaster profile={profile} />;
 		default:
 			return <ProfileChallenger profile={profile} />;
