@@ -3,6 +3,10 @@ import { Footer } from "@modules/common/presentation/templates/footer";
 import { Header } from "@modules/common/presentation/templates/header";
 import { Route, Routes } from "react-router";
 import { HomePage } from ".";
+import { UserBordersPage } from "./[username]";
+import { EmbeeCardsPage } from "./[username]/embeecards";
+import { UserLayout } from "./[username]/layout";
+import { Worlds2025Page } from "./[username]/worlds2025";
 import { ClasificatoriaPage } from "./clasificatoria";
 import { LoadingRankingPage } from "./clasificatoria/loading";
 import { NotFound } from "./not-found";
@@ -32,6 +36,20 @@ export function Root() {
 					path="/recompensas/cartas"
 					element={<WrapperSuspense element={<CardsPage />} />}
 				/>
+				<Route path="/usuarios/:username" element={<UserLayout />}>
+					<Route
+						index
+						element={<WrapperSuspense element={<UserBordersPage />} />}
+					/>
+					<Route
+						path="embeecards"
+						element={<WrapperSuspense element={<EmbeeCardsPage />} />}
+					/>
+					<Route
+						path="worlds2025"
+						element={<WrapperSuspense element={<Worlds2025Page />} />}
+					/>
+				</Route>
 				<Route path="*" element={<WrapperSuspense element={<NotFound />} />} />
 			</Routes>
 			<Footer />
