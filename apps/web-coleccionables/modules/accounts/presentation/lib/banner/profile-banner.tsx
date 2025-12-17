@@ -1,5 +1,6 @@
 import { cdnUrl } from "@/core/settings";
 import type { TRank } from "../../../domain/consts/rank.consts";
+import { rank as rankConsts } from "../../../domain/consts/rank.consts";
 import styles from "./styles.module.css";
 
 interface Props {
@@ -29,19 +30,19 @@ export function ProfileBanner({ rank }: Props) {
 
 const getHeight = (rank: TRank) => {
 	switch (rank) {
-		case rank.Challenger:
+		case rankConsts.challenger:
 			return 500;
-		case rank.Master:
+		case rankConsts.master:
 			return 488;
-		case rank.Diamond:
+		case rankConsts.diamond:
 			return 500;
-		case rank.Platinum:
+		case rankConsts.platinum:
 			return 488;
-		case rank.Gold:
+		case rankConsts.gold:
 			return 488;
-		case rank.Silver:
+		case rankConsts.silver:
 			return 482;
-		case rank.Bronze:
+		case rankConsts.bronze:
 			return 480;
 		default:
 			return 480;
@@ -50,19 +51,19 @@ const getHeight = (rank: TRank) => {
 
 const getWidth = (rank: TRank) => {
 	switch (rank) {
-		case rank.Challenger:
+		case rankConsts.challenger:
 			return 300;
-		case rank.Master:
+		case rankConsts.master:
 			return 230;
-		case rank.Diamond:
+		case rankConsts.diamond:
 			return 230;
-		case rank.Platinum:
+		case rankConsts.platinum:
 			return 230;
-		case rank.Gold:
+		case rankConsts.gold:
 			return 230;
-		case rank.Silver:
+		case rankConsts.silver:
 			return 282;
-		case rank.Bronze:
+		case rankConsts.bronze:
 			return 230;
 		default:
 			return 230;
