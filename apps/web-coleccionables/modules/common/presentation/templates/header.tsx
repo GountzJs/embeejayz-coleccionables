@@ -1,4 +1,4 @@
-import { SearchAccount } from "@modules/common/presentation/components/search-account";
+import { SearchAccount } from "@modules/accounts/presentation/components/search-account";
 import * as Dropdown from "@modules/common/presentation/lib/dropdown";
 import { Link } from "react-router";
 import { Icon } from "ui-kit";

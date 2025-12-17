@@ -9,4 +9,4 @@ export const Rank = {
 	Challenger: "CHALLENGER",
 };
 
-export type TRank = string;
+export type TRank = (typeof Rank)[keyof typeof Rank];

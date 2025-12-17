@@ -1,7 +1,7 @@
+import { Button } from "@modules/common/presentation/lib/button";
+import { InputOutline } from "@modules/common/presentation/lib/input-outline";
 import { type ChangeEvent, type FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
-import { Button } from "../lib/button";
-import { InputOutline } from "../lib/input-outline";
 
 export function SearchAccount() {
 	const [username, setUsername] = useState("");
@@ -23,9 +23,9 @@ export function SearchAccount() {
 				placeholder="Ingresar nombre de usuario"
 				minLength={3}
 				maxLength={50}
-				required
 				value={username}
 				onChange={changeOnInput}
+				required
 			/>
 			<Button type="submit">Buscar</Button>
 		</form>
