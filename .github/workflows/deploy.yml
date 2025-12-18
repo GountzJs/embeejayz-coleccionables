@@ -100,7 +100,7 @@ jobs:
       - name: Build web-coleccionables
         env:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
-        run: bun nx build web-coleccionables --skip-nx-cache
+        run: bun web:build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
