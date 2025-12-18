@@ -1,0 +1,36 @@
+.scroll-up {
+	background: transparent;
+	border: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 200ms ease-in-out;
+	& > img {
+		border-radius: 50%;
+	}
+}
+
+.scroll-up.active {
+	opacity: 1;
+	pointer-events: all;
+	animation: floating 2s ease-in-out infinite;
+	&:hover {
+		animation-play-state: paused;
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
