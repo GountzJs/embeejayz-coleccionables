@@ -100,11 +100,11 @@ jobs:
       - name: Build web-coleccionables
         env:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
-        run: bun nx build web-coleccionables
+        run: bun nx build web-coleccionables --skip-nx-cache
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy apps/web-coleccionables/dist --project-name=web-coleccionables --commit-dirty=true
+          command: pages deploy apps/web-coleccionables/dist --project-name=web-coleccionables
