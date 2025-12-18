@@ -2,6 +2,7 @@ import { useProfileContext } from "@modules/accounts/presentation/contexts/profi
 import { ListBorders } from "@modules/borders/presentation/components/list-borders";
 import { DialogSpellContextProvider } from "@modules/borders/presentation/contexts/dialog-spell.context";
 import { SpellsContextProvider } from "@modules/borders/presentation/contexts/spells.context";
+import { LoadingBordersPage } from "./loading";
 import { FilterBorders } from "./sections/filter-borders";
 
 export default function Page() {
@@ -12,12 +13,14 @@ export default function Page() {
 			<SpellsContextProvider>
 				<DialogSpellContextProvider>
 					<FilterBorders />
-					{data && (
+					{data ? (
 						<ListBorders
 							id={data.id}
 							avatarUrl={data.avatar}
 							username={data.username}
 						/>
+					) : (
+						<LoadingBordersPage />
 					)}
 				</DialogSpellContextProvider>
 			</SpellsContextProvider>

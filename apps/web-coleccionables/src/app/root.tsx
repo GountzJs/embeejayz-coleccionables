@@ -7,6 +7,7 @@ import { HomePage } from ".";
 import { UserBordersPage } from "./[username]";
 import { EmbeeCardsPage } from "./[username]/embeecards";
 import { UserLayout } from "./[username]/layout";
+import { LoadingBordersPage } from "./[username]/loading";
 import { Worlds2025Page } from "./[username]/worlds2025";
 import { ClasificatoriaPage } from "./clasificatoria";
 import { LoadingRankingPage } from "./clasificatoria/loading";
@@ -40,7 +41,12 @@ export function Root() {
 				<Route path="/usuarios/:username" element={<UserLayout />}>
 					<Route
 						index
-						element={<WrapperSuspense element={<UserBordersPage />} />}
+						element={
+							<WrapperSuspense
+								element={<UserBordersPage />}
+								fallback={<LoadingBordersPage />}
+							/>
+						}
 					/>
 					<Route
 						path="embeecards"
