@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useRef, useState } from "react";
+import { createContext, useContext, useRef, useState } from "react";
+import { useClickOutsideHook } from "../../hooks/click-outside.hook";
 
 type DropdownContextType = {
 	isOpen: boolean;
@@ -20,21 +21,9 @@ export function Provider({ children }: Props) {
 	const [isOpen, setIsOpen] = useState(false);
 	const container = useRef<HTMLDivElement>(null);
 
+	useClickOutsideHook({ ref: container, handler: () => setIsOpen(false) });
+
 	const toggle = () => setIsOpen(!isOpen);
-
-	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			const isClickInside = container.current?.contains(event.target as Node);
-
-			if (!isClickInside && isOpen) setIsOpen(false);
-		};
-
-		document.addEventListener("mousedown", handleClickOutside);
-
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
-	}, [isOpen]);
 
 	return (
 		<DropdownContext.Provider
