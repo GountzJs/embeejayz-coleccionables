@@ -38,7 +38,8 @@ export function ListBorders({ id, avatarUrl, username }: Props) {
 			</p>
 		);
 
-	if (!borders.length) return <NotBorders />;
+	if (!borders.length && !(isFetching || isFetchingNextPage))
+		return <NotBorders />;
 
 	return (
 		<ul className="flex flex-wrap gap-4 h-full w-full max-w-full">
