@@ -1,5 +1,6 @@
 // biome-ignore assist/source/organizeImports: <Auto save import>
 import { cdnUrl } from "@/core/settings";
+import { Button } from "@modules/common/presentation/lib/button";
 import { Field, Form, Formik } from "formik";
 import { useLocation, useNavigate } from "react-router";
 import {
@@ -41,7 +42,7 @@ export function SearchBorders({ sort, orderBy, name }: Props) {
 		<Formik initialValues={initValues} onSubmit={handleSubmit}>
 			{({ values }) => (
 				<Form className="flex items-center justify-center flex-wrap w-fit max-w-[80%] gap-3.5">
-					<label htmlFor="search" className="relative">
+					<label htmlFor="name" className="relative">
 						<img
 							className="absolute left-2 top-[50%] transform -translate-y-[55%]"
 							src={`${cdnUrl}/images/svgs/lens.svg`}
@@ -90,15 +91,7 @@ export function SearchBorders({ sort, orderBy, name }: Props) {
 							</option>
 						</Field>
 					</label>
-					<button
-						type="submit"
-						className="bg-gray-ultra-dark font-semibold outline-2 outline-primary rounded-md text-sm hover:scale-105 duration-200 transition-transform will-change-transform px-6 py-2 cursor-pointer"
-						style={{
-							boxShadow: "0 0 40px 10px rgba(226, 1, 45, 0.2)",
-						}}
-					>
-						Buscar
-					</button>
+					<Button type="submit">Buscar</Button>
 				</Form>
 			)}
 		</Formik>
