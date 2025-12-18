@@ -4,6 +4,9 @@
 		"vite:serve": {
 			"dependsOn": ["^build"]
 		},
+		"vite:build": {
+			"dependsOn": ["^build"]
+		},
 		"serve": {
 			"dependsOn": ["^build"]
 		},
