@@ -30,28 +30,31 @@ export const handlers = [
 
 function getBorders(sort: TBorderSort, orderBy: TBordersOrderBy, page: number) {
 	const limit = 8;
+
 	if (orderBy === bordersOrderBy.rank) {
-		if (sort === borderSort.desc) {
-			const data = borders.sort((a, b) => {
+		const sortedData = [...borders].sort((a, b) => {
+			if (sort === borderSort.desc) {
 				if (a.isSpecial && !b.isSpecial) return -1;
 				if (!a.isSpecial && b.isSpecial) return 1;
-
 				return b.quantity - a.quantity;
-			});
-			const paginatedData = data.slice((page - 1) * limit, page * limit);
-			return paginatedData;
-		}
-		const data = borders.sort((a, b) => {
-			if (a.isSpecial && !b.isSpecial) return -1;
-			if (!a.isSpecial && b.isSpecial) return 1;
+			}
+
+			if (a.isSpecial && !b.isSpecial) return 1;
+			if (!a.isSpecial && b.isSpecial) return -1;
 			return a.quantity - b.quantity;
 		});
-		const paginatedData = data.slice((page - 1) * limit, page * limit);
+
+		const paginatedData = sortedData.slice((page - 1) * limit, page * limit);
 		return paginatedData;
 	}
-	const data = borders.sort((a, b) => {
+
+	const sortedData = [...borders].sort((a, b) => {
+		if (sort === borderSort.desc) {
+			return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+		}
 		return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
 	});
-	const paginatedData = data.slice((page - 1) * limit, page * limit);
+
+	const paginatedData = sortedData.slice((page - 1) * limit, page * limit);
 	return paginatedData;
 }
