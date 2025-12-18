@@ -4,6 +4,8 @@ import {
 	type TBorderSort,
 	type TBordersOrderBy,
 } from "@modules/borders/domain/consts/borders.const";
+import type { BorderEntity } from "@modules/borders/domain/entities/border.entity";
+import type { TotalBorderEntity } from "@modules/borders/domain/entities/total-border.entity";
 import { HttpResponse, http } from "msw";
 import { borders } from "./data";
 
@@ -15,24 +17,35 @@ export const handlers = [
 			const page = Number(url.searchParams.get("page") || 1);
 			const sort = url.searchParams.get("sort") as TBorderSort;
 			const orderBy = url.searchParams.get("orderBy") as TBordersOrderBy;
-			const data = getBorders(sort, orderBy, page);
+			const name = url.searchParams.get("name") || "";
+			const { items, total } = getBorders(sort, orderBy, page, name);
 			return HttpResponse.json({
-				items: data,
-				actualPage: 1,
-				total: {
-					count: 8,
-					pages: 1,
-				},
+				items,
+				actualPage: page,
+				total,
 			});
 		},
 	),
 ];
 
-function getBorders(sort: TBorderSort, orderBy: TBordersOrderBy, page: number) {
+type GetBordersResponse = {
+	items: BorderEntity[];
+	total: TotalBorderEntity;
+};
+
+function getBorders(
+	sort: TBorderSort,
+	orderBy: TBordersOrderBy,
+	page: number,
+	name: string,
+): GetBordersResponse {
+	const filteredData = borders.filter((border) =>
+		border.name.toLowerCase().includes(name.toLowerCase()),
+	);
 	const limit = 8;
 
 	if (orderBy === bordersOrderBy.rank) {
-		const sortedData = [...borders].sort((a, b) => {
+		const sortedData = [...filteredData].sort((a, b) => {
 			if (sort === borderSort.desc) {
 				if (a.isSpecial && !b.isSpecial) return -1;
 				if (!a.isSpecial && b.isSpecial) return 1;
@@ -45,10 +58,16 @@ function getBorders(sort: TBorderSort, orderBy: TBordersOrderBy, page: number) {
 		});
 
 		const paginatedData = sortedData.slice((page - 1) * limit, page * limit);
-		return paginatedData;
+		return {
+			items: paginatedData,
+			total: {
+				items: sortedData.length,
+				pages: Math.ceil(sortedData.length / limit),
+			},
+		};
 	}
 
-	const sortedData = [...borders].sort((a, b) => {
+	const sortedData = [...filteredData].sort((a, b) => {
 		if (sort === borderSort.desc) {
 			return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
 		}
@@ -56,5 +75,12 @@ function getBorders(sort: TBorderSort, orderBy: TBordersOrderBy, page: number) {
 	});
 
 	const paginatedData = sortedData.slice((page - 1) * limit, page * limit);
-	return paginatedData;
+
+	return {
+		items: paginatedData,
+		total: {
+			items: sortedData.length,
+			pages: Math.ceil(sortedData.length / limit),
+		},
+	};
 }
