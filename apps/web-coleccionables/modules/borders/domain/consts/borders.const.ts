@@ -1,13 +1,13 @@
-export const BordersOrderBy = {
+export const bordersOrderBy = {
 	rank: "rank",
 	createdAt: "createdAt",
 } as const;
 
-export type TBordersOrderBy = keyof typeof BordersOrderBy;
+export type TBordersOrderBy = keyof typeof bordersOrderBy;
 
-export const BorderSort = {
+export const borderSort = {
 	asc: "ASC",
 	desc: "DESC",
 } as const;
 
-export type TBorderSort = keyof typeof BorderSort;
+export type TBorderSort = keyof typeof borderSort;

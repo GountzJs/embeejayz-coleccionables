@@ -9,4 +9,4 @@ export const borderRank = {
 	challenger: "CHALLENGER",
 } as const;
 
-export type TBorderRank = keyof typeof borderRank;
+export type TBorderRank = (typeof borderRank)[keyof typeof borderRank];
