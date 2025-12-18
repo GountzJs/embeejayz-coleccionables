@@ -1,0 +1,27 @@
+.form-container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	gap: 14px;
+	width: fit-content;
+	max-width: 80%;
+}
+
+
+.label {
+	position: relative;
+}
+
+.wrapper {
+	padding-left: 30px !important;
+	height: 100%;
+	width: 200px;
+}
+
+.icon {
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-55%);
+}
+
