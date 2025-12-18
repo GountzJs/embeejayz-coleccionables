@@ -1,4 +1,5 @@
 import { WrapperSuspense } from "@modules/common/presentation/components/wrapper-suspense";
+import { ScrollUp } from "@modules/common/presentation/lib/scroll-up/scroll-up";
 import { Footer } from "@modules/common/presentation/templates/footer";
 import { Header } from "@modules/common/presentation/templates/header";
 import { Route, Routes } from "react-router";
@@ -53,6 +54,7 @@ export function Root() {
 				<Route path="*" element={<WrapperSuspense element={<NotFound />} />} />
 			</Routes>
 			<Footer />
+			<ScrollUp />
 		</div>
 	);
 }
