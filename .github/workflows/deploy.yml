@@ -102,7 +102,7 @@ jobs:
         env:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
           VITE_PUBLIC_API_URL: ${{ secrets.VITE_PUBLIC_API_URL }}
-        run: bun nx vite:build web-coleccionables --with-deps
+        run: bun nx vite:build web-coleccionables
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
