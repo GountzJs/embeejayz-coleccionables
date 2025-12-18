@@ -1,6 +1,9 @@
 {
 	"$schema": "./node_modules/nx/schemas/nx-schema.json",
 	"targetDefaults": {
+		"vite:serve": {
+			"dependsOn": ["^build"]
+		},
 		"serve": {
 			"dependsOn": ["^build"]
 		},
