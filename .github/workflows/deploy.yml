@@ -94,21 +94,17 @@ jobs:
         with:
           bun-version: latest
 
+
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Clean cache
+        run: bun nx reset
 
       - name: Build web-coleccionables
         env:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
-        run: bun nx build web-coleccionables --skip-nx-cache
-
-      - name: Verify build output
-        run: |
-          echo "Listing dist directory:"
-          ls -la apps/web-coleccionables/dist
-          echo "Checking index.html timestamp:"
-          stat apps/web-coleccionables/dist/index.html
-
+        run: bun nx build web-coleccionables
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
