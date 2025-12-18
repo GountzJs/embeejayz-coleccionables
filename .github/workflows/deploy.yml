@@ -102,6 +102,14 @@ jobs:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
         run: bun nx build web-coleccionables --skip-nx-cache
 
+      - name: Verify build output
+        run: |
+          echo "Listing dist directory:"
+          ls -la apps/web-coleccionables/dist
+          echo "Checking index.html timestamp:"
+          stat apps/web-coleccionables/dist/index.html
+
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
