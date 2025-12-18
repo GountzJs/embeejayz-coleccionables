@@ -1,14 +1,14 @@
 // biome-ignore assist/source/organizeImports: <Auto save import>
 import { cdnUrl } from "@/core/settings";
-import cardPallet from "@modules/embeecards/presentations/consts/card-pallet";
+import embeecardPallet from "@modules/cards/presentations/consts/embeecard-pallet";
 
 export function DetailCards() {
 	const categories = [
-		{ name: "T1", color: cardPallet.t1.light },
-		{ name: "Embeejayz", color: cardPallet.embee.light },
-		{ name: "Troll", color: cardPallet.troll.light },
-		{ name: "Lolesports", color: cardPallet.lolesports.light },
-		{ name: "Únicas", color: cardPallet.special.light },
+		{ name: "T1", color: embeecardPallet.t1.light },
+		{ name: "Embeejayz", color: embeecardPallet.embee.light },
+		{ name: "Troll", color: embeecardPallet.troll.light },
+		{ name: "Lolesports", color: embeecardPallet.lolesports.light },
+		{ name: "Únicas", color: embeecardPallet.special.light },
 	];
 
 	return (
