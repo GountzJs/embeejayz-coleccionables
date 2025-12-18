@@ -1,6 +1,6 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: false positive */
-import { spells } from "@modules/borders/domain/consts/spells.const";
 import { InfiniteScrollObserver } from "@modules/common/presentation/lib/infinite-scroll";
+import { useSpellsContext } from "../contexts/spells.context";
 import { useGetBorderFilters } from "../hooks/get-border-filters";
 import { useGetBordersPaginationQuery } from "../queries/get-border-pagination.query";
 import { getRankByQuantity } from "../utils/rank";
@@ -16,6 +16,7 @@ interface Props {
 }
 
 export function ListBorders({ id, avatarUrl, username }: Props) {
+	const { leftIcon, rightIcon } = useSpellsContext();
 	const { orderBy, sort, name } = useGetBorderFilters();
 	const {
 		borders,
@@ -48,8 +49,8 @@ export function ListBorders({ id, avatarUrl, username }: Props) {
 						username={username}
 						avatarUrl={avatarUrl}
 						rank={getRankByQuantity(border.quantity, border.isSpecial)}
-						leftIcon={spells.flash}
-						rightIcon={spells.ignite}
+						leftIcon={leftIcon}
+						rightIcon={rightIcon}
 					/>
 				</li>
 			))}
