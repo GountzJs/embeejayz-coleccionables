@@ -94,6 +94,9 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Clean all caches
+        run: |
+          rm -rf apps/web-coleccionables/dist
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
