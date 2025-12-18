@@ -6,6 +6,15 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+	root: import.meta.dirname,
+	cacheDir: "../../node_modules/.vite/apps/web-coleccionables",
+	server: {
+		port: 4200,
+	},
+	preview: {
+		port: 4200,
+		host: "localhost",
+	},
 	plugins: [
 		react({
 			babel: {
@@ -14,8 +23,13 @@ export default defineConfig({
 		}),
 		tailwindcss(),
 	],
-	server: {
-		port: 4200,
+	build: {
+		outDir: "./dist",
+		emptyOutDir: true,
+		reportCompressedSize: true,
+		commonjsOptions: {
+			transformMixedEsModules: true,
+		},
 	},
 	resolve: {
 		alias: [
