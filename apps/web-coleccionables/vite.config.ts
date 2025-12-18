@@ -23,14 +23,6 @@ export default defineConfig({
 		}),
 		tailwindcss(),
 	],
-	build: {
-		outDir: "./dist",
-		emptyOutDir: true,
-		reportCompressedSize: true,
-		commonjsOptions: {
-			transformMixedEsModules: true,
-		},
-	},
 	resolve: {
 		alias: [
 			{
