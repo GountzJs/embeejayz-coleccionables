@@ -30,6 +30,7 @@ jobs:
               - 'packages/**'
               - 'package.json'
               - 'bun.lock'
+              - 'nx.json'
 
   build-gountzbot:
     needs: changes
@@ -100,7 +101,8 @@ jobs:
       - name: Build web-coleccionables
         env:
           VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_PUBLIC_CDN_URL }}
-        run: bun web:build
+          VITE_PUBLIC_API_URL: ${{ secrets.VITE_PUBLIC_API_URL }}
+        run: bun nx build web-coleccionables --with-deps
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
