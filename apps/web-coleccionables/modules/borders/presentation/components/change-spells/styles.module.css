@@ -1,0 +1,22 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 2px solid var(--color-secondary);
+  padding: 0;
+  height: fit-content;
+  width: fit-content;
+  transition: transform 300ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
