@@ -6,6 +6,7 @@
 	"dependencies": {
 		"@tanstack/react-query": "5.90.12",
 		"formik": "2.4.9",
+		"html2canvas": "1.4.1",
 		"isomorphic-dompurify": "2.34.0",
 		"react": "19.2.3",
 		"react-dom": "19.2.3",
