@@ -1,0 +1,11 @@
+.content-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-inline: 20px;
+  padding-bottom: 34px;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
