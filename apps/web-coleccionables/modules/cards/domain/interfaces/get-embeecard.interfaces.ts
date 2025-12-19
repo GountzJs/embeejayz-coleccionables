@@ -1,4 +1,5 @@
 import type { EmbeecardEntity } from "../entities/embeecard.entity";
+import type { TotalEmbeecardEntity } from "../entities/total-embeecard.entity";
 
 export interface GetEmbeeCardsRequest {
 	id: string;
@@ -7,9 +8,6 @@ export interface GetEmbeeCardsRequest {
 
 export interface GetEmbeeCardsResponse {
 	page: number;
-	total: {
-		pages: number;
-		items: number;
-	};
+	total: TotalEmbeecardEntity;
 	data: EmbeecardEntity[];
 }
