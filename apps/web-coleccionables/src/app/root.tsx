@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router";
 import { HomePage } from ".";
 import { UserBordersPage } from "./[username]";
 import { EmbeeCardsPage } from "./[username]/embeecards";
+import { LoadingEmbeeCardsPage } from "./[username]/embeecards/loading";
 import { UserLayout } from "./[username]/layout";
 import { LoadingBordersPage } from "./[username]/loading";
 import { Worlds2025Page } from "./[username]/worlds2025";
@@ -50,7 +51,12 @@ export function Root() {
 					/>
 					<Route
 						path="embeecards"
-						element={<WrapperSuspense element={<EmbeeCardsPage />} />}
+						element={
+							<WrapperSuspense
+								element={<EmbeeCardsPage />}
+								fallback={<LoadingEmbeeCardsPage />}
+							/>
+						}
 					/>
 					<Route
 						path="worlds2025"
