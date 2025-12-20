@@ -22,4 +22,4 @@ RUN bun install --frozen-lockfile
 
 RUN bun nx build gountzbot
 
-CMD ["bun", "run", "./dist/apps/gountzbot/main.js"]
+CMD ["bun", "run", "./apps/gountz-bot/dist/main.js"]
