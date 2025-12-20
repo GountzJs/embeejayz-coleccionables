@@ -1,1 +1,1 @@
-export * from './card-category.enum';
+export * from "./card-category.enum";

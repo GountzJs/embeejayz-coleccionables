@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
+import sitemap from "vite-plugin-sitemap";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -22,6 +23,19 @@ export default defineConfig({
 			},
 		}),
 		tailwindcss(),
+		sitemap({
+			hostname: "https://coleccionables.embeejayz.com",
+			dynamicRoutes: [
+				"/",
+				"/clasificatoria",
+				"/contacto",
+				"/recompensas/bordes",
+				"/recompensas/cartas",
+			],
+			readable: true,
+			generateRobotsTxt: false,
+			exclude: ["/404"],
+		}),
 	],
 	resolve: {
 		alias: [

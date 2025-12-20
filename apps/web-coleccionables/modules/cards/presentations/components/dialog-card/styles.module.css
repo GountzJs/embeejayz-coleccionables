@@ -1,58 +1,58 @@
 .content-container {
-  align-items: center;
-  display: flex;
-  gap: 24px;
+	align-items: center;
+	display: flex;
+	gap: 24px;
 }
 
 .card-container {
-  position: relative;
-  height: 450px;
-  width: 300px;
+	position: relative;
+	height: 450px;
+	width: 300px;
 }
 
 .card-info-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
 .animate-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-44%, 20%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-44%, 20%);
 }
 
 .move-container {
-  animation: move-pack 500ms ease-in-out forwards;
+	animation: move-pack 500ms ease-in-out forwards;
 }
 
 .card-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 38%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 38%);
 }
 
 .active-position {
-  animation: move-card 500ms ease-in-out forwards;
+	animation: move-card 500ms ease-in-out forwards;
 }
 
 @keyframes move-card {
-  from {
-    transform: translate(-50%, 38%);
-  }
-  to {
-    transform: translate(-50%, -50%);
-  }
+	from {
+		transform: translate(-50%, 38%);
+	}
+	to {
+		transform: translate(-50%, -50%);
+	}
 }
 
 @keyframes move-pack {
-  from {
-    transform: translate(-44%, 20%);
-  }
-  to {
-    transform: translate(-44%, 80%);
-  }
+	from {
+		transform: translate(-44%, 20%);
+	}
+	to {
+		transform: translate(-44%, 80%);
+	}
 }

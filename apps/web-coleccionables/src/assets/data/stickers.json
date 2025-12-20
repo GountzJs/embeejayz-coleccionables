@@ -1,1316 +1,1316 @@
 {
-  "fly": [
-    {
-      "id": "9e76a0f6-eed9-49a5-8a93-f1ff2e72b231",
-      "date": "24-12-98",
-      "name": "BWIPO",
-      "cover": "/albums/worlds2025/proplayers/fly/bwipo.png",
-      "country": "BELGIUM",
-      "team": "FLY",
-      "role": "TOP"
-    },
-    {
-      "id": "60881574-5eb2-4a9c-831e-822275047353",
-      "date": "04-06-08",
-      "name": "GAKGOS",
-      "cover": "/albums/worlds2025/proplayers/fly/gakgos.png",
-      "country": "TURKEY",
-      "team": "FLY",
-      "role": "TOP"
-    },
-    {
-      "id": "ba903586-d122-4b21-a2f0-5f91dd769093",
-      "date": "24-01-02",
-      "name": "INSPIRED",
-      "cover": "/albums/worlds2025/proplayers/fly/inspired.png",
-      "country": "POLAND",
-      "team": "FLY",
-      "role": "JG"
-    },
-    {
-      "id": "279ae695-2339-483e-8d4f-c9ee86050364",
-      "date": "25-08-02",
-      "name": "QUAD",
-      "cover": "/albums/worlds2025/proplayers/fly/quad.png",
-      "country": "SOUTHKOREA",
-      "team": "FLY",
-      "role": "MID"
-    },
-    {
-      "id": "188042b4-a334-46e4-bfcf-fa7569d0150a",
-      "date": "28-11-04",
-      "name": "MASSU",
-      "cover": "/albums/worlds2025/proplayers/fly/massu.png",
-      "country": "CANADA",
-      "team": "FLY",
-      "role": "ADC"
-    },
-    {
-      "id": "148e338c-7b82-423a-b636-5b9d0722f1d7",
-      "date": "22-10-03",
-      "name": "BUSIO",
-      "cover": "/albums/worlds2025/proplayers/fly/busio.png",
-      "country": "UNITEDSTATES",
-      "team": "FLY",
-      "role": "SUP"
-    },
-    {
-      "id": "ed760361-5271-4b36-9a25-65a966e64519",
-      "date": "21-05-96",
-      "name": "NUKEDUCK",
-      "cover": "/albums/worlds2025/proplayers/fly/nukeduck.png",
-      "country": "SOUTHKOREA",
-      "team": "FLY",
-      "role": "COACH"
-    },
-    {
-      "id": "00d33c5c-2c07-437c-b685-01abf0d90661",
-      "date": "06-01-17",
-      "name": "FLY",
-      "cover": "/albums/worlds2025/teams/logos/fly.png",
-      "country": "UNITEDSTATES",
-      "team": "FLY",
-      "role": "LOGO"
-    },
-    {
-      "id": "bdb5377c-af2f-47d1-9e02-e62c00fef513",
-      "date": "06-01-17",
-      "name": "Americas Seed #1",
-      "cover": "/albums/worlds2025/teams/fly.png",
-      "country": "UNITEDSTATES",
-      "team": "FLY",
-      "role": "TEAM"
-    }
-  ],
-  "cfo": [
-    {
-      "id": "e32f84dc-8f7e-4cdb-ba99-0483149c7a09",
-      "date": "04-04-02",
-      "name": "DRIVER",
-      "cover": "/albums/worlds2025/proplayers/cfo/driver.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "TOP"
-    },
-    {
-      "id": "d69ca8df-237a-4cbd-8e90-e85f96d1f59d",
-      "date": "11-12-98",
-      "name": "REST",
-      "cover": "/albums/worlds2025/proplayers/cfo/rest.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "TOP"
-    },
-    {
-      "id": "dfb39cd5-77f1-48b7-a1dd-bad8dff33900",
-      "date": "10-06-02",
-      "name": "JUNJIA",
-      "cover": "/albums/worlds2025/proplayers/cfo/junjia.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "JG"
-    },
-    {
-      "id": "4452beaa-ee01-404f-bca9-58fb41f7e18e",
-      "date": "02-07-07",
-      "name": "HONQQ",
-      "cover": "/albums/worlds2025/proplayers/cfo/honqq.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "MID"
-    },
-    {
-      "id": "25eec636-e496-4386-ae4d-3d777dafc558",
-      "date": "14-10-03",
-      "name": "DOGGO",
-      "cover": "/albums/worlds2025/proplayers/cfo/doggo.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "ADC"
-    },
-    {
-      "id": "7f0dfa1b-ceaf-4c7a-9658-bde470075cba",
-      "date": "27-10-96",
-      "name": "KAIWING",
-      "cover": "/albums/worlds2025/proplayers/cfo/kaiwing.png",
-      "country": "HONGKONG",
-      "team": "CFO",
-      "role": "SUP"
-    },
-    {
-      "id": "5248222d-4bfd-4de2-bf01-72b259968b27",
-      "date": "28-11-91",
-      "name": "CHAWY",
-      "cover": "/albums/worlds2025/proplayers/cfo/chawy.png",
-      "country": "SINGAPORE",
-      "team": "CFO",
-      "role": "COACH"
-    },
-    {
-      "id": "3b07479c-6cee-4bfb-bdbb-cd3814637fef",
-      "date": "26-01-22",
-      "name": "CFO",
-      "cover": "/albums/worlds2025/teams/logos/cfo.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "LOGO"
-    },
-    {
-      "id": "3cec5b34-f285-44c3-9340-adbfb4aac59f",
-      "date": "26-01-22",
-      "name": "Asian P. Seed #1",
-      "cover": "/albums/worlds2025/teams/cfo.png",
-      "country": "TAIWAN",
-      "team": "CFO",
-      "role": "TEAM"
-    }
-  ],
-  "tes": [
-    {
-      "id": "08f5a5bd-8f2c-446f-8482-bf4a82984cc6",
-      "date": "12-07-01",
-      "name": "369",
-      "cover": "/albums/worlds2025/proplayers/tes/369.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "TOP"
-    },
-    {
-      "id": "ba06be40-f18f-437d-857f-4c6de5c28e9f",
-      "date": "02-11-00",
-      "name": "KANAVI",
-      "cover": "/albums/worlds2025/proplayers/tes/kanavi.png",
-      "country": "SOUTHKOREA",
-      "team": "TES",
-      "role": "JG"
-    },
-    {
-      "id": "4f2fcfbf-860e-4bab-9d2e-581704636f3c",
-      "date": "14-12-03",
-      "name": "CREME",
-      "cover": "/albums/worlds2025/proplayers/tes/creme.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "MID"
-    },
-    {
-      "id": "e24c4d0b-42ce-4e0d-b61d-1b7b8909217c",
-      "date": "18-11-00",
-      "name": "JACKEYLOVE",
-      "cover": "/albums/worlds2025/proplayers/tes/jackeylove.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "ADC"
-    },
-    {
-      "id": "ecef39f0-ff5c-4875-b3ad-6b1aca063df4",
-      "date": "06-11-05",
-      "name": "FENGYUE",
-      "cover": "/albums/worlds2025/proplayers/tes/fengyue.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "SUP"
-    },
-    {
-      "id": "e7a15509-c0d2-4db7-a4cd-828f6d9a89e0",
-      "date": "05-02-03",
-      "name": "HANG",
-      "cover": "/albums/worlds2025/proplayers/tes/hang.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "SUP"
-    },
-    {
-      "id": "24e82e15-78d7-4a44-b323-0a4fa4193c45",
-      "date": "01-01-85",
-      "name": "HOMME",
-      "cover": "/albums/worlds2025/proplayers/tes/homme.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "COACH"
-    },
-    {
-      "id": "7c51dd7c-e1f6-43eb-99c3-96b82697e018",
-      "date": "21-12-17",
-      "name": "TES",
-      "cover": "/albums/worlds2025/teams/logos/tes.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "LOGO"
-    },
-    {
-      "id": "1b7a98cf-3c11-4afa-9213-fad67ed8c0c5",
-      "date": "21-12-17",
-      "name": "China Seed #3",
-      "cover": "/albums/worlds2025/teams/tes.png",
-      "country": "CHINA",
-      "team": "TES",
-      "role": "TEAM"
-    }
-  ],
-  "kt": [
-    {
-      "id": "59c06556-6ce7-4b53-bb3c-fb546e2c4007",
-      "date": "02-04-03",
-      "name": "PETER",
-      "cover": "/albums/worlds2025/proplayers/kt/peter.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "SUP"
-    },
-    {
-      "id": "804ffa3b-d4f9-4a45-9182-2aa9468a0fbc",
-      "date": "25-02-00",
-      "name": "DEOKDAM",
-      "cover": "/albums/worlds2025/proplayers/kt/deokdam.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "ADC"
-    },
-    {
-      "id": "a6f1ce85-5a74-4fce-8b3d-2805c69abb64",
-      "date": "01-03-99",
-      "name": "BDD",
-      "cover": "/albums/worlds2025/proplayers/kt/bdd.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "MID"
-    },
-    {
-      "id": "ea45ebf5-b7a3-48f7-b71e-ca20a1bc966b",
-      "date": "30-10-99",
-      "name": "CUZZ",
-      "cover": "/albums/worlds2025/proplayers/kt/cuzz.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "JG"
-    },
-    {
-      "id": "d8952575-e5f5-4c54-83ba-d2c0df755454",
-      "date": "17-05-04",
-      "name": "PERFECT",
-      "cover": "/albums/worlds2025/proplayers/kt/perfect.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "TOP"
-    },
-    {
-      "id": "656b7c47-7b91-4e13-96a6-a0fda312c863",
-      "date": "08-07-92",
-      "name": "SCORE",
-      "cover": "/albums/worlds2025/proplayers/kt/score.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "COACH"
-    },
-    {
-      "id": "a73782cd-d0c4-4c5a-8f3c-808eef076059",
-      "date": "10-10-12",
-      "name": "KT",
-      "cover": "/albums/worlds2025/teams/logos/kt.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "LOGO"
-    },
-    {
-      "id": "fc9ffd63-62a2-44fc-8f85-9f6f12053863",
-      "date": "10-10-12",
-      "name": "Korea Seed #3",
-      "cover": "/albums/worlds2025/teams/kt.png",
-      "country": "SOUTHKOREA",
-      "team": "KT",
-      "role": "TEAM"
-    }
-  ],
-  "g2": [
-    {
-      "id": "9a21da32-9f61-4098-8fef-0416d9b5f98f",
-      "created_at": "2025-10-14T13:41:58.963Z",
-      "updated_at": "2025-10-14T13:41:58.963Z",
-      "date": "19-01-00",
-      "name": "BROKENBLADE",
-      "cover": "/albums/worlds2025/proplayers/g2/brokenblade.png",
-      "country": "GERMANY",
-      "team": "G2",
-      "role": "TOP"
-    },
-    {
-      "id": "6d1814a8-f110-443e-8d87-ad1d56046a28",
-      "date": "09-08-04",
-      "name": "SKEWMOND",
-      "cover": "/albums/worlds2025/proplayers/g2/skewmond.png",
-      "country": "FRANCE",
-      "team": "G2",
-      "role": "JG"
-    },
-    {
-      "id": "2db54374-06cd-4938-9ac5-f01fd62e2ea1",
-      "date": "07-11-99",
-      "name": "CAPS",
-      "cover": "/albums/worlds2025/proplayers/g2/caps.png",
-      "country": "DENMARK",
-      "team": "G2",
-      "role": "MID"
-    },
-    {
-      "id": "2711773f-c55e-44d3-bca9-2f5dc0d897bb",
-      "date": "02-09-99",
-      "name": "HANS SAMA",
-      "cover": "/albums/worlds2025/proplayers/g2/hans sama.png",
-      "country": "FRANCE",
-      "team": "G2",
-      "role": "ADC"
-    },
-    {
-      "id": "a8287263-9780-4f38-b83d-b4831f6f77ce",
-      "date": "12-02-02",
-      "name": "LABROV",
-      "cover": "/albums/worlds2025/proplayers/g2/labrov.png",
-      "country": "GREECE",
-      "team": "G2",
-      "role": "SUP"
-    },
-    {
-      "id": "6efae796-a8c1-4e49-b452-db09fcaaae51",
-      "date": "05-03-89",
-      "name": "DYLAN FALCO",
-      "cover": "/albums/worlds2025/proplayers/g2/dylan falco.png",
-      "country": "CANADA",
-      "team": "G2",
-      "role": "COACH"
-    },
-    {
-      "id": "69687257-8a13-4d0f-a1a2-a4950de074cb",
-      "date": "15-10-15",
-      "name": "G2",
-      "cover": "/albums/worlds2025/teams/logos/g2.png",
-      "country": "SPAIN",
-      "team": "G2",
-      "role": "LOGO"
-    },
-    {
-      "id": "5be5c0ac-1cb7-49f7-84eb-8ea45e1004c0",
-      "date": "15-10-15",
-      "name": "Emea Seed #1",
-      "cover": "/albums/worlds2025/teams/g2.png",
-      "country": "SPAIN",
-      "team": "G2",
-      "role": "TEAM"
-    }
-  ],
-  "koi": [
-    {
-      "id": "ec7fd74d-8b76-4022-b4f3-6c8d210157e9",
-      "date": "13-06-03",
-      "name": "MYRWN",
-      "cover": "/albums/worlds2025/proplayers/koi/myrwn.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "TOP"
-    },
-    {
-      "id": "e9d05c30-2831-424e-8842-4ac2fc5acfc5",
-      "date": "13-03-00",
-      "name": "ELYOYA",
-      "cover": "/albums/worlds2025/proplayers/koi/elyoya.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "JG"
-    },
-    {
-      "id": "f4e18b03-ac39-466c-9628-30df02c674fc",
-      "date": "01-10-04",
-      "name": "JOJOPYUN",
-      "cover": "/albums/worlds2025/proplayers/koi/jojopyun.png",
-      "country": "CANADA",
-      "team": "KOI",
-      "role": "MID"
-    },
-    {
-      "id": "483508fd-2482-4aae-9365-a0aefd4c1a44",
-      "date": "23-10-00",
-      "name": "SUPA",
-      "cover": "/albums/worlds2025/proplayers/koi/supa.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "ADC"
-    },
-    {
-      "id": "27aeb846-1162-4b1e-a19e-71f60fccce24",
-      "date": "15-07-03",
-      "name": "ALVARO",
-      "cover": "/albums/worlds2025/proplayers/koi/alvaro.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "SUP"
-    },
-    {
-      "id": "049681d0-e547-4ec4-99ca-b0975ac4b755",
-      "date": "07-10-94",
-      "name": "MELZHET",
-      "cover": "/albums/worlds2025/proplayers/koi/melzhet.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "COACH"
-    },
-    {
-      "id": "1ef9ea52-67f0-4f33-80d1-884bd4484b0b",
-      "date": "10-01-17",
-      "name": "KOI",
-      "cover": "/albums/worlds2025/teams/logos/koi.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "LOGO"
-    },
-    {
-      "id": "c6c7e325-8da8-467f-9cdc-2085372e751c",
-      "date": "10-01-17",
-      "name": "Emea Seed #2",
-      "cover": "/albums/worlds2025/teams/koi.png",
-      "country": "SPAIN",
-      "team": "KOI",
-      "role": "TEAM"
-    }
-  ],
-  "gen": [
-    {
-      "id": "499556ca-c63f-46b8-818e-47b572fae6c2",
-      "date": "28-05-99",
-      "name": "KIIN",
-      "cover": "/albums/worlds2025/proplayers/gen/kiin.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "TOP"
-    },
-    {
-      "id": "e6d49e5a-ac1c-4fd0-b84e-cf724a1355b1",
-      "date": "18-06-01",
-      "name": "CANYON",
-      "cover": "/albums/worlds2025/proplayers/gen/canyon.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "JG"
-    },
-    {
-      "id": "481b80e8-539a-40f3-81b0-e8c1de1ba351",
-      "date": "03-03-01",
-      "name": "CHOVY",
-      "cover": "/albums/worlds2025/proplayers/gen/chovy.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "MID"
-    },
-    {
-      "id": "cf68e497-a083-40ed-a27b-457c8c7390c8",
-      "date": "29-12-98",
-      "name": "RULER",
-      "cover": "/albums/worlds2025/proplayers/gen/ruler.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "ADC"
-    },
-    {
-      "id": "9a5c185a-1a9c-4fe7-9e85-1c00b777bd8e",
-      "date": "04-02-02",
-      "name": "DURO",
-      "cover": "/albums/worlds2025/proplayers/gen/duro.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "SUP"
-    },
-    {
-      "id": "2396ba36-83b0-4186-8056-03c3457188ae",
-      "date": "17-06-88",
-      "name": "KIM",
-      "cover": "/albums/worlds2025/proplayers/gen/kim.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "COACH"
-    },
-    {
-      "id": "4f95b3eb-e1ab-41be-af15-204f918a748a",
-      "date": "03-05-18",
-      "name": "GEN",
-      "cover": "/albums/worlds2025/tams/logos/gen.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "LOGO"
-    },
-    {
-      "id": "48efbd4d-3d7a-4f1a-be64-fd471edf66af",
-      "date": "03-05-18",
-      "name": "Korea Seed #1 ",
-      "cover": "/albums/worlds2025/teams/gen.png",
-      "country": "SOUTHKOREA",
-      "team": "GEN",
-      "role": "TEAM"
-    }
-  ],
-  "psg": [
-    {
-      "id": "284c7706-9023-4808-9ace-1b4b794bce68",
-      "date": "09-03-01",
-      "name": "AZHI",
-      "cover": "/albums/worlds2025/proplayers/psg/azhi.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "TOP"
-    },
-    {
-      "id": "dde79b3a-2568-458d-bbbd-8d94b89418a9",
-      "date": "14-02-97",
-      "name": "KARSA",
-      "cover": "/albums/worlds2025/proplayers/psg/karsa.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "JG"
-    },
-    {
-      "id": "80b5c34f-ec1d-4871-91a6-c76f9d72e999",
-      "date": "10-10-97",
-      "name": "MAPLE",
-      "cover": "/albums/worlds2025/proplayers/psg/maple.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "MID"
-    },
-    {
-      "id": "ad20da2f-0d2b-4d81-b5e7-2d8a4054c736",
-      "date": "16-01-00",
-      "name": "BETTY",
-      "cover": "/albums/worlds2025/proplayers/psg/betty.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "ADC"
-    },
-    {
-      "id": "1e0444bd-c8bf-4bd5-8ab8-8a13448eca7b",
-      "date": "11-04-98",
-      "name": "WOODY",
-      "cover": "/albums/worlds2025/proplayers/psg/woody.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "SUP"
-    },
-    {
-      "id": "f90724f3-49fd-4513-b20f-ef82482e07ac",
-      "date": "18-08-93",
-      "name": "CORGI",
-      "cover": "/albums/worlds2025/proplayers/psg/corgi.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "COACH"
-    },
-    {
-      "id": "4e023c47-24f7-48d7-9341-906abef2e3b3",
-      "date": "19-12-19",
-      "name": "PSG",
-      "cover": "/albums/worlds2025/teams/logos/psg.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "LOGO"
-    },
-    {
-      "id": "1a1c79f3-eed4-476d-9d27-6c0ecbd3fb5d",
-      "date": "19-12-19",
-      "name": "Asian P. Seed #3",
-      "cover": "/albums/worlds2025/teams/psg.png",
-      "country": "TAIWAN",
-      "team": "PSG",
-      "role": "TEAM"
-    }
-  ],
-  "blg": [
-    {
-      "id": "266f2f02-7a76-4b2e-9058-b38bf853a2eb",
-      "date": "28-09-03",
-      "name": "BIN",
-      "cover": "/albums/worlds2025/proplayers/blg/bin.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "TOP"
-    },
-    {
-      "id": "6b97350e-327e-4dcc-8427-d771e7786ad1",
-      "date": "21-07-01",
-      "name": "BEICHUAN",
-      "cover": "/albums/worlds2025/proplayers/blg/beichuan.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "JG"
-    },
-    {
-      "id": "711be54a-c3e0-4b9f-b6f3-c685c75647de",
-      "date": "05-02-01",
-      "name": "SHAD0W",
-      "cover": "/albums/worlds2025/proplayers/blg/shad0w.png",
-      "country": "ITALY",
-      "team": "BLG",
-      "role": "JG"
-    },
-    {
-      "id": "61509665-1888-4426-bdb3-6877fb853fb8",
-      "date": "22-03-00",
-      "name": "KNIGHT",
-      "cover": "/albums/worlds2025/proplayers/blg/knight.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "MID"
-    },
-    {
-      "id": "ba23289a-93d4-4979-a3d5-eb34ebc3f59c",
-      "date": "29-09-01",
-      "name": "ELK",
-      "cover": "/albums/worlds2025/proplayers/blg/elk.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "ADC"
-    },
-    {
-      "id": "b73b6422-cd7e-44ae-a145-bf1701426c07",
-      "date": "12-03-03",
-      "name": "ON",
-      "cover": "/albums/worlds2025/proplayers/blg/on.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "SUP"
-    },
-    {
-      "id": "63b85149-68dd-4b48-94b2-9d4cced14c92",
-      "date": "17-17-91",
-      "name": "MAOKAI",
-      "cover": "/albums/worlds2025/proplayers/blg/maokai.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "COACH"
-    },
-    {
-      "id": "1824611f-a895-4aaa-a7b9-2ded06969aac",
-      "date": "17-12-17",
-      "name": "BLG",
-      "cover": "/albums/worlds2025/teams/logos/blg.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "LOGO"
-    },
-    {
-      "id": "dfc3481c-c25b-4fe8-a468-073e99932185",
-      "date": "17-12-17",
-      "name": "China Seed #1",
-      "cover": "/albums/worlds2025/teams/blg.png",
-      "country": "CHINA",
-      "team": "BLG",
-      "role": "TEAM"
-    }
-  ],
-  "100t": [
-    {
-      "id": "68b0cd70-1e73-4d1b-9730-0df4a204e006",
-      "date": "17-07-97",
-      "name": "DHOLKA",
-      "cover": "/albums/worlds2025/proplayers/100t/dholka.png",
-      "country": "UNITEDSTATES",
-      "team": "100T",
-      "role": "TOP"
-    },
-    {
-      "id": "e917cc58-3e61-4651-9493-33a0b2a16ef1",
-      "date": "23-07-99",
-      "name": "RIVER",
-      "cover": "/albums/worlds2025/proplayers/100t/river.png",
-      "country": "SOUTHKOREA",
-      "team": "100T",
-      "role": "JG"
-    },
-    {
-      "id": "f8e75ecf-2774-4290-a9a2-83737a3d3e8b",
-      "date": "27-04-04",
-      "name": "QUID",
-      "cover": "/albums/worlds2025/proplayers/100t/quid.png",
-      "country": "SOUTHKOREA",
-      "team": "100T",
-      "role": "MID"
-    },
-    {
-      "id": "602a2aab-ad8c-4938-93e4-38f8a0e1509d",
-      "date": "11-02-99",
-      "name": "FBI",
-      "cover": "/albums/worlds2025/proplayers/100t/fbi.png",
-      "country": "AUSTRALIA",
-      "team": "100T",
-      "role": "ADC"
-    },
-    {
-      "id": "9a157b63-de2c-4615-beb3-750e0c046b10",
-      "date": "24-08-99",
-      "name": "EYLA",
-      "cover": "/albums/worlds2025/proplayers/100t/eyla.png",
-      "country": "AUSTRALIA",
-      "team": "100T",
-      "role": "SUP"
-    },
-    {
-      "id": "026722ee-4df1-45a6-a903-db71740a61e8",
-      "date": "10-11-06",
-      "name": "SNIPER",
-      "cover": "/albums/worlds2025/proplayers/100t/sniper.png",
-      "country": "CANADA",
-      "team": "100T",
-      "role": "TOP"
-    },
-    {
-      "id": "0043b557-9f1f-4302-a1e3-3be666546dc5",
-      "date": "23-11-96",
-      "name": "GOLDENGLUE",
-      "cover": "/albums/worlds2025/proplayers/100t/goldenglue.png",
-      "country": "UNITEDSTATES",
-      "team": "100T",
-      "role": "COACH"
-    },
-    {
-      "id": "3b77e757-b68e-4f46-91ba-cf37ce59ee56",
-      "date": "20-11-17",
-      "name": "100T",
-      "cover": "/albums/worlds2025/teams/logos/100t.png",
-      "country": "UNITEDSTATES",
-      "team": "100T",
-      "role": "LOGO"
-    },
-    {
-      "id": "26e8a073-ffc4-45fd-a808-229ec8eaf4d4",
-      "date": "20-11-17",
-      "name": "Americas Seed #3",
-      "cover": "/albums/worlds2025/teams/100t.png",
-      "country": "UNITEDSTATES",
-      "team": "100T",
-      "role": "TEAM"
-    }
-  ],
-  "al": [
-    {
-      "id": "a155337f-9807-4f40-91c2-7c9d0fd5f4c2",
-      "date": "28-08-98",
-      "name": "FLANDRE",
-      "cover": "/albums/worlds2025/proplayers/al/flandre.png",
-      "country": "CHINA",
-      "team": "AL",
-      "role": "TOP"
-    },
-    {
-      "id": "eae68459-dcf0-477c-ae78-a0cea583cfbd",
-      "date": "23-08-99",
-      "name": "TARZAN",
-      "cover": "/albums/worlds2025/proplayers/al/tarzan.png",
-      "country": "SOUTHKOREA",
-      "team": "AL",
-      "role": "JG"
-    },
-    {
-      "id": "f1793d5d-f099-4492-9e3a-bf5804158a3b",
-      "date": "13-03-01",
-      "name": "SHANKS",
-      "cover": "/albums/worlds2025/proplayers/al/shanks.png",
-      "country": "CHINA",
-      "team": "AL",
-      "role": "MID"
-    },
-    {
-      "id": "edcee374-2182-402b-9427-95a20f870fa4",
-      "date": "29-08-00",
-      "name": "HOPE",
-      "cover": "/albums/worlds2025/proplayers/al/hope.png",
-      "country": "CHINA",
-      "team": "AL",
-      "role": "ADC"
-    },
-    {
-      "id": "2e47943b-5a29-4028-b903-400c77520ffe",
-      "date": "11-02-04",
-      "name": "KAEL",
-      "cover": "/albums/worlds2025/proplayers/al/kael.png",
-      "country": "SOUTHKOREA",
-      "team": "AL",
-      "role": "SUP"
-    },
-    {
-      "id": "231c094d-719e-4456-8950-0b2e74027fd8",
-      "date": "18-01-91",
-      "name": "TABE",
-      "cover": "/albums/worlds2025/proplayers/al/tabe.png",
-      "country": "HONGKONG",
-      "team": "AL",
-      "role": "COACH"
-    },
-    {
-      "id": "f3934cf4-89c8-4ac7-9e6b-3effb68f1aa6",
-      "date": "01-12-21",
-      "name": "AL",
-      "cover": "/albums/worlds2025/teams/logos/al.png",
-      "country": "CHINA",
-      "team": "AL",
-      "role": "LOGO"
-    },
-    {
-      "id": "fca6e59e-1c92-45fd-bfdd-a69306a488e7",
-      "date": "01-12-01",
-      "name": "China Seed #2",
-      "cover": "/albums/worlds2025/teams/al.png",
-      "country": "CHINA",
-      "team": "AL",
-      "role": "TEAM"
-    }
-  ],
-  "fnc": [
-    {
-      "id": "fd75cbe0-a2bf-4311-8b1c-6efde570e1b1",
-      "date": "11-06-03",
-      "name": "OSCARININ",
-      "cover": "/albums/worlds2025/proplayers/fnc/oscarinin.png",
-      "country": "SPAIN",
-      "team": "FNC",
-      "role": "TOP"
-    },
-    {
-      "id": "fa2a29f9-1767-485a-a613-9246fd80b4f9",
-      "date": "07-10-00",
-      "name": "RAZORK",
-      "cover": "/albums/worlds2025/proplayers/fnc/razork.png",
-      "country": "SPAIN",
-      "team": "FNC",
-      "role": "JG"
-    },
-    {
-      "id": "069678f5-1986-4526-83a2-9b21ca6ff302",
-      "date": "07-02-06",
-      "name": "POBY",
-      "cover": "/albums/worlds2025/proplayers/fnc/poby.png",
-      "country": "SOUTHKOREA",
-      "team": "FNC",
-      "role": "MID"
-    },
-    {
-      "id": "76a98793-cf7d-4000-8d0f-0122c949b0ce",
-      "date": "16-12-99",
-      "name": "UPSET",
-      "cover": "/albums/worlds2025/proplayers/fnc/upset.png",
-      "country": "GERMANY",
-      "team": "FNC",
-      "role": "ADC"
-    },
-    {
-      "id": "9bc4822a-5351-4cf2-899d-5542bd90b24e",
-      "date": "02-11-98",
-      "name": "MIKYX",
-      "cover": "/albums/worlds2025/proplayers/fnc/mikyx.png",
-      "country": "SLOVENIA",
-      "team": "FNC",
-      "role": "SUP"
-    },
-    {
-      "id": "50365c05-3190-415f-abb5-76380dda1b09",
-      "date": "14-01-95",
-      "name": "GRABBZ",
-      "cover": "/albums/worlds2025/proplayers/fnc/grabbz.png",
-      "country": "GERMANY",
-      "team": "FNC",
-      "role": "COACH"
-    },
-    {
-      "id": "abfccd27-dab1-42bd-bb4c-93086f9d3fac",
-      "date": "14-03-11",
-      "name": "FNC",
-      "cover": "/albums/worlds2025/teams/logos/fnc.png",
-      "country": "UNITEDKINGDOM",
-      "team": "FNC",
-      "role": "LOGO"
-    },
-    {
-      "id": "b9eb3c85-9baa-453d-a50c-85592b1b1b06",
-      "date": "14-05-11",
-      "name": "Emea Seed #3",
-      "cover": "/albums/worlds2025/teams/fnc.png",
-      "country": "UNITEDKINGDOM",
-      "team": "FNC",
-      "role": "TEAM"
-    }
-  ],
-  "t1": [
-    {
-      "id": "04f51a29-38da-416b-a5cf-f5e29b9164a1",
-      "date": "14-10-02",
-      "name": "KERIA",
-      "cover": "/albums/worlds2025/proplayers/t1/keria.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "SUP"
-    },
-    {
-      "id": "d1f9daf8-3fb9-479b-9e77-3bcbee11f25c",
-      "date": "06-02-02",
-      "name": "GUMAYUSI",
-      "cover": "/albums/worlds2025/proplayers/t1/guma.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "ADC"
-    },
-    {
-      "id": "843b3c94-a95a-4c04-a29a-6e4590bdff11",
-      "date": "07-05-96",
-      "name": "FAKER",
-      "cover": "/albums/worlds2025/proplayers/t1/faker.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "MID"
-    },
-    {
-      "id": "63cf3d4f-cd42-40ee-bf21-8ef6ebb72d81",
-      "date": "24-12-02",
-      "name": "ONER",
-      "cover": "/albums/worlds2025/proplayers/t1/oner.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "JG"
-    },
-    {
-      "id": "41361ace-594d-4439-8a86-9ce0941b8826",
-      "date": "22-07-00",
-      "name": "DORAN",
-      "cover": "/albums/worlds2025/proplayers/t1/doran.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "TOP"
-    },
-    {
-      "id": "a9dbb2d7-281f-40bc-bbfc-0aeca55c01ab",
-      "date": "23-12-85",
-      "name": "KK0MA",
-      "cover": "/albums/worlds2025/proplayers/t1/kkoma.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "COACH"
-    },
-    {
-      "id": "3c169186-4d93-4ca9-9d37-b3668d1b5fec",
-      "date": "08-12-19",
-      "name": "T1",
-      "cover": "/albums/worlds2025/teams/logos/t1.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "LOGO"
-    },
-    {
-      "id": "36251de1-5f18-4b1d-a3ec-b45daeb16b0f",
-      "date": "08-12-19",
-      "name": "Korea Seed #4",
-      "cover": "/albums/worlds2025/teams/t1.png",
-      "country": "SOUTHKOREA",
-      "team": "T1",
-      "role": "TEAM"
-    }
-  ],
-  "hle": [
-    {
-      "id": "9aebedec-3c54-4c12-8feb-eafe068bedf8",
-      "date": "31-06-04",
-      "name": "ZEUS",
-      "cover": "/albums/worlds2025/proplayers/hle/zeus.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "TOP"
-    },
-    {
-      "id": "91777610-9ffd-46c9-91a1-4caaa7586f18",
-      "date": "03-02-98",
-      "name": "PEANUT",
-      "cover": "/albums/worlds2025/proplayers/hle/peanut.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "JG"
-    },
-    {
-      "id": "ba8f656f-9b6f-47cc-b9c2-9b54f5ef000f",
-      "date": "28-11-02",
-      "name": "ZEKA",
-      "cover": "/albums/worlds2025/proplayers/hle/zeka.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "MID"
-    },
-    {
-      "id": "30406b99-fd95-424c-a347-79c4967cb123",
-      "date": "19-10-00",
-      "name": "VIPER",
-      "cover": "/albums/worlds2025/proplayers/hle/viper.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "ADC"
-    },
-    {
-      "id": "eac037db-89a8-46db-baaf-c188cefb4150",
-      "date": "12-09-02",
-      "name": "DELIGHT",
-      "cover": "/albums/worlds2025/proplayers/hle/delight.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "SUP"
-    },
-    {
-      "id": "0ceda86f-f0da-4c0a-86c8-8379d6541973",
-      "date": "03-01-94",
-      "name": "DANDY",
-      "cover": "/albums/worlds2025/proplayers/hle/dandy.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "COACH"
-    },
-    {
-      "id": "af542032-edac-454f-a449-d802f87633fb",
-      "date": "15-04-18",
-      "name": "HLE",
-      "cover": "/albums/worlds2025/teams/logos/hle.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "LOGO"
-    },
-    {
-      "id": "1ed2536e-f486-475e-99b8-0d88b8e62237",
-      "date": "15-04-18",
-      "name": "Korea Seed #2",
-      "cover": "/albums/worlds2025/teams/hle.png",
-      "country": "SOUTHKOREA",
-      "team": "HLE",
-      "role": "TEAM"
-    }
-  ],
-  "tsw": [
-    {
-      "id": "edf399d0-1fda-4c03-a917-a4535fa272d1",
-      "date": "18-05-02",
-      "name": "HIRO02",
-      "cover": "/albums/worlds2025/proplayers/tsw/hiro02.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "TOP"
-    },
-    {
-      "id": "a4eaeb00-8cf2-4166-8103-7b20bcc9175a",
-      "date": "29-07-02",
-      "name": "PUN",
-      "cover": "/albums/worlds2025/proplayers/tsw/pun.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "TOP"
-    },
-    {
-      "id": "fe6dcdf5-8a57-423d-a744-2b1f09a99d8c",
-      "date": "15-09-07",
-      "name": "HIZTO",
-      "cover": "/albums/worlds2025/proplayers/tsw/hizto.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "JG"
-    },
-    {
-      "id": "8665813a-0b84-4fb9-b4bc-0f38a7ded337",
-      "date": "22-11-06",
-      "name": "DIRE",
-      "cover": "/albums/worlds2025/proplayers/tsw/dire.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "MID"
-    },
-    {
-      "id": "1ec7fed4-d246-46ce-a90b-c37e2c6da33f",
-      "date": "17-06-03",
-      "name": "EDDIE",
-      "cover": "/albums/worlds2025/proplayers/tsw/eddie.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "ADC"
-    },
-    {
-      "id": "44b155ff-edc6-44a5-b1c4-b4d79d1ede8b",
-      "date": "30-06-03",
-      "name": "TAKI",
-      "cover": "/albums/worlds2025/proplayers/tsw/taki.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "SUP"
-    },
-    {
-      "id": "835c3268-5788-4ff4-9468-758208216316",
-      "date": "27-07-98",
-      "name": "NAUL",
-      "cover": "/albums/worlds2025/proplayers/tsw/naul.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "COACH"
-    },
-    {
-      "id": "dba171b9-9457-4ebc-a47d-db9ad185f806",
-      "date": "05-12-24",
-      "name": "TSW",
-      "cover": "/albums/worlds2025/teams/logos/tsw.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "LOGO"
-    },
-    {
-      "id": "2e7e966d-5031-491c-8525-34ceda84d6ad",
-      "date": "05-12-24",
-      "name": "Asian P. Seed #2",
-      "cover": "/albums/worlds2025/teams/tsw.png",
-      "country": "HONGKONG",
-      "team": "TSW",
-      "role": "TEAM"
-    }
-  ],
-  "ig": [
-    {
-      "id": "752ff791-ffab-46e5-97bd-24c2b2628acc",
-      "date": "11-11-99",
-      "name": "THESHY",
-      "cover": "/albums/worlds2025/proplayers/ig/theshy.png",
-      "country": "SOUTHKOREA",
-      "team": "IG",
-      "role": "TOP"
-    },
-    {
-      "id": "35581fed-2d13-4654-a001-8117aeea2778",
-      "date": "09-11-02",
-      "name": "WEI",
-      "cover": "/albums/worlds2025/proplayers/ig/wei.png",
-      "country": "CHINA",
-      "team": "IG",
-      "role": "MID"
-    },
-    {
-      "id": "c5b01035-c9bd-4fd7-bb40-c25f616086ba",
-      "date": "11-03-97",
-      "name": "ROOKIE",
-      "cover": "/albums/worlds2025/proplayers/ig/rookie.png",
-      "country": "SOUTHKOREA",
-      "team": "IG",
-      "role": "MID"
-    },
-    {
-      "id": "5efeb3d5-b165-41df-b1e8-7ed82531d8d4",
-      "date": "14-02-01",
-      "name": "GALA",
-      "cover": "/albums/worlds2025/proplayers/ig/gala.png",
-      "country": "CHINA",
-      "team": "IG",
-      "role": "ADC"
-    },
-    {
-      "id": "c03e7f4a-3ca8-458e-b011-09a0b70c3b9c",
-      "date": "06-06-98",
-      "name": "MEIKO",
-      "cover": "/albums/worlds2025/proplayers/ig/meiko.png",
-      "country": "CHINA",
-      "team": "IG",
-      "role": "SUP"
-    },
-    {
-      "id": "b91d3bf2-ca18-4927-804e-3ed626e2d430",
-      "date": "10-02-93",
-      "name": "DAENY",
-      "cover": "/albums/worlds2025/proplayers/ig/daeny.png",
-      "country": "SOUTHKOREA",
-      "team": "IG",
-      "role": "COACH"
-    },
-    {
-      "id": "7ee43ca5-0b0f-451d-8f8f-a9fcbbb0bcd0",
-      "date": "02-08-11",
-      "name": "IG",
-      "cover": "/albums/worlds2025/teams/logos/ig.png",
-      "country": "CHINA",
-      "team": "IG",
-      "role": "LOGO"
-    },
-    {
-      "id": "a90bf333-51b5-4eac-b301-6fc641dfe956",
-      "date": "02-12-11",
-      "name": "China Seed #4",
-      "cover": "/albums/worlds2025/teams/ig.png",
-      "country": "CHINA",
-      "team": "IG",
-      "role": "TEAM"
-    }
-  ],
-  "vks": [
-    {
-      "id": "b08627e0-fc27-43fe-9cad-461b6fa67fd3",
-      "date": "04-12-02",
-      "name": "BOAL",
-      "cover": "/albums/worlds2025/proplayers/vks/boal.png",
-      "country": "BRAZIL",
-      "team": "VKS",
-      "role": "TOP"
-    },
-    {
-      "id": "f0ff2eaf-7cbf-402e-b260-5f1fa4020833",
-      "date": "03-08-03",
-      "name": "DISAMIS",
-      "cover": "/albums/worlds2025/proplayers/vks/disamis.png",
-      "country": "BRAZIL",
-      "team": "VKS",
-      "role": "JG"
-    },
-    {
-      "id": "86c09ebe-4cb9-4bce-8dde-a196d15ee83a",
-      "date": "20-09-01",
-      "name": "MIREU",
-      "cover": "/albums/worlds2025/proplayers/vks/mireu.png",
-      "country": "SOUTHKOREA",
-      "team": "VKS",
-      "role": "MID"
-    },
-    {
-      "id": "ee8a30cd-7519-4df8-a97c-fb5bd864a3e3",
-      "date": "18-06-02",
-      "name": "MORTTHEUS",
-      "cover": "/albums/worlds2025/proplayers/vks/morttheus.png",
-      "country": "BRAZIL",
-      "team": "VKS",
-      "role": "ADC"
-    },
-    {
-      "id": "becb0283-e90e-4471-8c73-d179b7059335",
-      "date": "20-10-00",
-      "name": "TRYMBI",
-      "cover": "/albums/worlds2025/proplayers/vks/trymbi.png",
-      "country": "POLAND",
-      "team": "VKS",
-      "role": "SUP"
-    },
-    {
-      "id": "7f22cd9c-ab1a-499f-933c-d5137a43ce04",
-      "date": "12-06-96",
-      "name": "SEEEL",
-      "cover": "/albums/worlds2025/proplayers/vks/seeel.png",
-      "country": "SOUTHKOREA",
-      "team": "VKS",
-      "role": "COACH"
-    },
-    {
-      "id": "9c41d52c-96e2-4ed0-ab36-481f70a2308f",
-      "date": "07-11-22",
-      "name": "VKS",
-      "cover": "/albums/worlds2025/teams/logos/vks.png",
-      "country": "BRAZIL",
-      "team": "VKS",
-      "role": "LOGO"
-    },
-    {
-      "id": "d49641c8-9767-47ed-9021-a2b3f7f790da",
-      "date": "07-11-22",
-      "name": "Americas Seed #2",
-      "cover": "/albums/worlds2025/teams/vks.png",
-      "country": "BRAZIL",
-      "team": "VKS",
-      "role": "TEAM"
-    }
-  ]
+	"fly": [
+		{
+			"id": "9e76a0f6-eed9-49a5-8a93-f1ff2e72b231",
+			"date": "24-12-98",
+			"name": "BWIPO",
+			"cover": "/albums/worlds2025/proplayers/fly/bwipo.png",
+			"country": "BELGIUM",
+			"team": "FLY",
+			"role": "TOP"
+		},
+		{
+			"id": "60881574-5eb2-4a9c-831e-822275047353",
+			"date": "04-06-08",
+			"name": "GAKGOS",
+			"cover": "/albums/worlds2025/proplayers/fly/gakgos.png",
+			"country": "TURKEY",
+			"team": "FLY",
+			"role": "TOP"
+		},
+		{
+			"id": "ba903586-d122-4b21-a2f0-5f91dd769093",
+			"date": "24-01-02",
+			"name": "INSPIRED",
+			"cover": "/albums/worlds2025/proplayers/fly/inspired.png",
+			"country": "POLAND",
+			"team": "FLY",
+			"role": "JG"
+		},
+		{
+			"id": "279ae695-2339-483e-8d4f-c9ee86050364",
+			"date": "25-08-02",
+			"name": "QUAD",
+			"cover": "/albums/worlds2025/proplayers/fly/quad.png",
+			"country": "SOUTHKOREA",
+			"team": "FLY",
+			"role": "MID"
+		},
+		{
+			"id": "188042b4-a334-46e4-bfcf-fa7569d0150a",
+			"date": "28-11-04",
+			"name": "MASSU",
+			"cover": "/albums/worlds2025/proplayers/fly/massu.png",
+			"country": "CANADA",
+			"team": "FLY",
+			"role": "ADC"
+		},
+		{
+			"id": "148e338c-7b82-423a-b636-5b9d0722f1d7",
+			"date": "22-10-03",
+			"name": "BUSIO",
+			"cover": "/albums/worlds2025/proplayers/fly/busio.png",
+			"country": "UNITEDSTATES",
+			"team": "FLY",
+			"role": "SUP"
+		},
+		{
+			"id": "ed760361-5271-4b36-9a25-65a966e64519",
+			"date": "21-05-96",
+			"name": "NUKEDUCK",
+			"cover": "/albums/worlds2025/proplayers/fly/nukeduck.png",
+			"country": "SOUTHKOREA",
+			"team": "FLY",
+			"role": "COACH"
+		},
+		{
+			"id": "00d33c5c-2c07-437c-b685-01abf0d90661",
+			"date": "06-01-17",
+			"name": "FLY",
+			"cover": "/albums/worlds2025/teams/logos/fly.png",
+			"country": "UNITEDSTATES",
+			"team": "FLY",
+			"role": "LOGO"
+		},
+		{
+			"id": "bdb5377c-af2f-47d1-9e02-e62c00fef513",
+			"date": "06-01-17",
+			"name": "Americas Seed #1",
+			"cover": "/albums/worlds2025/teams/fly.png",
+			"country": "UNITEDSTATES",
+			"team": "FLY",
+			"role": "TEAM"
+		}
+	],
+	"cfo": [
+		{
+			"id": "e32f84dc-8f7e-4cdb-ba99-0483149c7a09",
+			"date": "04-04-02",
+			"name": "DRIVER",
+			"cover": "/albums/worlds2025/proplayers/cfo/driver.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "TOP"
+		},
+		{
+			"id": "d69ca8df-237a-4cbd-8e90-e85f96d1f59d",
+			"date": "11-12-98",
+			"name": "REST",
+			"cover": "/albums/worlds2025/proplayers/cfo/rest.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "TOP"
+		},
+		{
+			"id": "dfb39cd5-77f1-48b7-a1dd-bad8dff33900",
+			"date": "10-06-02",
+			"name": "JUNJIA",
+			"cover": "/albums/worlds2025/proplayers/cfo/junjia.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "JG"
+		},
+		{
+			"id": "4452beaa-ee01-404f-bca9-58fb41f7e18e",
+			"date": "02-07-07",
+			"name": "HONQQ",
+			"cover": "/albums/worlds2025/proplayers/cfo/honqq.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "MID"
+		},
+		{
+			"id": "25eec636-e496-4386-ae4d-3d777dafc558",
+			"date": "14-10-03",
+			"name": "DOGGO",
+			"cover": "/albums/worlds2025/proplayers/cfo/doggo.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "ADC"
+		},
+		{
+			"id": "7f0dfa1b-ceaf-4c7a-9658-bde470075cba",
+			"date": "27-10-96",
+			"name": "KAIWING",
+			"cover": "/albums/worlds2025/proplayers/cfo/kaiwing.png",
+			"country": "HONGKONG",
+			"team": "CFO",
+			"role": "SUP"
+		},
+		{
+			"id": "5248222d-4bfd-4de2-bf01-72b259968b27",
+			"date": "28-11-91",
+			"name": "CHAWY",
+			"cover": "/albums/worlds2025/proplayers/cfo/chawy.png",
+			"country": "SINGAPORE",
+			"team": "CFO",
+			"role": "COACH"
+		},
+		{
+			"id": "3b07479c-6cee-4bfb-bdbb-cd3814637fef",
+			"date": "26-01-22",
+			"name": "CFO",
+			"cover": "/albums/worlds2025/teams/logos/cfo.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "LOGO"
+		},
+		{
+			"id": "3cec5b34-f285-44c3-9340-adbfb4aac59f",
+			"date": "26-01-22",
+			"name": "Asian P. Seed #1",
+			"cover": "/albums/worlds2025/teams/cfo.png",
+			"country": "TAIWAN",
+			"team": "CFO",
+			"role": "TEAM"
+		}
+	],
+	"tes": [
+		{
+			"id": "08f5a5bd-8f2c-446f-8482-bf4a82984cc6",
+			"date": "12-07-01",
+			"name": "369",
+			"cover": "/albums/worlds2025/proplayers/tes/369.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "TOP"
+		},
+		{
+			"id": "ba06be40-f18f-437d-857f-4c6de5c28e9f",
+			"date": "02-11-00",
+			"name": "KANAVI",
+			"cover": "/albums/worlds2025/proplayers/tes/kanavi.png",
+			"country": "SOUTHKOREA",
+			"team": "TES",
+			"role": "JG"
+		},
+		{
+			"id": "4f2fcfbf-860e-4bab-9d2e-581704636f3c",
+			"date": "14-12-03",
+			"name": "CREME",
+			"cover": "/albums/worlds2025/proplayers/tes/creme.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "MID"
+		},
+		{
+			"id": "e24c4d0b-42ce-4e0d-b61d-1b7b8909217c",
+			"date": "18-11-00",
+			"name": "JACKEYLOVE",
+			"cover": "/albums/worlds2025/proplayers/tes/jackeylove.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "ADC"
+		},
+		{
+			"id": "ecef39f0-ff5c-4875-b3ad-6b1aca063df4",
+			"date": "06-11-05",
+			"name": "FENGYUE",
+			"cover": "/albums/worlds2025/proplayers/tes/fengyue.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "SUP"
+		},
+		{
+			"id": "e7a15509-c0d2-4db7-a4cd-828f6d9a89e0",
+			"date": "05-02-03",
+			"name": "HANG",
+			"cover": "/albums/worlds2025/proplayers/tes/hang.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "SUP"
+		},
+		{
+			"id": "24e82e15-78d7-4a44-b323-0a4fa4193c45",
+			"date": "01-01-85",
+			"name": "HOMME",
+			"cover": "/albums/worlds2025/proplayers/tes/homme.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "COACH"
+		},
+		{
+			"id": "7c51dd7c-e1f6-43eb-99c3-96b82697e018",
+			"date": "21-12-17",
+			"name": "TES",
+			"cover": "/albums/worlds2025/teams/logos/tes.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "LOGO"
+		},
+		{
+			"id": "1b7a98cf-3c11-4afa-9213-fad67ed8c0c5",
+			"date": "21-12-17",
+			"name": "China Seed #3",
+			"cover": "/albums/worlds2025/teams/tes.png",
+			"country": "CHINA",
+			"team": "TES",
+			"role": "TEAM"
+		}
+	],
+	"kt": [
+		{
+			"id": "59c06556-6ce7-4b53-bb3c-fb546e2c4007",
+			"date": "02-04-03",
+			"name": "PETER",
+			"cover": "/albums/worlds2025/proplayers/kt/peter.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "SUP"
+		},
+		{
+			"id": "804ffa3b-d4f9-4a45-9182-2aa9468a0fbc",
+			"date": "25-02-00",
+			"name": "DEOKDAM",
+			"cover": "/albums/worlds2025/proplayers/kt/deokdam.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "ADC"
+		},
+		{
+			"id": "a6f1ce85-5a74-4fce-8b3d-2805c69abb64",
+			"date": "01-03-99",
+			"name": "BDD",
+			"cover": "/albums/worlds2025/proplayers/kt/bdd.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "MID"
+		},
+		{
+			"id": "ea45ebf5-b7a3-48f7-b71e-ca20a1bc966b",
+			"date": "30-10-99",
+			"name": "CUZZ",
+			"cover": "/albums/worlds2025/proplayers/kt/cuzz.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "JG"
+		},
+		{
+			"id": "d8952575-e5f5-4c54-83ba-d2c0df755454",
+			"date": "17-05-04",
+			"name": "PERFECT",
+			"cover": "/albums/worlds2025/proplayers/kt/perfect.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "TOP"
+		},
+		{
+			"id": "656b7c47-7b91-4e13-96a6-a0fda312c863",
+			"date": "08-07-92",
+			"name": "SCORE",
+			"cover": "/albums/worlds2025/proplayers/kt/score.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "COACH"
+		},
+		{
+			"id": "a73782cd-d0c4-4c5a-8f3c-808eef076059",
+			"date": "10-10-12",
+			"name": "KT",
+			"cover": "/albums/worlds2025/teams/logos/kt.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "LOGO"
+		},
+		{
+			"id": "fc9ffd63-62a2-44fc-8f85-9f6f12053863",
+			"date": "10-10-12",
+			"name": "Korea Seed #3",
+			"cover": "/albums/worlds2025/teams/kt.png",
+			"country": "SOUTHKOREA",
+			"team": "KT",
+			"role": "TEAM"
+		}
+	],
+	"g2": [
+		{
+			"id": "9a21da32-9f61-4098-8fef-0416d9b5f98f",
+			"created_at": "2025-10-14T13:41:58.963Z",
+			"updated_at": "2025-10-14T13:41:58.963Z",
+			"date": "19-01-00",
+			"name": "BROKENBLADE",
+			"cover": "/albums/worlds2025/proplayers/g2/brokenblade.png",
+			"country": "GERMANY",
+			"team": "G2",
+			"role": "TOP"
+		},
+		{
+			"id": "6d1814a8-f110-443e-8d87-ad1d56046a28",
+			"date": "09-08-04",
+			"name": "SKEWMOND",
+			"cover": "/albums/worlds2025/proplayers/g2/skewmond.png",
+			"country": "FRANCE",
+			"team": "G2",
+			"role": "JG"
+		},
+		{
+			"id": "2db54374-06cd-4938-9ac5-f01fd62e2ea1",
+			"date": "07-11-99",
+			"name": "CAPS",
+			"cover": "/albums/worlds2025/proplayers/g2/caps.png",
+			"country": "DENMARK",
+			"team": "G2",
+			"role": "MID"
+		},
+		{
+			"id": "2711773f-c55e-44d3-bca9-2f5dc0d897bb",
+			"date": "02-09-99",
+			"name": "HANS SAMA",
+			"cover": "/albums/worlds2025/proplayers/g2/hans sama.png",
+			"country": "FRANCE",
+			"team": "G2",
+			"role": "ADC"
+		},
+		{
+			"id": "a8287263-9780-4f38-b83d-b4831f6f77ce",
+			"date": "12-02-02",
+			"name": "LABROV",
+			"cover": "/albums/worlds2025/proplayers/g2/labrov.png",
+			"country": "GREECE",
+			"team": "G2",
+			"role": "SUP"
+		},
+		{
+			"id": "6efae796-a8c1-4e49-b452-db09fcaaae51",
+			"date": "05-03-89",
+			"name": "DYLAN FALCO",
+			"cover": "/albums/worlds2025/proplayers/g2/dylan falco.png",
+			"country": "CANADA",
+			"team": "G2",
+			"role": "COACH"
+		},
+		{
+			"id": "69687257-8a13-4d0f-a1a2-a4950de074cb",
+			"date": "15-10-15",
+			"name": "G2",
+			"cover": "/albums/worlds2025/teams/logos/g2.png",
+			"country": "SPAIN",
+			"team": "G2",
+			"role": "LOGO"
+		},
+		{
+			"id": "5be5c0ac-1cb7-49f7-84eb-8ea45e1004c0",
+			"date": "15-10-15",
+			"name": "Emea Seed #1",
+			"cover": "/albums/worlds2025/teams/g2.png",
+			"country": "SPAIN",
+			"team": "G2",
+			"role": "TEAM"
+		}
+	],
+	"koi": [
+		{
+			"id": "ec7fd74d-8b76-4022-b4f3-6c8d210157e9",
+			"date": "13-06-03",
+			"name": "MYRWN",
+			"cover": "/albums/worlds2025/proplayers/koi/myrwn.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "TOP"
+		},
+		{
+			"id": "e9d05c30-2831-424e-8842-4ac2fc5acfc5",
+			"date": "13-03-00",
+			"name": "ELYOYA",
+			"cover": "/albums/worlds2025/proplayers/koi/elyoya.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "JG"
+		},
+		{
+			"id": "f4e18b03-ac39-466c-9628-30df02c674fc",
+			"date": "01-10-04",
+			"name": "JOJOPYUN",
+			"cover": "/albums/worlds2025/proplayers/koi/jojopyun.png",
+			"country": "CANADA",
+			"team": "KOI",
+			"role": "MID"
+		},
+		{
+			"id": "483508fd-2482-4aae-9365-a0aefd4c1a44",
+			"date": "23-10-00",
+			"name": "SUPA",
+			"cover": "/albums/worlds2025/proplayers/koi/supa.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "ADC"
+		},
+		{
+			"id": "27aeb846-1162-4b1e-a19e-71f60fccce24",
+			"date": "15-07-03",
+			"name": "ALVARO",
+			"cover": "/albums/worlds2025/proplayers/koi/alvaro.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "SUP"
+		},
+		{
+			"id": "049681d0-e547-4ec4-99ca-b0975ac4b755",
+			"date": "07-10-94",
+			"name": "MELZHET",
+			"cover": "/albums/worlds2025/proplayers/koi/melzhet.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "COACH"
+		},
+		{
+			"id": "1ef9ea52-67f0-4f33-80d1-884bd4484b0b",
+			"date": "10-01-17",
+			"name": "KOI",
+			"cover": "/albums/worlds2025/teams/logos/koi.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "LOGO"
+		},
+		{
+			"id": "c6c7e325-8da8-467f-9cdc-2085372e751c",
+			"date": "10-01-17",
+			"name": "Emea Seed #2",
+			"cover": "/albums/worlds2025/teams/koi.png",
+			"country": "SPAIN",
+			"team": "KOI",
+			"role": "TEAM"
+		}
+	],
+	"gen": [
+		{
+			"id": "499556ca-c63f-46b8-818e-47b572fae6c2",
+			"date": "28-05-99",
+			"name": "KIIN",
+			"cover": "/albums/worlds2025/proplayers/gen/kiin.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "TOP"
+		},
+		{
+			"id": "e6d49e5a-ac1c-4fd0-b84e-cf724a1355b1",
+			"date": "18-06-01",
+			"name": "CANYON",
+			"cover": "/albums/worlds2025/proplayers/gen/canyon.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "JG"
+		},
+		{
+			"id": "481b80e8-539a-40f3-81b0-e8c1de1ba351",
+			"date": "03-03-01",
+			"name": "CHOVY",
+			"cover": "/albums/worlds2025/proplayers/gen/chovy.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "MID"
+		},
+		{
+			"id": "cf68e497-a083-40ed-a27b-457c8c7390c8",
+			"date": "29-12-98",
+			"name": "RULER",
+			"cover": "/albums/worlds2025/proplayers/gen/ruler.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "ADC"
+		},
+		{
+			"id": "9a5c185a-1a9c-4fe7-9e85-1c00b777bd8e",
+			"date": "04-02-02",
+			"name": "DURO",
+			"cover": "/albums/worlds2025/proplayers/gen/duro.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "SUP"
+		},
+		{
+			"id": "2396ba36-83b0-4186-8056-03c3457188ae",
+			"date": "17-06-88",
+			"name": "KIM",
+			"cover": "/albums/worlds2025/proplayers/gen/kim.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "COACH"
+		},
+		{
+			"id": "4f95b3eb-e1ab-41be-af15-204f918a748a",
+			"date": "03-05-18",
+			"name": "GEN",
+			"cover": "/albums/worlds2025/tams/logos/gen.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "LOGO"
+		},
+		{
+			"id": "48efbd4d-3d7a-4f1a-be64-fd471edf66af",
+			"date": "03-05-18",
+			"name": "Korea Seed #1 ",
+			"cover": "/albums/worlds2025/teams/gen.png",
+			"country": "SOUTHKOREA",
+			"team": "GEN",
+			"role": "TEAM"
+		}
+	],
+	"psg": [
+		{
+			"id": "284c7706-9023-4808-9ace-1b4b794bce68",
+			"date": "09-03-01",
+			"name": "AZHI",
+			"cover": "/albums/worlds2025/proplayers/psg/azhi.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "TOP"
+		},
+		{
+			"id": "dde79b3a-2568-458d-bbbd-8d94b89418a9",
+			"date": "14-02-97",
+			"name": "KARSA",
+			"cover": "/albums/worlds2025/proplayers/psg/karsa.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "JG"
+		},
+		{
+			"id": "80b5c34f-ec1d-4871-91a6-c76f9d72e999",
+			"date": "10-10-97",
+			"name": "MAPLE",
+			"cover": "/albums/worlds2025/proplayers/psg/maple.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "MID"
+		},
+		{
+			"id": "ad20da2f-0d2b-4d81-b5e7-2d8a4054c736",
+			"date": "16-01-00",
+			"name": "BETTY",
+			"cover": "/albums/worlds2025/proplayers/psg/betty.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "ADC"
+		},
+		{
+			"id": "1e0444bd-c8bf-4bd5-8ab8-8a13448eca7b",
+			"date": "11-04-98",
+			"name": "WOODY",
+			"cover": "/albums/worlds2025/proplayers/psg/woody.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "SUP"
+		},
+		{
+			"id": "f90724f3-49fd-4513-b20f-ef82482e07ac",
+			"date": "18-08-93",
+			"name": "CORGI",
+			"cover": "/albums/worlds2025/proplayers/psg/corgi.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "COACH"
+		},
+		{
+			"id": "4e023c47-24f7-48d7-9341-906abef2e3b3",
+			"date": "19-12-19",
+			"name": "PSG",
+			"cover": "/albums/worlds2025/teams/logos/psg.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "LOGO"
+		},
+		{
+			"id": "1a1c79f3-eed4-476d-9d27-6c0ecbd3fb5d",
+			"date": "19-12-19",
+			"name": "Asian P. Seed #3",
+			"cover": "/albums/worlds2025/teams/psg.png",
+			"country": "TAIWAN",
+			"team": "PSG",
+			"role": "TEAM"
+		}
+	],
+	"blg": [
+		{
+			"id": "266f2f02-7a76-4b2e-9058-b38bf853a2eb",
+			"date": "28-09-03",
+			"name": "BIN",
+			"cover": "/albums/worlds2025/proplayers/blg/bin.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "TOP"
+		},
+		{
+			"id": "6b97350e-327e-4dcc-8427-d771e7786ad1",
+			"date": "21-07-01",
+			"name": "BEICHUAN",
+			"cover": "/albums/worlds2025/proplayers/blg/beichuan.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "JG"
+		},
+		{
+			"id": "711be54a-c3e0-4b9f-b6f3-c685c75647de",
+			"date": "05-02-01",
+			"name": "SHAD0W",
+			"cover": "/albums/worlds2025/proplayers/blg/shad0w.png",
+			"country": "ITALY",
+			"team": "BLG",
+			"role": "JG"
+		},
+		{
+			"id": "61509665-1888-4426-bdb3-6877fb853fb8",
+			"date": "22-03-00",
+			"name": "KNIGHT",
+			"cover": "/albums/worlds2025/proplayers/blg/knight.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "MID"
+		},
+		{
+			"id": "ba23289a-93d4-4979-a3d5-eb34ebc3f59c",
+			"date": "29-09-01",
+			"name": "ELK",
+			"cover": "/albums/worlds2025/proplayers/blg/elk.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "ADC"
+		},
+		{
+			"id": "b73b6422-cd7e-44ae-a145-bf1701426c07",
+			"date": "12-03-03",
+			"name": "ON",
+			"cover": "/albums/worlds2025/proplayers/blg/on.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "SUP"
+		},
+		{
+			"id": "63b85149-68dd-4b48-94b2-9d4cced14c92",
+			"date": "17-17-91",
+			"name": "MAOKAI",
+			"cover": "/albums/worlds2025/proplayers/blg/maokai.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "COACH"
+		},
+		{
+			"id": "1824611f-a895-4aaa-a7b9-2ded06969aac",
+			"date": "17-12-17",
+			"name": "BLG",
+			"cover": "/albums/worlds2025/teams/logos/blg.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "LOGO"
+		},
+		{
+			"id": "dfc3481c-c25b-4fe8-a468-073e99932185",
+			"date": "17-12-17",
+			"name": "China Seed #1",
+			"cover": "/albums/worlds2025/teams/blg.png",
+			"country": "CHINA",
+			"team": "BLG",
+			"role": "TEAM"
+		}
+	],
+	"100t": [
+		{
+			"id": "68b0cd70-1e73-4d1b-9730-0df4a204e006",
+			"date": "17-07-97",
+			"name": "DHOLKA",
+			"cover": "/albums/worlds2025/proplayers/100t/dholka.png",
+			"country": "UNITEDSTATES",
+			"team": "100T",
+			"role": "TOP"
+		},
+		{
+			"id": "e917cc58-3e61-4651-9493-33a0b2a16ef1",
+			"date": "23-07-99",
+			"name": "RIVER",
+			"cover": "/albums/worlds2025/proplayers/100t/river.png",
+			"country": "SOUTHKOREA",
+			"team": "100T",
+			"role": "JG"
+		},
+		{
+			"id": "f8e75ecf-2774-4290-a9a2-83737a3d3e8b",
+			"date": "27-04-04",
+			"name": "QUID",
+			"cover": "/albums/worlds2025/proplayers/100t/quid.png",
+			"country": "SOUTHKOREA",
+			"team": "100T",
+			"role": "MID"
+		},
+		{
+			"id": "602a2aab-ad8c-4938-93e4-38f8a0e1509d",
+			"date": "11-02-99",
+			"name": "FBI",
+			"cover": "/albums/worlds2025/proplayers/100t/fbi.png",
+			"country": "AUSTRALIA",
+			"team": "100T",
+			"role": "ADC"
+		},
+		{
+			"id": "9a157b63-de2c-4615-beb3-750e0c046b10",
+			"date": "24-08-99",
+			"name": "EYLA",
+			"cover": "/albums/worlds2025/proplayers/100t/eyla.png",
+			"country": "AUSTRALIA",
+			"team": "100T",
+			"role": "SUP"
+		},
+		{
+			"id": "026722ee-4df1-45a6-a903-db71740a61e8",
+			"date": "10-11-06",
+			"name": "SNIPER",
+			"cover": "/albums/worlds2025/proplayers/100t/sniper.png",
+			"country": "CANADA",
+			"team": "100T",
+			"role": "TOP"
+		},
+		{
+			"id": "0043b557-9f1f-4302-a1e3-3be666546dc5",
+			"date": "23-11-96",
+			"name": "GOLDENGLUE",
+			"cover": "/albums/worlds2025/proplayers/100t/goldenglue.png",
+			"country": "UNITEDSTATES",
+			"team": "100T",
+			"role": "COACH"
+		},
+		{
+			"id": "3b77e757-b68e-4f46-91ba-cf37ce59ee56",
+			"date": "20-11-17",
+			"name": "100T",
+			"cover": "/albums/worlds2025/teams/logos/100t.png",
+			"country": "UNITEDSTATES",
+			"team": "100T",
+			"role": "LOGO"
+		},
+		{
+			"id": "26e8a073-ffc4-45fd-a808-229ec8eaf4d4",
+			"date": "20-11-17",
+			"name": "Americas Seed #3",
+			"cover": "/albums/worlds2025/teams/100t.png",
+			"country": "UNITEDSTATES",
+			"team": "100T",
+			"role": "TEAM"
+		}
+	],
+	"al": [
+		{
+			"id": "a155337f-9807-4f40-91c2-7c9d0fd5f4c2",
+			"date": "28-08-98",
+			"name": "FLANDRE",
+			"cover": "/albums/worlds2025/proplayers/al/flandre.png",
+			"country": "CHINA",
+			"team": "AL",
+			"role": "TOP"
+		},
+		{
+			"id": "eae68459-dcf0-477c-ae78-a0cea583cfbd",
+			"date": "23-08-99",
+			"name": "TARZAN",
+			"cover": "/albums/worlds2025/proplayers/al/tarzan.png",
+			"country": "SOUTHKOREA",
+			"team": "AL",
+			"role": "JG"
+		},
+		{
+			"id": "f1793d5d-f099-4492-9e3a-bf5804158a3b",
+			"date": "13-03-01",
+			"name": "SHANKS",
+			"cover": "/albums/worlds2025/proplayers/al/shanks.png",
+			"country": "CHINA",
+			"team": "AL",
+			"role": "MID"
+		},
+		{
+			"id": "edcee374-2182-402b-9427-95a20f870fa4",
+			"date": "29-08-00",
+			"name": "HOPE",
+			"cover": "/albums/worlds2025/proplayers/al/hope.png",
+			"country": "CHINA",
+			"team": "AL",
+			"role": "ADC"
+		},
+		{
+			"id": "2e47943b-5a29-4028-b903-400c77520ffe",
+			"date": "11-02-04",
+			"name": "KAEL",
+			"cover": "/albums/worlds2025/proplayers/al/kael.png",
+			"country": "SOUTHKOREA",
+			"team": "AL",
+			"role": "SUP"
+		},
+		{
+			"id": "231c094d-719e-4456-8950-0b2e74027fd8",
+			"date": "18-01-91",
+			"name": "TABE",
+			"cover": "/albums/worlds2025/proplayers/al/tabe.png",
+			"country": "HONGKONG",
+			"team": "AL",
+			"role": "COACH"
+		},
+		{
+			"id": "f3934cf4-89c8-4ac7-9e6b-3effb68f1aa6",
+			"date": "01-12-21",
+			"name": "AL",
+			"cover": "/albums/worlds2025/teams/logos/al.png",
+			"country": "CHINA",
+			"team": "AL",
+			"role": "LOGO"
+		},
+		{
+			"id": "fca6e59e-1c92-45fd-bfdd-a69306a488e7",
+			"date": "01-12-01",
+			"name": "China Seed #2",
+			"cover": "/albums/worlds2025/teams/al.png",
+			"country": "CHINA",
+			"team": "AL",
+			"role": "TEAM"
+		}
+	],
+	"fnc": [
+		{
+			"id": "fd75cbe0-a2bf-4311-8b1c-6efde570e1b1",
+			"date": "11-06-03",
+			"name": "OSCARININ",
+			"cover": "/albums/worlds2025/proplayers/fnc/oscarinin.png",
+			"country": "SPAIN",
+			"team": "FNC",
+			"role": "TOP"
+		},
+		{
+			"id": "fa2a29f9-1767-485a-a613-9246fd80b4f9",
+			"date": "07-10-00",
+			"name": "RAZORK",
+			"cover": "/albums/worlds2025/proplayers/fnc/razork.png",
+			"country": "SPAIN",
+			"team": "FNC",
+			"role": "JG"
+		},
+		{
+			"id": "069678f5-1986-4526-83a2-9b21ca6ff302",
+			"date": "07-02-06",
+			"name": "POBY",
+			"cover": "/albums/worlds2025/proplayers/fnc/poby.png",
+			"country": "SOUTHKOREA",
+			"team": "FNC",
+			"role": "MID"
+		},
+		{
+			"id": "76a98793-cf7d-4000-8d0f-0122c949b0ce",
+			"date": "16-12-99",
+			"name": "UPSET",
+			"cover": "/albums/worlds2025/proplayers/fnc/upset.png",
+			"country": "GERMANY",
+			"team": "FNC",
+			"role": "ADC"
+		},
+		{
+			"id": "9bc4822a-5351-4cf2-899d-5542bd90b24e",
+			"date": "02-11-98",
+			"name": "MIKYX",
+			"cover": "/albums/worlds2025/proplayers/fnc/mikyx.png",
+			"country": "SLOVENIA",
+			"team": "FNC",
+			"role": "SUP"
+		},
+		{
+			"id": "50365c05-3190-415f-abb5-76380dda1b09",
+			"date": "14-01-95",
+			"name": "GRABBZ",
+			"cover": "/albums/worlds2025/proplayers/fnc/grabbz.png",
+			"country": "GERMANY",
+			"team": "FNC",
+			"role": "COACH"
+		},
+		{
+			"id": "abfccd27-dab1-42bd-bb4c-93086f9d3fac",
+			"date": "14-03-11",
+			"name": "FNC",
+			"cover": "/albums/worlds2025/teams/logos/fnc.png",
+			"country": "UNITEDKINGDOM",
+			"team": "FNC",
+			"role": "LOGO"
+		},
+		{
+			"id": "b9eb3c85-9baa-453d-a50c-85592b1b1b06",
+			"date": "14-05-11",
+			"name": "Emea Seed #3",
+			"cover": "/albums/worlds2025/teams/fnc.png",
+			"country": "UNITEDKINGDOM",
+			"team": "FNC",
+			"role": "TEAM"
+		}
+	],
+	"t1": [
+		{
+			"id": "04f51a29-38da-416b-a5cf-f5e29b9164a1",
+			"date": "14-10-02",
+			"name": "KERIA",
+			"cover": "/albums/worlds2025/proplayers/t1/keria.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "SUP"
+		},
+		{
+			"id": "d1f9daf8-3fb9-479b-9e77-3bcbee11f25c",
+			"date": "06-02-02",
+			"name": "GUMAYUSI",
+			"cover": "/albums/worlds2025/proplayers/t1/guma.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "ADC"
+		},
+		{
+			"id": "843b3c94-a95a-4c04-a29a-6e4590bdff11",
+			"date": "07-05-96",
+			"name": "FAKER",
+			"cover": "/albums/worlds2025/proplayers/t1/faker.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "MID"
+		},
+		{
+			"id": "63cf3d4f-cd42-40ee-bf21-8ef6ebb72d81",
+			"date": "24-12-02",
+			"name": "ONER",
+			"cover": "/albums/worlds2025/proplayers/t1/oner.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "JG"
+		},
+		{
+			"id": "41361ace-594d-4439-8a86-9ce0941b8826",
+			"date": "22-07-00",
+			"name": "DORAN",
+			"cover": "/albums/worlds2025/proplayers/t1/doran.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "TOP"
+		},
+		{
+			"id": "a9dbb2d7-281f-40bc-bbfc-0aeca55c01ab",
+			"date": "23-12-85",
+			"name": "KK0MA",
+			"cover": "/albums/worlds2025/proplayers/t1/kkoma.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "COACH"
+		},
+		{
+			"id": "3c169186-4d93-4ca9-9d37-b3668d1b5fec",
+			"date": "08-12-19",
+			"name": "T1",
+			"cover": "/albums/worlds2025/teams/logos/t1.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "LOGO"
+		},
+		{
+			"id": "36251de1-5f18-4b1d-a3ec-b45daeb16b0f",
+			"date": "08-12-19",
+			"name": "Korea Seed #4",
+			"cover": "/albums/worlds2025/teams/t1.png",
+			"country": "SOUTHKOREA",
+			"team": "T1",
+			"role": "TEAM"
+		}
+	],
+	"hle": [
+		{
+			"id": "9aebedec-3c54-4c12-8feb-eafe068bedf8",
+			"date": "31-06-04",
+			"name": "ZEUS",
+			"cover": "/albums/worlds2025/proplayers/hle/zeus.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "TOP"
+		},
+		{
+			"id": "91777610-9ffd-46c9-91a1-4caaa7586f18",
+			"date": "03-02-98",
+			"name": "PEANUT",
+			"cover": "/albums/worlds2025/proplayers/hle/peanut.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "JG"
+		},
+		{
+			"id": "ba8f656f-9b6f-47cc-b9c2-9b54f5ef000f",
+			"date": "28-11-02",
+			"name": "ZEKA",
+			"cover": "/albums/worlds2025/proplayers/hle/zeka.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "MID"
+		},
+		{
+			"id": "30406b99-fd95-424c-a347-79c4967cb123",
+			"date": "19-10-00",
+			"name": "VIPER",
+			"cover": "/albums/worlds2025/proplayers/hle/viper.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "ADC"
+		},
+		{
+			"id": "eac037db-89a8-46db-baaf-c188cefb4150",
+			"date": "12-09-02",
+			"name": "DELIGHT",
+			"cover": "/albums/worlds2025/proplayers/hle/delight.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "SUP"
+		},
+		{
+			"id": "0ceda86f-f0da-4c0a-86c8-8379d6541973",
+			"date": "03-01-94",
+			"name": "DANDY",
+			"cover": "/albums/worlds2025/proplayers/hle/dandy.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "COACH"
+		},
+		{
+			"id": "af542032-edac-454f-a449-d802f87633fb",
+			"date": "15-04-18",
+			"name": "HLE",
+			"cover": "/albums/worlds2025/teams/logos/hle.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "LOGO"
+		},
+		{
+			"id": "1ed2536e-f486-475e-99b8-0d88b8e62237",
+			"date": "15-04-18",
+			"name": "Korea Seed #2",
+			"cover": "/albums/worlds2025/teams/hle.png",
+			"country": "SOUTHKOREA",
+			"team": "HLE",
+			"role": "TEAM"
+		}
+	],
+	"tsw": [
+		{
+			"id": "edf399d0-1fda-4c03-a917-a4535fa272d1",
+			"date": "18-05-02",
+			"name": "HIRO02",
+			"cover": "/albums/worlds2025/proplayers/tsw/hiro02.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "TOP"
+		},
+		{
+			"id": "a4eaeb00-8cf2-4166-8103-7b20bcc9175a",
+			"date": "29-07-02",
+			"name": "PUN",
+			"cover": "/albums/worlds2025/proplayers/tsw/pun.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "TOP"
+		},
+		{
+			"id": "fe6dcdf5-8a57-423d-a744-2b1f09a99d8c",
+			"date": "15-09-07",
+			"name": "HIZTO",
+			"cover": "/albums/worlds2025/proplayers/tsw/hizto.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "JG"
+		},
+		{
+			"id": "8665813a-0b84-4fb9-b4bc-0f38a7ded337",
+			"date": "22-11-06",
+			"name": "DIRE",
+			"cover": "/albums/worlds2025/proplayers/tsw/dire.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "MID"
+		},
+		{
+			"id": "1ec7fed4-d246-46ce-a90b-c37e2c6da33f",
+			"date": "17-06-03",
+			"name": "EDDIE",
+			"cover": "/albums/worlds2025/proplayers/tsw/eddie.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "ADC"
+		},
+		{
+			"id": "44b155ff-edc6-44a5-b1c4-b4d79d1ede8b",
+			"date": "30-06-03",
+			"name": "TAKI",
+			"cover": "/albums/worlds2025/proplayers/tsw/taki.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "SUP"
+		},
+		{
+			"id": "835c3268-5788-4ff4-9468-758208216316",
+			"date": "27-07-98",
+			"name": "NAUL",
+			"cover": "/albums/worlds2025/proplayers/tsw/naul.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "COACH"
+		},
+		{
+			"id": "dba171b9-9457-4ebc-a47d-db9ad185f806",
+			"date": "05-12-24",
+			"name": "TSW",
+			"cover": "/albums/worlds2025/teams/logos/tsw.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "LOGO"
+		},
+		{
+			"id": "2e7e966d-5031-491c-8525-34ceda84d6ad",
+			"date": "05-12-24",
+			"name": "Asian P. Seed #2",
+			"cover": "/albums/worlds2025/teams/tsw.png",
+			"country": "HONGKONG",
+			"team": "TSW",
+			"role": "TEAM"
+		}
+	],
+	"ig": [
+		{
+			"id": "752ff791-ffab-46e5-97bd-24c2b2628acc",
+			"date": "11-11-99",
+			"name": "THESHY",
+			"cover": "/albums/worlds2025/proplayers/ig/theshy.png",
+			"country": "SOUTHKOREA",
+			"team": "IG",
+			"role": "TOP"
+		},
+		{
+			"id": "35581fed-2d13-4654-a001-8117aeea2778",
+			"date": "09-11-02",
+			"name": "WEI",
+			"cover": "/albums/worlds2025/proplayers/ig/wei.png",
+			"country": "CHINA",
+			"team": "IG",
+			"role": "MID"
+		},
+		{
+			"id": "c5b01035-c9bd-4fd7-bb40-c25f616086ba",
+			"date": "11-03-97",
+			"name": "ROOKIE",
+			"cover": "/albums/worlds2025/proplayers/ig/rookie.png",
+			"country": "SOUTHKOREA",
+			"team": "IG",
+			"role": "MID"
+		},
+		{
+			"id": "5efeb3d5-b165-41df-b1e8-7ed82531d8d4",
+			"date": "14-02-01",
+			"name": "GALA",
+			"cover": "/albums/worlds2025/proplayers/ig/gala.png",
+			"country": "CHINA",
+			"team": "IG",
+			"role": "ADC"
+		},
+		{
+			"id": "c03e7f4a-3ca8-458e-b011-09a0b70c3b9c",
+			"date": "06-06-98",
+			"name": "MEIKO",
+			"cover": "/albums/worlds2025/proplayers/ig/meiko.png",
+			"country": "CHINA",
+			"team": "IG",
+			"role": "SUP"
+		},
+		{
+			"id": "b91d3bf2-ca18-4927-804e-3ed626e2d430",
+			"date": "10-02-93",
+			"name": "DAENY",
+			"cover": "/albums/worlds2025/proplayers/ig/daeny.png",
+			"country": "SOUTHKOREA",
+			"team": "IG",
+			"role": "COACH"
+		},
+		{
+			"id": "7ee43ca5-0b0f-451d-8f8f-a9fcbbb0bcd0",
+			"date": "02-08-11",
+			"name": "IG",
+			"cover": "/albums/worlds2025/teams/logos/ig.png",
+			"country": "CHINA",
+			"team": "IG",
+			"role": "LOGO"
+		},
+		{
+			"id": "a90bf333-51b5-4eac-b301-6fc641dfe956",
+			"date": "02-12-11",
+			"name": "China Seed #4",
+			"cover": "/albums/worlds2025/teams/ig.png",
+			"country": "CHINA",
+			"team": "IG",
+			"role": "TEAM"
+		}
+	],
+	"vks": [
+		{
+			"id": "b08627e0-fc27-43fe-9cad-461b6fa67fd3",
+			"date": "04-12-02",
+			"name": "BOAL",
+			"cover": "/albums/worlds2025/proplayers/vks/boal.png",
+			"country": "BRAZIL",
+			"team": "VKS",
+			"role": "TOP"
+		},
+		{
+			"id": "f0ff2eaf-7cbf-402e-b260-5f1fa4020833",
+			"date": "03-08-03",
+			"name": "DISAMIS",
+			"cover": "/albums/worlds2025/proplayers/vks/disamis.png",
+			"country": "BRAZIL",
+			"team": "VKS",
+			"role": "JG"
+		},
+		{
+			"id": "86c09ebe-4cb9-4bce-8dde-a196d15ee83a",
+			"date": "20-09-01",
+			"name": "MIREU",
+			"cover": "/albums/worlds2025/proplayers/vks/mireu.png",
+			"country": "SOUTHKOREA",
+			"team": "VKS",
+			"role": "MID"
+		},
+		{
+			"id": "ee8a30cd-7519-4df8-a97c-fb5bd864a3e3",
+			"date": "18-06-02",
+			"name": "MORTTHEUS",
+			"cover": "/albums/worlds2025/proplayers/vks/morttheus.png",
+			"country": "BRAZIL",
+			"team": "VKS",
+			"role": "ADC"
+		},
+		{
+			"id": "becb0283-e90e-4471-8c73-d179b7059335",
+			"date": "20-10-00",
+			"name": "TRYMBI",
+			"cover": "/albums/worlds2025/proplayers/vks/trymbi.png",
+			"country": "POLAND",
+			"team": "VKS",
+			"role": "SUP"
+		},
+		{
+			"id": "7f22cd9c-ab1a-499f-933c-d5137a43ce04",
+			"date": "12-06-96",
+			"name": "SEEEL",
+			"cover": "/albums/worlds2025/proplayers/vks/seeel.png",
+			"country": "SOUTHKOREA",
+			"team": "VKS",
+			"role": "COACH"
+		},
+		{
+			"id": "9c41d52c-96e2-4ed0-ab36-481f70a2308f",
+			"date": "07-11-22",
+			"name": "VKS",
+			"cover": "/albums/worlds2025/teams/logos/vks.png",
+			"country": "BRAZIL",
+			"team": "VKS",
+			"role": "LOGO"
+		},
+		{
+			"id": "d49641c8-9767-47ed-9021-a2b3f7f790da",
+			"date": "07-11-22",
+			"name": "Americas Seed #2",
+			"cover": "/albums/worlds2025/teams/vks.png",
+			"country": "BRAZIL",
+			"team": "VKS",
+			"role": "TEAM"
+		}
+	]
 }

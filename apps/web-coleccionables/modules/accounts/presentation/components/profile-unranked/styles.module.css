@@ -1,35 +1,35 @@
 .total {
-  color: #94a3b8;
+	color: #94a3b8;
 }
 
 .avatar {
-  position: absolute;
-  top: 7.75rem;
-  left: 4.2rem;
+	position: absolute;
+	top: 7.75rem;
+	left: 4.2rem;
 }
 
 .summonerIconWrapper {
-  position: absolute;
-  top: 7.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 141px;
-  width: 150px;
+	position: absolute;
+	top: 7.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 141px;
+	width: 150px;
 }
 
 .usernameCenteredBottom {
-  position: absolute;
-  bottom: 10.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute;
+	bottom: 10.5rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .quantitiesWrapper {
-  position: absolute;
-  bottom: 5.5rem;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+	position: absolute;
+	bottom: 5.5rem;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
 }

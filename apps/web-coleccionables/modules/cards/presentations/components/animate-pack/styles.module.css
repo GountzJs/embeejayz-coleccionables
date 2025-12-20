@@ -1,39 +1,39 @@
 .container {
-  display: flex;
-  height: 800px;
-  width: 350px;
-  position: relative;
-  pointer-events: none;
+	display: flex;
+	height: 800px;
+	width: 350px;
+	position: relative;
+	pointer-events: none;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 .sobre-top {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform-origin: bottom left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-origin: bottom left;
 }
 
 .open-sobre {
-  animation: rotate 500ms ease-in-out forwards;
+	animation: rotate 500ms ease-in-out forwards;
 }
 
 .sobre-bottom {
-  position: absolute;
-  left: 0;
-  top: 70px;
+	position: absolute;
+	left: 0;
+	top: 70px;
 }
 
 @keyframes rotate {
-  from {
-    left: 0;
-    transform: rotate(0deg);
-  }
-  to {
-    left: 4px;
-    transform: rotate(-10deg);
-  }
+	from {
+		left: 0;
+		transform: rotate(0deg);
+	}
+	to {
+		left: 4px;
+		transform: rotate(-10deg);
+	}
 }

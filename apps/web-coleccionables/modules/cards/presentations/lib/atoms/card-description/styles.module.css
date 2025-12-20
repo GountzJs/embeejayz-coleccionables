@@ -1,20 +1,19 @@
 .description {
-  border-radius: 6px;
-  text-align: center;
-  margin: auto;
-  color: var(--white);
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-overflow: ellipsis;
-  font-family: var(--font-montserrat);
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-inline: 8px;
-  text-wrap: wrap;
-  height: 100%;
-  width: 250px;
-  user-select: none;
-  text-wrap: pretty;
+	border-radius: 6px;
+	text-align: center;
+	margin: auto;
+	color: var(--white);
+	font-size: 0.75rem;
+	font-weight: 500;
+	text-overflow: ellipsis;
+	font-family: var(--font-montserrat);
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-inline: 8px;
+	text-wrap: wrap;
+	height: 100%;
+	width: 250px;
+	user-select: none;
+	text-wrap: pretty;
 }
-  

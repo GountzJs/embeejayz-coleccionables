@@ -1,52 +1,52 @@
 {
-  "round1": [
-    {
-      "left": {
-        "team": "VKS",
-        "score": "0",
-        "winner": false
-      },
-      "right": {
-        "team": "TSW",
-        "score": "1",
-        "winner": true
-      }
-    },
-    {
-      "left": {
-        "team": "CFO",
-        "score": "1",
-        "winner": true
-      },
-      "right": {
-        "team": "FNC",
-        "score": "0",
-        "winner": false
-      }
-    },
-    {
-      "left": {
-        "team": "KT",
-        "score": "1",
-        "winner": true
-      },
-      "right": {
-        "team": "MKOI",
-        "score": "0",
-        "winner": false
-      }
-    },
-    {
-      "left": {
-        "team": "BLG",
-        "score": "0",
-        "winner": false
-      },
-      "right": {
-        "team": "100T",
-        "score": "1",
-        "winner": true
-      }
-    }
-  ]
+	"round1": [
+		{
+			"left": {
+				"team": "VKS",
+				"score": "0",
+				"winner": false
+			},
+			"right": {
+				"team": "TSW",
+				"score": "1",
+				"winner": true
+			}
+		},
+		{
+			"left": {
+				"team": "CFO",
+				"score": "1",
+				"winner": true
+			},
+			"right": {
+				"team": "FNC",
+				"score": "0",
+				"winner": false
+			}
+		},
+		{
+			"left": {
+				"team": "KT",
+				"score": "1",
+				"winner": true
+			},
+			"right": {
+				"team": "MKOI",
+				"score": "0",
+				"winner": false
+			}
+		},
+		{
+			"left": {
+				"team": "BLG",
+				"score": "0",
+				"winner": false
+			},
+			"right": {
+				"team": "100T",
+				"score": "1",
+				"winner": true
+			}
+		}
+	]
 }
