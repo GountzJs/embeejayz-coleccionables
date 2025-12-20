@@ -4,8 +4,8 @@
 	"description": "Bot de twitch para canjear recompensas e interacción con los usuarios",
 	"private": true,
 	"scripts": {
-		"start": "node ./dist/main.js",
-		"serve": "cross-env NODE_ENV=development tsx watch src/main.ts",
+		"start": "bun ./dist/main.js",
+		"serve": "cross-env NODE_ENV=development bun --watch src/main.ts",
 		"build": "tsc"
 	},
 	"keywords": [],
@@ -25,6 +25,7 @@
 	"dependencies": {
 		"@libsql/client": "0.15.15",
 		"axios": "^1.13.2",
+		"dotenv": "^17.2.3",
 		"tmi.js": "1.8.5",
 		"uuid": "^11.1.0"
 	}
