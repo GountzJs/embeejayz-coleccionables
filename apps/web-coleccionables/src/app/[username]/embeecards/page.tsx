@@ -17,20 +17,37 @@ export default function Page() {
 	);
 }
 
+interface Props {
+	children: React.ReactNode;
+}
+
+function ViewContainer({ children }: Props) {
+	return <div className="flex flex-1 w-full h-full">{children}</div>;
+}
+
 function ViewEmbeeCards() {
 	const { isLoading, data } = useProfileContext();
 
-	if (!data) return <ListSkeletonCard />;
+	if (isLoading || !data)
+		return (
+			<ViewContainer>
+				<ListSkeletonCard />
+			</ViewContainer>
+		);
+
+	if (!isLoading && !data.total.cards) {
+		return (
+			<ViewContainer>
+				<NotEmbeeCards />
+			</ViewContainer>
+		);
+	}
 
 	return (
-		<div className="flex flex-1 w-full h-full">
-			{isLoading && <p>Cargando...</p>}
-			{!isLoading && data.total.cards === 0 && <NotEmbeeCards />}
-			{!isLoading && data.total.cards > 0 && (
-				<Suspense fallback={<ListSkeletonCard />}>
-					<ListEmbeeCards id={data.id} />
-				</Suspense>
-			)}
-		</div>
+		<ViewContainer>
+			<Suspense fallback={<ListSkeletonCard />}>
+				<ListEmbeeCards id={data.id} />
+			</Suspense>
+		</ViewContainer>
 	);
 }

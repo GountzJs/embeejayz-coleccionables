@@ -1,5 +1,4 @@
 import { InfiniteScrollObserver } from "@modules/common/presentation/lib/infinite-scroll";
-import { NotEmbeeCards } from "../errors/not-embeecards";
 import { useGetEmbeeCardsPaginationQuery } from "../queries/get-embeecard-pagination.query";
 import { BtnDialog } from "./btn-dialog";
 import { CardElement } from "./card-element";
@@ -19,9 +18,6 @@ export function ListEmbeeCards({ id }: Props) {
 	} = useGetEmbeeCardsPaginationQuery({
 		id,
 	});
-
-	if (!embeecards.length && !(isFetching || isFetchingNextPage))
-		return <NotEmbeeCards />;
 
 	return (
 		<ul className="flex flex-wrap gap-4 justify-center h-auto max-h-full w-full">
