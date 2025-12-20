@@ -46,7 +46,7 @@ export function DetailCards() {
 							loading="lazy"
 							decoding="async"
 						/>
-						<p className="absolute text-xl rotate-30 translate-x-[28%] -translate-y-[15%] bottom-0 right-0 text-nowrap">
+						<p className="absolute text-xl rotate-30 translate-x-[28%] -bottom-8 right-0 text-nowrap">
 							<i>Fijate cuáles son!</i>
 						</p>
 					</div>

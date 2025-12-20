@@ -1,3 +1,8 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
+import { cdnUrl } from "@/core/settings";
+import { spells } from "@modules/borders/domain/consts/spells.const";
+import { BorderChallenger } from "@modules/borders/presentation/components/border-challenger/border-challenger";
+
 export function Presentation() {
 	return (
 		<section className="flex justify-center flex-col flex-1 gap-5 py-12 h-[calc(100vh-75px)] w-full">
@@ -25,6 +30,15 @@ export function Presentation() {
 						Maestro, Diamante, Platino, Oro, Plata y Bronce.
 					</p>
 				</article>
+
+				<BorderChallenger
+					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
+					coverUrl={`/images/proplayers/faker/default.png`}
+					name="Faker"
+					username="embeejayz"
+					leftIcon={spells.flash}
+					rightIcon={spells.ignite}
+				/>
 			</div>
 		</section>
 	);
