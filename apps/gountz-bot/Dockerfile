@@ -9,7 +9,9 @@ RUN apk add --no-cache \
     openssl
 
 ENV BUN_INSTALL=/opt/bun
+
 RUN curl -fsSL https://bun.sh/install | bash
+
 ENV PATH="$BUN_INSTALL/bin:$PATH"
 
 WORKDIR /app
@@ -20,4 +22,4 @@ RUN bun install --frozen-lockfile
 
 RUN bun nx build gountzbot
 
-CMD ["bun", "nx", "start", "gountzbot"]
+CMD ["bun", "run", "./dist/apps/gountzbot/main.js"]
