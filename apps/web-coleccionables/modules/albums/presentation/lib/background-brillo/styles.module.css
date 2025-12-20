@@ -1,0 +1,23 @@
+.logo:before,
+.logo:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 300% 300%;
+	mix-blend-mode: color-dodge;
+	opacity: 0.2;
+}
+
+.logo:after {
+	background-image: url("/sparkles.gif");
+	position: center;
+	background-size: 180%;
+	mix-blend-mode: color-dodge;
+	opacity: 1;
+	clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
+}
