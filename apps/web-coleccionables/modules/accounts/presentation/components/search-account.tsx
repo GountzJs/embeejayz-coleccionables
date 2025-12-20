@@ -9,7 +9,7 @@ export function SearchAccount() {
 
 	const goToProfile = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		router(`/usuario/${username}`);
+		router(`/usuarios/${username}`);
 	};
 
 	const changeOnInput = (e: ChangeEvent<HTMLInputElement>) =>
