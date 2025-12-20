@@ -10,7 +10,7 @@ export class AccountQueries {
       `,
 			args: ["TWITCH"],
 		});
-		const platformId = platforms[0]!.id;
+		const platformId = platforms[0]?.id;
 		const { rows } = await turso.execute({
 			sql: `
         INSERT INTO accounts (id, ref, is_staff, quantity, platform_id, created_at, updated_at)
@@ -30,6 +30,6 @@ export class AccountQueries {
 			args: [ref],
 		});
 
-		return existing[0]!.id as string;
+		return existing[0]?.id as string;
 	}
 }

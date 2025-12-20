@@ -38,9 +38,9 @@ export class EmbeeCardsController {
 
 	async insertRandom(displayName: string) {
 		try {
-			const twitchUser = await this.twitchServices.getByUsername(displayName);
+			const twitchUserId = await this.twitchServices.getByUsername(displayName);
 			const accountId =
-				await this.accountQueries.getOrCreateAccount(twitchUser);
+				await this.accountQueries.getOrCreateAccount(twitchUserId);
 			const cardId = await this.accountEmbeeCardQueries.getRandom(accountId);
 			await this.accountEmbeeCardQueries.insertOrIncrement(accountId, cardId);
 			this.client.say(

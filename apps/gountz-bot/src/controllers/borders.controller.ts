@@ -25,7 +25,6 @@ export class BordersController {
 				`!notification border-1-false-${username}`,
 			);
 		} catch (err) {
-			console.log("err", err);
 			if (err instanceof Error) {
 				this.client.say(
 					`#${twitchBotUsername}`,

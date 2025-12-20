@@ -20,6 +20,6 @@ export class TwitchServices {
 
 		if (!data.length) throw new Error("User not found");
 
-		return data[0];
+		return data[0].id;
 	}
 }
