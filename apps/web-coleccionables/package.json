@@ -14,7 +14,8 @@
 		"@embeejayz/core-accounts": "workspace:*",
 		"@embeejayz/core-albums": "workspace:*",
 		"@embeejayz/core-cards": "workspace:*",
-		"@embeejayz/ui-cards": "workspace:*"
+		"@embeejayz/ui-cards": "workspace:*",
+		"@embeejayz/ui-borders": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "19.2.3",

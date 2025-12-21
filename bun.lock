@@ -48,6 +48,7 @@
         "@embeejayz/core-albums": "workspace:*",
         "@embeejayz/core-borders": "workspace:*",
         "@embeejayz/core-cards": "workspace:*",
+        "@embeejayz/ui-borders": "workspace:*",
         "@embeejayz/ui-cards": "workspace:*",
         "@tanstack/react-query": "5.90.12",
         "formik": "2.4.9",

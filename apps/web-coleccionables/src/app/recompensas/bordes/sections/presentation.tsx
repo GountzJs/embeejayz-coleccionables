@@ -1,7 +1,7 @@
 // biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
 import { spells } from "@embeejayz/core-borders";
-import { BorderChallenger } from "@modules/borders/presentation/components/border-challenger/border-challenger";
+import { BorderChallenger } from "@embeejayz/ui-borders";
 
 export function Presentation() {
 	return (
@@ -32,6 +32,7 @@ export function Presentation() {
 				</article>
 
 				<BorderChallenger
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/faker/default.png`}
 					name="Faker"

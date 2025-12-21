@@ -1,13 +1,15 @@
 // biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
 import { spells } from "@embeejayz/core-borders";
-import { BorderBronze } from "@modules/borders/presentation/components/border-bronze/border-bronze";
-import { BorderChallenger } from "@modules/borders/presentation/components/border-challenger/border-challenger";
-import { BorderDiamond } from "@modules/borders/presentation/components/border-diamond/border-diamond";
-import { BorderGold } from "@modules/borders/presentation/components/border-gold/border-gold";
-import { BorderMaster } from "@modules/borders/presentation/components/border-master/border-master";
-import { BorderPlatinum } from "@modules/borders/presentation/components/border-platinum/border-platinum";
-import { BorderSilver } from "@modules/borders/presentation/components/border-silver/border-silver";
+import {
+	BorderBronze,
+	BorderChallenger,
+	BorderDiamond,
+	BorderGold,
+	BorderMaster,
+	BorderPlatinum,
+	BorderSilver,
+} from "@embeejayz/ui-borders";
 
 export function ListClasification() {
 	return (
@@ -17,6 +19,7 @@ export function ListClasification() {
 			</h1>
 			<div className="flex flex-wrap justify-center gap-5 w-full">
 				<BorderChallenger
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -25,6 +28,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderMaster
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -33,6 +37,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderDiamond
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -41,6 +46,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderPlatinum
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -49,6 +55,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderGold
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -57,6 +64,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderSilver
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"
@@ -65,6 +73,7 @@ export function ListClasification() {
 					rightIcon={spells.ignite}
 				/>
 				<BorderBronze
+					cdnUrl={cdnUrl}
 					avatarUrl={`${cdnUrl}/images/avatars/embeejayz.avif`}
 					coverUrl={`/images/proplayers/keria/default.png`}
 					name="Keria"

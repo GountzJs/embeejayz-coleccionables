@@ -1,10 +1,12 @@
-/** biome-ignore-all lint/suspicious/noArrayIndexKey: false positive */
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
+
+import { cdnUrl } from "@/core/settings";
+import { BorderRank } from "@embeejayz/ui-borders";
 import { InfiniteScrollObserver } from "@modules/common/presentation/lib/infinite-scroll";
 import { useSpellsContext } from "../contexts/spells.context";
 import { useGetBorderFilters } from "../hooks/get-border-filters";
 import { useGetBordersPaginationQuery } from "../queries/get-border-pagination.query";
 import { getRankByQuantity } from "../utils/rank";
-import { BorderRank } from "./border-rank";
 import { NotBorders } from "./not-borders";
 import { SkeletonBorder } from "./skeleton-border";
 
@@ -49,6 +51,7 @@ export function ListBorders({ id, avatarUrl, username }: Props) {
 						border={border}
 						username={username}
 						avatarUrl={avatarUrl}
+						cdnUrl={cdnUrl}
 						rank={getRankByQuantity(border.quantity, border.isSpecial)}
 						leftIcon={leftIcon}
 						rightIcon={rightIcon}
