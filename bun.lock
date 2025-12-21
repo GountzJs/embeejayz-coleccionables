@@ -43,6 +43,7 @@
       "version": "0.0.0",
       "dependencies": {
         "@embeejayz/core-accounts": "workspace:*",
+        "@embeejayz/core-albums": "workspace:*",
         "@embeejayz/core-borders": "workspace:*",
         "@tanstack/react-query": "5.90.12",
         "formik": "2.4.9",
@@ -72,6 +73,16 @@
     },
     "packages/core-accounts": {
       "name": "@embeejayz/core-accounts",
+      "version": "1.0.0",
+      "devDependencies": {
+        "tsup": "8.5.1",
+      },
+      "peerDependencies": {
+        "typescript": "5.9.3",
+      },
+    },
+    "packages/core-albums": {
+      "name": "@embeejayz/core-albums",
       "version": "1.0.0",
       "devDependencies": {
         "tsup": "8.5.1",
@@ -346,6 +357,8 @@
     "@csstools/css-tokenizer": ["@csstools/css-tokenizer@3.0.4", "", {}, "sha512-Vd/9EVDiu6PPJt9yAh6roZP6El1xHrdvIVGjyBsHR0RYwNHgL7FJPyIIW4fANJNG6FtyZfvlRPpFI4ZM/lubvw=="],
 
     "@embeejayz/core-accounts": ["@embeejayz/core-accounts@workspace:packages/core-accounts"],
+
+    "@embeejayz/core-albums": ["@embeejayz/core-albums@workspace:packages/core-albums"],
 
     "@embeejayz/core-borders": ["@embeejayz/core-borders@workspace:packages/core-borders"],
 

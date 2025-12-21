@@ -1,4 +1,4 @@
-import type { Worlds2025Repository } from "../../domain/worlds2025.repository";
+import type { Worlds2025Repository } from "../../domain/repositories/worlds2025.repository";
 
 type GetEmbeeCardPagination = (id: string) => Promise<string[]>;
 
