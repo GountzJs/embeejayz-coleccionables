@@ -8,16 +8,17 @@
 		"formik": "2.4.9",
 		"html2canvas": "1.4.1",
 		"isomorphic-dompurify": "2.34.0",
-		"react": "19.2.3",
-		"react-dom": "19.2.3",
 		"react-router": "7.11.0",
 		"ui-kit": "workspace:*",
 		"@embeejayz/core-borders": "workspace:*",
 		"@embeejayz/core-accounts": "workspace:*",
 		"@embeejayz/core-albums": "workspace:*",
-		"@embeejayz/core-cards": "workspace:*"
+		"@embeejayz/core-cards": "workspace:*",
+		"@embeejayz/ui-cards": "workspace:*"
 	},
 	"peerDependencies": {
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
 		"@biomejs/biome": "2.3.8",
 		"typescript": "5.9.3",
 		"vite": "7.2.4"
