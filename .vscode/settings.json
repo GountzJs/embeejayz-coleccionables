@@ -11,6 +11,7 @@
 		"workspace",
 		"web-coleccionables",
 		"ui-kit",
-		"ui-cards"
+		"ui-cards",
+		"ui-borders"
 	]
 }

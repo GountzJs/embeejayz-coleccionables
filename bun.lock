@@ -115,6 +115,25 @@
         "typescript": "5.9.3",
       },
     },
+    "packages/ui-borders": {
+      "name": "@embeejayz/ui-borders",
+      "version": "1.0.0",
+      "dependencies": {
+        "isomorphic-dompurify": "2.34.0",
+        "styled-components": "6.1.19",
+      },
+      "devDependencies": {
+        "@types/node": "^24.10.1",
+        "@types/react": "19.2.5",
+        "tsup": "8.5.1",
+      },
+      "peerDependencies": {
+        "@embeejayz/core-borders": "workspace:*",
+        "react": "19.2.1",
+        "react-dom": "19.2.1",
+        "typescript": "5.9.3",
+      },
+    },
     "packages/ui-cards": {
       "name": "@embeejayz/ui-cards",
       "version": "1.0.0",
@@ -396,6 +415,8 @@
     "@embeejayz/core-borders": ["@embeejayz/core-borders@workspace:packages/core-borders"],
 
     "@embeejayz/core-cards": ["@embeejayz/core-cards@workspace:packages/core-cards"],
+
+    "@embeejayz/ui-borders": ["@embeejayz/ui-borders@workspace:packages/ui-borders"],
 
     "@embeejayz/ui-cards": ["@embeejayz/ui-cards@workspace:packages/ui-cards"],
 
