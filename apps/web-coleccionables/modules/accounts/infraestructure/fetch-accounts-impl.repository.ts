@@ -25,7 +25,9 @@ export class FetchAccountsImplRepository implements AccountsRepository {
 		const { data } = await response.json();
 
 		if (!response.ok) {
-			throw data;
+			throw new Error(
+				data.message || `Failed to fetch profile: ${response.status}`,
+			);
 		}
 
 		return { rank: rank.unranked, ...data };

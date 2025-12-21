@@ -1,4 +1,5 @@
 import { type ProfileEntity, rank } from "@embeejayz/core-accounts";
+import { Navigate } from "react-router";
 import { useProfileContext } from "../contexts/profile.context";
 import { ProfileBronze } from "./profile-bronze/profile-bronze";
 import { ProfileChallenger } from "./profile-challenger/profile-challenger";
@@ -11,7 +12,9 @@ import { ProfileSkeleton } from "./profile-skeleton";
 import { ProfileUnranked } from "./profile-unranked/profile-unranked";
 
 export function Profile() {
-	const { isLoading, data } = useProfileContext();
+	const { isLoading, data, error } = useProfileContext();
+
+	if (error) return <Navigate to="/404" replace />;
 
 	if (isLoading || !data) return <ProfileSkeleton />;
 
