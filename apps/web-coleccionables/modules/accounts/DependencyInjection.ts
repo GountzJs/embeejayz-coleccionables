@@ -1,6 +1,6 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
 import { apiUrl } from "@/core/settings";
-import { getAllRanking } from "./application/use-cases/get-all-ranking";
-import { getProfile } from "./application/use-cases/get-profile";
+import { getAllRanking, getProfile } from "@embeejayz/core-accounts";
 import { FetchAccountsImplRepository } from "./infraestructure/fetch-accounts-impl.repository";
 
 const fetchAccountsImplRepository = new FetchAccountsImplRepository(apiUrl);

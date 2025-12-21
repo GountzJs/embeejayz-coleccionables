@@ -1,11 +1,11 @@
 import {
 	borderSort,
 	bordersOrderBy,
+	type BorderEntity,
 	type TBorderSort,
 	type TBordersOrderBy,
-} from "@modules/borders/domain/consts/borders.const";
-import type { BorderEntity } from "@modules/borders/domain/entities/border.entity";
-import type { TotalBorderEntity } from "@modules/borders/domain/entities/total-border.entity";
+	type TotalBorderEntity,
+} from "@embeejayz/core-borders";
 import { HttpResponse, http } from "msw";
 import { borders } from "./data";
 

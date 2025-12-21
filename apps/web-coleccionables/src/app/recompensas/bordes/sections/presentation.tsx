@@ -1,6 +1,6 @@
 // biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
-import { spells } from "@modules/borders/domain/consts/spells.const";
+import { spells } from "@embeejayz/core-borders";
 import { BorderChallenger } from "@modules/borders/presentation/components/border-challenger/border-challenger";
 
 export function Presentation() {

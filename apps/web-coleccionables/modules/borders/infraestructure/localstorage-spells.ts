@@ -1,6 +1,9 @@
-import { spells, type TSpell } from "../domain/consts/spells.const";
-import type { GetSpellsResponse } from "../domain/interfaces/get-spells.interface";
-import type { SpellsRepository } from "../domain/repositories/spells.repository";
+import type {
+	GetSpellsResponse,
+	SpellsRepository,
+	TSpell,
+} from "@embeejayz/core-borders";
+import { spells } from "@embeejayz/core-borders";
 
 export class LocalStorageSpells implements SpellsRepository {
 	async getSpells(): Promise<GetSpellsResponse> {
