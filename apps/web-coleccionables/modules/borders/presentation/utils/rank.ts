@@ -1,4 +1,4 @@
-import { borderRank } from "../../domain/consts/rank.consts";
+import { borderRank } from "@embeejayz/core-borders";
 
 export const getRankByQuantity = (quantity: number, isSpecial: boolean) => {
 	if (isSpecial || quantity >= 7) {

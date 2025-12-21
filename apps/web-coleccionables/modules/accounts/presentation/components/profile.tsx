@@ -1,5 +1,4 @@
-import { rank } from "../../domain/consts/rank.consts";
-import type { ProfileEntity } from "../../domain/entities/profile.entity";
+import { type ProfileEntity, rank } from "@embeejayz/core-accounts";
 import { useProfileContext } from "../contexts/profile.context";
 import { ProfileBronze } from "./profile-bronze/profile-bronze";
 import { ProfileChallenger } from "./profile-challenger/profile-challenger";

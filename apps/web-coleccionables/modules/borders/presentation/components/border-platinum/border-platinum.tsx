@@ -1,6 +1,5 @@
+import { borderRank, type TSpell } from "@embeejayz/core-borders";
 import { UserAvatar } from "@modules/common/presentation/components/user-avatar";
-import { borderRank } from "../../../domain/consts/rank.consts";
-import type { TSpell } from "../../../domain/consts/spells.const";
 import { BorderBox } from "../../lib/box/border-box";
 import { BorderCover } from "../../lib/cover/border-cover";
 import { BorderName } from "../../lib/name/border-name";

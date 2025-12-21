@@ -1,9 +1,17 @@
-import { changeLeftSpell } from "./application/use-cases/change-left-spell";
-import { changeRightSpell } from "./application/use-cases/change-right-spell";
-import { getBordersPagination } from "./application/use-cases/get-borders-pagination";
-import { getSpells } from "./application/use-cases/get-spells";
-import { fetchBordersImplRepository } from "./infraestructure/fetch-borders.repository";
-import { localStorageSpells } from "./infraestructure/localstorage-spells";
+// biome-ignore assist/source/organizeImports: <Auto save import>
+import { apiUrl } from "@/core/settings";
+import {
+	changeLeftSpell,
+	changeRightSpell,
+	getBordersPagination,
+	getSpells,
+} from "@embeejayz/core-borders";
+import { FetchBordersImplRepository } from "./infraestructure/fetch-borders.repository";
+import { LocalStorageSpells } from "./infraestructure/localstorage-spells";
+
+const localStorageSpells = new LocalStorageSpells();
+
+const fetchBordersImplRepository = new FetchBordersImplRepository(apiUrl);
 
 export const ChangeLeftSpell = changeLeftSpell(localStorageSpells);
 

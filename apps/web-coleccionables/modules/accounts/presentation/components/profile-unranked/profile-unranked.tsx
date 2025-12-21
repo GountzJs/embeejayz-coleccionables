@@ -1,4 +1,4 @@
-import type { ProfileEntity } from "../../../domain/entities/profile.entity";
+import type { ProfileEntity } from "@embeejayz/core-accounts";
 import { ProfileAvatar } from "../../lib/avatar/profile-avatar";
 import { ProfileBox } from "../../lib/box/profile-box";
 import { ProfileQuantity } from "../../lib/quantity/profile-quantity";

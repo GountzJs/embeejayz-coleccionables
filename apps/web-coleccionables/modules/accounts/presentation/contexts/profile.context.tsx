@@ -1,5 +1,5 @@
+import type { ProfileEntity } from "@embeejayz/core-accounts";
 import { createContext, useContext } from "react";
-import type { ProfileEntity } from "../../domain/entities/profile.entity";
 import { useGetProfileQuery } from "../queries/get-profile.query";
 
 interface ContextProps {

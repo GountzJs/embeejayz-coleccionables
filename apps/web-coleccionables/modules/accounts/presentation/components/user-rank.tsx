@@ -1,6 +1,8 @@
+import {
+	type AccountRankingEntity,
+	rank as rankConsts,
+} from "@embeejayz/core-accounts";
 import { useState } from "react";
-import { rank as rankConsts } from "../../domain/consts/rank.consts";
-import type { AccountRankingEntity } from "../../domain/entities/account-ranking.entity";
 import { getColorRank, getGradientRank } from "../utils/ranks";
 import { IconRank } from "./icon-rank";
 

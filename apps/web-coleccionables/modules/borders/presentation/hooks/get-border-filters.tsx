@@ -1,10 +1,10 @@
-import { useLocation } from "react-router";
 import {
 	borderSort,
 	bordersOrderBy,
 	type TBorderSort,
 	type TBordersOrderBy,
-} from "../../domain/consts/borders.const";
+} from "@embeejayz/core-borders";
+import { useLocation } from "react-router";
 
 export function useGetBorderFilters() {
 	const { search } = useLocation();

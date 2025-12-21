@@ -1,5 +1,6 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
-import type { TBorderRank } from "../../../domain/consts/rank.consts";
+import type { TBorderRank } from "@embeejayz/core-borders";
 import styles from "./styles.module.css";
 
 interface Props {

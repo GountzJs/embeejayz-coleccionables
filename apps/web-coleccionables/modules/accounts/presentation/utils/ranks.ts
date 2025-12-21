@@ -1,7 +1,4 @@
-import {
-	rank as rankConsts,
-	type TRank,
-} from "../../domain/consts/rank.consts";
+import { rank as rankConsts, type TRank } from "@embeejayz/core-accounts";
 
 export const getRankByIndex = (index: number) => {
 	switch (index) {

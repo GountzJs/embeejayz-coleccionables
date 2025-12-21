@@ -11,7 +11,9 @@
 		"react": "19.2.3",
 		"react-dom": "19.2.3",
 		"react-router": "7.11.0",
-		"ui-kit": "workspace:*"
+		"ui-kit": "workspace:*",
+		"@embeejayz/core-borders": "workspace:*",
+		"@embeejayz/core-accounts": "workspace:*"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "2.3.8",

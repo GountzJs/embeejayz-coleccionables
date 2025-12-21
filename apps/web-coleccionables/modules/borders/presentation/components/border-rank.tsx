@@ -1,12 +1,10 @@
+import type { BorderEntity } from "@embeejayz/core-borders";
 import {
 	borderRank,
-	type TBorderRank,
-} from "@modules/borders/domain/consts/rank.consts";
-import {
 	spells,
+	type TBorderRank,
 	type TSpell,
-} from "@modules/borders/domain/consts/spells.const";
-import type { BorderEntity } from "@modules/borders/domain/entities/border.entity";
+} from "@embeejayz/core-borders";
 import { BorderBronze } from "./border-bronze/border-bronze";
 import { BorderChallenger } from "./border-challenger/border-challenger";
 import { BorderDiamond } from "./border-diamond/border-diamond";

@@ -1,14 +1,14 @@
 // biome-ignore assist/source/organizeImports: <Auto save import>
 import { cdnUrl } from "@/core/settings";
-import { Button } from "@modules/common/presentation/lib/button";
-import { Field, Form, Formik } from "formik";
-import { useLocation, useNavigate } from "react-router";
 import {
 	borderSort,
 	bordersOrderBy,
 	type TBorderSort,
 	type TBordersOrderBy,
-} from "../../../domain/consts/borders.const";
+} from "@embeejayz/core-borders";
+import { Button } from "@modules/common/presentation/lib/button";
+import { Field, Form, Formik } from "formik";
+import { useLocation, useNavigate } from "react-router";
 
 interface FormData {
 	name: string;

@@ -1,6 +1,6 @@
+import type { GetPaginationBordersRequest } from "@embeejayz/core-borders";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { GetBordersPagination } from "../../DependencyInjection";
-import type { GetPaginationBordersRequest } from "../../domain/interfaces/get-pagination-borders.interface";
 
 export function useGetBordersPaginationQuery({
 	id,

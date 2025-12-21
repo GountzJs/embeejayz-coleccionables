@@ -1,18 +1,19 @@
-import { apiUrl } from "@/core/settings";
 import type {
+	BordersRepository,
 	GetPaginationBordersRequest,
 	GetPaginationBordersResponse,
-} from "../domain/interfaces/get-pagination-borders.interface";
-import type { ApiBordersRepository } from "../domain/repositories/api-borders.repository";
+} from "@embeejayz/core-borders";
 
-export const fetchBordersImplRepository: ApiBordersRepository = {
-	getPagination: async ({
+export class FetchBordersImplRepository implements BordersRepository {
+	constructor(private readonly apiUrl: string) {}
+
+	async getPagination({
 		id,
 		page,
 		orderBy,
 		sort,
 		name,
-	}: GetPaginationBordersRequest): Promise<GetPaginationBordersResponse> => {
+	}: GetPaginationBordersRequest): Promise<GetPaginationBordersResponse> {
 		const searchParams = new URLSearchParams();
 
 		if (page) searchParams.set("page", page.toString());
@@ -21,7 +22,7 @@ export const fetchBordersImplRepository: ApiBordersRepository = {
 		if (name) searchParams.set("name", name);
 
 		const res = await fetch(
-			`${apiUrl}/borders/users/${id}?${searchParams.toString()}`,
+			`${this.apiUrl}/borders/users/${id}?${searchParams.toString()}`,
 			{
 				headers: {
 					"Content-Type": "application/json",
@@ -34,5 +35,5 @@ export const fetchBordersImplRepository: ApiBordersRepository = {
 		if (!res.ok) throw data;
 
 		return data;
-	},
-};
+	}
+}

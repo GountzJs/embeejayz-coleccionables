@@ -1,6 +1,7 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
-import type { TRank } from "../../../domain/consts/rank.consts";
-import { rank as rankConsts } from "../../../domain/consts/rank.consts";
+import type { TRank } from "@embeejayz/core-accounts";
+import { rank as rankConsts } from "@embeejayz/core-accounts";
 import styles from "./styles.module.css";
 
 interface Props {

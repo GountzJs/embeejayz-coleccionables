@@ -1,10 +1,10 @@
 // biome-ignore assist/source/organizeImports: <Auto save import>
 import { cdnUrl } from "@/core/settings";
+import { spells, type TSpell } from "@embeejayz/core-borders";
 import { DialogBox } from "@modules/common/presentation/components/dialog-box";
 import { useClickOutsideHook } from "@modules/common/presentation/hooks/click-outside.hook";
 import { Field, Form, Formik } from "formik";
 import { useRef } from "react";
-import { spells, type TSpell } from "../../../domain/consts/spells.const";
 import { useDialogSpellContext } from "../../contexts/dialog-spell.context";
 import { useSpellsContext } from "../../contexts/spells.context";
 import styles from "./styles.module.css";

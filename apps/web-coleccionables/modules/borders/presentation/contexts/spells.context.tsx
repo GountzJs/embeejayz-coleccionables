@@ -1,11 +1,11 @@
+import { spells, type TSpell } from "@embeejayz/core-borders";
+import type React from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
 	ChangeLeftSpell,
 	ChangeRightSpell,
 	GetSpells,
-} from "@modules/borders/DependencyInjection";
-import type React from "react";
-import { createContext, useContext, useEffect, useState } from "react";
-import { spells, type TSpell } from "../../domain/consts/spells.const";
+} from "../../DependencyInjection";
 
 export interface SpellsContextType {
 	leftIcon?: TSpell;

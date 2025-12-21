@@ -1,5 +1,4 @@
-import { borderRank } from "@modules/borders/domain/consts/rank.consts";
-import type { TSpell } from "@modules/borders/domain/consts/spells.const";
+import { borderRank, type TSpell } from "@embeejayz/core-borders";
 import { UserAvatar } from "@modules/common/presentation/components/user-avatar";
 import { BorderBox } from "../../lib/box/border-box";
 import { BorderCover } from "../../lib/cover/border-cover";

@@ -1,7 +1,10 @@
+import { apiUrl } from "@/core/settings";
 import { getAllRanking } from "./application/use-cases/get-all-ranking";
 import { getProfile } from "./application/use-cases/get-profile";
-import { apiAccountsImplRepository } from "./infraestructure/api-accounts.repository";
+import { FetchAccountsImplRepository } from "./infraestructure/fetch-accounts-impl.repository";
 
-export const GetAllRanking = getAllRanking(apiAccountsImplRepository);
+const fetchAccountsImplRepository = new FetchAccountsImplRepository(apiUrl);
 
-export const GetProfile = getProfile(apiAccountsImplRepository);
+export const GetAllRanking = getAllRanking(fetchAccountsImplRepository);
+
+export const GetProfile = getProfile(fetchAccountsImplRepository);
