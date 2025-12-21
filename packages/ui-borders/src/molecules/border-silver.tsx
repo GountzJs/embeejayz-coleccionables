@@ -36,7 +36,7 @@ export function BorderSilver({
 			<AvatarPosition bottom="0.5rem" left="1rem" width="268px">
 				<UserAvatar url={avatarUrl} size={69} />
 			</AvatarPosition>
-			<BorderCoverPosition bottom="5.75rem" left="1rem" width="280px">
+			<BorderCoverPosition bottom="6.2rem" left="1rem" width="280px">
 				<BorderCover
 					cdnUrl={cdnUrl}
 					url={coverUrl}

@@ -36,7 +36,7 @@ export function BorderPlatinum({
 			<AvatarPosition bottom="0.5rem" left="1.125rem" width="268px">
 				<UserAvatar url={avatarUrl} size={66} />
 			</AvatarPosition>
-			<BorderCoverPosition bottom="6.25rem" left="1.125rem" width="274px">
+			<BorderCoverPosition bottom="6.6rem" left="1.1rem" width="274px">
 				<BorderCover
 					cdnUrl={cdnUrl}
 					url={coverUrl}
