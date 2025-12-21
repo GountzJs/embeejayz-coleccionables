@@ -1,5 +1,7 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
 import { cdnUrl } from "@/core/settings";
-import type { EmbeecardEntity } from "../../../domain/entities/embeecard.entity";
+import type { EmbeecardEntity } from "@embeejayz/core-cards";
+import cardPallet from "../../consts/embeecard-pallet";
 import { CardBox } from "../atoms/card-box/card-box";
 import { CardContent } from "../atoms/card-content/card-content";
 import { CardCover } from "../atoms/card-cover/card-cover";
@@ -10,7 +12,6 @@ import { CardNumber } from "../atoms/card-number/card-number";
 import { CardPosition } from "../atoms/card-position/card-position";
 import { CardTitle } from "../atoms/card-title/card-title";
 import { StarIcon } from "../atoms/icons";
-import { cardPallet } from "../consts/colors";
 import { SpecialIcons } from "../molecules/special-icons";
 
 export function CardSpecial({

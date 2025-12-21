@@ -45,6 +45,7 @@
         "@embeejayz/core-accounts": "workspace:*",
         "@embeejayz/core-albums": "workspace:*",
         "@embeejayz/core-borders": "workspace:*",
+        "@embeejayz/core-cards": "workspace:*",
         "@tanstack/react-query": "5.90.12",
         "formik": "2.4.9",
         "html2canvas": "1.4.1",
@@ -93,6 +94,16 @@
     },
     "packages/core-borders": {
       "name": "@embeejayz/core-borders",
+      "version": "1.0.0",
+      "devDependencies": {
+        "tsup": "8.5.1",
+      },
+      "peerDependencies": {
+        "typescript": "5.9.3",
+      },
+    },
+    "packages/core-cards": {
+      "name": "@embeejayz/core-cards",
       "version": "1.0.0",
       "devDependencies": {
         "tsup": "8.5.1",
@@ -361,6 +372,8 @@
     "@embeejayz/core-albums": ["@embeejayz/core-albums@workspace:packages/core-albums"],
 
     "@embeejayz/core-borders": ["@embeejayz/core-borders@workspace:packages/core-borders"],
+
+    "@embeejayz/core-cards": ["@embeejayz/core-cards@workspace:packages/core-cards"],
 
     "@emnapi/core": ["@emnapi/core@1.7.1", "", { "dependencies": { "@emnapi/wasi-threads": "1.1.0", "tslib": "^2.4.0" } }, "sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg=="],
 

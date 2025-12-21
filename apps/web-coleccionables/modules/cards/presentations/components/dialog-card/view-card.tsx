@@ -1,6 +1,5 @@
+import { type EmbeecardEntity, embeecardCategory } from "@embeejayz/core-cards";
 import { useState } from "react";
-import type { EmbeecardEntity } from "../../../domain/entities/embeecard.entity";
-import { CardCategory } from "../../lib/models";
 import { CardEffect } from "../card-effect/card-effect";
 import { CardElement } from "../card-element";
 import { CardTilt } from "../card-tilt";
@@ -23,7 +22,9 @@ export function ViewCard({ card, elementRef }: ViewCardProps) {
 				<CardEffect
 					tiltX={tilt.x}
 					tiltY={tilt.y}
-					ranking={card.category === CardCategory.Special ? 5 : card.quantity}
+					ranking={
+						card.category === embeecardCategory.special ? 5 : card.quantity
+					}
 				>
 					<CardElement
 						category={card.category}

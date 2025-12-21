@@ -1,5 +1,5 @@
-import type { EmbeecardEntity } from "@modules/cards/domain/entities/embeecard.entity";
-import { CardCategory } from "../lib/models";
+import { type EmbeecardEntity, embeecardCategory } from "@embeejayz/core-cards";
+
 import { CardEmbee } from "../lib/templates/card-embee";
 import { CardLolesports } from "../lib/templates/card-lolesports";
 import { CardSpecial } from "../lib/templates/card-special";
@@ -8,13 +8,13 @@ import { CardTroll } from "../lib/templates/card-troll";
 
 const CardComponent = (props: EmbeecardEntity) => {
 	switch (props.category) {
-		case CardCategory.Lolesports:
+		case embeecardCategory.lolesports:
 			return <CardLolesports {...props} />;
-		case CardCategory.Embee:
+		case embeecardCategory.embee:
 			return <CardEmbee {...props} />;
-		case CardCategory.Troll:
+		case embeecardCategory.troll:
 			return <CardTroll {...props} />;
-		case CardCategory.T1:
+		case embeecardCategory.t1:
 			return <CardT1 {...props} />;
 		default:
 			return <CardSpecial {...props} />;

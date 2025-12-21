@@ -1,4 +1,4 @@
-import type { EmbeecardEntity } from "../../domain/entities/embeecard.entity";
+import type { EmbeecardEntity } from "@embeejayz/core-cards";
 import { useCardDialogContext } from "../contexts/card-dialog.context";
 
 interface Props extends EmbeecardEntity {

@@ -14,7 +14,8 @@
 		"ui-kit": "workspace:*",
 		"@embeejayz/core-borders": "workspace:*",
 		"@embeejayz/core-accounts": "workspace:*",
-		"@embeejayz/core-albums": "workspace:*"
+		"@embeejayz/core-albums": "workspace:*",
+		"@embeejayz/core-cards": "workspace:*"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "2.3.8",

@@ -1,20 +1,21 @@
-import { apiUrl } from "@/core/settings";
 import type {
+	EmbeeCardsRepository,
 	GetEmbeeCardsRequest,
 	GetEmbeeCardsResponse,
-} from "../domain/interfaces/get-embeecard.interfaces";
-import type { EmbeeCardsRepository } from "../domain/repositories/embeecards.repository";
+} from "@embeejayz/core-cards";
 
-export const fetchEmbeeCardsImplRepository: EmbeeCardsRepository = {
-	getPagination: async ({
+export class FetchEmbeecardsImplRepository implements EmbeeCardsRepository {
+	constructor(private readonly apiUrl: string) {}
+
+	async getPagination({
 		id,
 		page,
-	}: GetEmbeeCardsRequest): Promise<GetEmbeeCardsResponse> => {
+	}: GetEmbeeCardsRequest): Promise<GetEmbeeCardsResponse> {
 		const searchParams = new URLSearchParams();
 		if (page) searchParams.set("page", page.toString());
 
 		const response = await fetch(
-			`${apiUrl}/embeecards/users/${id}?${searchParams.toString()}`,
+			`${this.apiUrl}/embeecards/users/${id}?${searchParams.toString()}`,
 			{
 				headers: {
 					"Content-Type": "application/json",
@@ -24,9 +25,9 @@ export const fetchEmbeeCardsImplRepository: EmbeeCardsRepository = {
 
 		const data = await response.json();
 
-		if (!response.ok) {
-			throw data;
-		}
+		if (!response.ok)
+			throw new Error(data.message || "Failed to fetch embeecards");
+
 		return data;
-	},
-};
+	}
+}

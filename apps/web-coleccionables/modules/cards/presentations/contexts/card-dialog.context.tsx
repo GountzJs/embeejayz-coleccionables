@@ -1,4 +1,4 @@
-import type { EmbeecardEntity } from "@modules/cards/domain/entities/embeecard.entity";
+import type { EmbeecardEntity } from "@embeejayz/core-cards";
 import type React from "react";
 import { createContext, useContext, useState } from "react";
 

@@ -1,5 +1,5 @@
 import type { SVGProps } from "react";
-import { cardPallet } from "../../consts/colors";
+import cardPallet from "../../../consts/embeecard-pallet";
 
 interface Props extends SVGProps<SVGSVGElement> {
 	size?: number;

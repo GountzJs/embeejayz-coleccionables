@@ -1,0 +1,26 @@
+{
+	"name": "@embeejayz/core-cards",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"keywords": [],
+	"peerDependencies": {
+		"typescript": "5.9.3"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tsup": "8.5.1"
+	}
+}
