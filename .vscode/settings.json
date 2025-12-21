@@ -10,6 +10,7 @@
 		"gountz-bot",
 		"workspace",
 		"web-coleccionables",
-		"ui-kit"
+		"ui-kit",
+		"ui-cards"
 	]
 }

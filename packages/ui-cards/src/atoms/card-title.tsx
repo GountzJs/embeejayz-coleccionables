@@ -10,7 +10,7 @@ interface Props {
 const Text = styled.p<{ color?: string }>`
 	color: ${(props) => props.color || "#fff"};
 	text-align: center;
-	font-family: var(--font-sigmar);
+	font-family: "Sigmar";
 	user-select: none;
 	font-weight: 400;
 	font-size: 1.5rem;

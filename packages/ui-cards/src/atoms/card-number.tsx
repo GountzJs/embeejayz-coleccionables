@@ -15,9 +15,9 @@ const Container = styled.div`
 const Text = styled.p`
 	user-select: none;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 0.75rem;
-	font-family: var(--font-montserrat);
+	font-family: "Montserrat";
 	text-shadow: 0 0 2px #000;
 	padding: 0;
 	line-height: 1;

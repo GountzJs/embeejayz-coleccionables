@@ -12,11 +12,11 @@ const Text = styled.p<{ color?: string }>`
 	border-radius: 6px;
 	text-align: center;
 	margin: auto;
-	color: var(--white);
+	color: #fff;
 	font-size: 0.75rem;
 	font-weight: 500;
 	text-overflow: ellipsis;
-	font-family: var(--font-montserrat);
+	font-family: "Montserrat";
 	overflow: hidden;
 	padding-top: 10px;
 	padding-bottom: 10px;
