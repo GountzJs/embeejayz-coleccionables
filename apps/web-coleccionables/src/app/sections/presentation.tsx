@@ -1,8 +1,8 @@
 // biome-ignore assist/source/organizeImports: Auto save organization
 import { cdnUrl } from "@/core/settings";
+import { Icon } from "@embeejayz/ui-kit";
 import { EmbeeLink } from "@modules/common/presentation/components/embee-link";
 import { Link } from "react-router";
-import { Icon } from "ui-kit";
 
 export function Presentation() {
 	return (

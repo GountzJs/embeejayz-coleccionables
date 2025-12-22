@@ -1,7 +1,7 @@
+import { Icon } from "@embeejayz/ui-kit";
 import { SearchAccount } from "@modules/accounts/presentation/components/search-account";
 import * as Dropdown from "@modules/common/presentation/lib/dropdown";
 import { Link } from "react-router";
-import { Icon } from "ui-kit";
 
 export function Header() {
 	return (

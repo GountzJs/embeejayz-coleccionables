@@ -1,7 +1,7 @@
 // biome-ignore assist/source/organizeImports: <Auto save import>
 import { cdnUrl } from "@/core/settings";
+import { Icon } from "@embeejayz/ui-kit";
 import { useState } from "react";
-import { Icon } from "ui-kit";
 
 export function ListPacks() {
 	const packs = ["individual", "chico", "mediano", "grande"];
