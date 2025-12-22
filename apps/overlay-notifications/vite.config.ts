@@ -27,6 +27,10 @@ export default defineConfig({
 				find: "@",
 				replacement: resolve(__dirname, "src"),
 			},
+			{
+				find: "@modules",
+				replacement: resolve(__dirname, "modules"),
+			},
 		],
 	},
 });
