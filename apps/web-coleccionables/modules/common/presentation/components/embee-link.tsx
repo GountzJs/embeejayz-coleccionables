@@ -1,5 +1,5 @@
+import { Icon } from "@embeejayz/ui-kit";
 import { Link } from "react-router";
-import { Icon } from "ui-kit";
 
 export function EmbeeLink() {
 	return (

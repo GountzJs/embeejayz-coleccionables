@@ -1,4 +1,4 @@
-import { Icon } from "ui-kit";
+import { Icon } from "@embeejayz/ui-kit";
 import { useDropdown } from "./dropdown";
 
 interface Props {
