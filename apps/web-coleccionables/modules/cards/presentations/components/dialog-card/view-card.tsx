@@ -1,7 +1,9 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
+import { cdnUrl } from "@/core/settings";
 import { type EmbeecardEntity, embeecardCategory } from "@embeejayz/core-cards";
+import { CardElement } from "@embeejayz/ui-cards";
 import { useState } from "react";
 import { CardEffect } from "../card-effect/card-effect";
-import { CardElement } from "../card-element";
 import { CardTilt } from "../card-tilt";
 
 interface ViewCardProps {
@@ -27,6 +29,7 @@ export function ViewCard({ card, elementRef }: ViewCardProps) {
 					}
 				>
 					<CardElement
+						cdnUrl={cdnUrl}
 						category={card.category}
 						name={card.name}
 						cover={card.cover}

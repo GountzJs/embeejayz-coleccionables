@@ -1,7 +1,9 @@
+// biome-ignore assist/source/organizeImports: <Autosave import>
+import { cdnUrl } from "@/core/settings";
+import { CardElement } from "@embeejayz/ui-cards";
 import { InfiniteScrollObserver } from "@modules/common/presentation/lib/infinite-scroll";
 import { useGetEmbeeCardsPaginationQuery } from "../queries/get-embeecard-pagination.query";
 import { BtnDialog } from "./btn-dialog";
-import { CardElement } from "./card-element";
 import { SkeletonCard } from "./skeleton-card";
 
 interface Props {
@@ -25,6 +27,7 @@ export function ListEmbeeCards({ id }: Props) {
 				<li key={`${props.name}-${props.identify}-${idx}`}>
 					<BtnDialog {...props}>
 						<CardElement
+							cdnUrl={cdnUrl}
 							category={props.category}
 							name={props.name}
 							cover={props.cover}
