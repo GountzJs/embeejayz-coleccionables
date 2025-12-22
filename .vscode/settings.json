@@ -13,6 +13,7 @@
 		"ui-kit",
 		"ui-cards",
 		"ui-borders",
-		"overlay-notifications"
+		"overlay-notifications",
+		"core-cards"
 	]
 }
