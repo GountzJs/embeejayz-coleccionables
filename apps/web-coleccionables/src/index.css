@@ -1,4 +1,4 @@
-@import "ui-kit/fonts.css";
+@import "@embeejayz/ui-kit/fonts.css";
 @import "tailwindcss";
 
 @theme {

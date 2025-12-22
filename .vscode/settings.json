@@ -12,6 +12,7 @@
 		"web-coleccionables",
 		"ui-kit",
 		"ui-cards",
-		"ui-borders"
+		"ui-borders",
+		"overlay-notifications"
 	]
 }
