@@ -1,5 +1,7 @@
 # Embeejayz Coleccionables
 
+> El proyecto se encuentra en plena migración y adaptación, no cuenta con documentación profunda, se recomienda no colaborar hasta que esté estable
+
 Este proyecto busca centralizar todas las aplicaciones del ecosistema de recompensas para **Embeejayz**.
 
 Cómo podrá observar el ecosistema es grande para lo que podrías imaginarte, entre las apps se incluyen:
@@ -14,15 +16,19 @@ Documentaciones:
 
 [GountzBot](./docs/gountzbot.md)
 
+[Web Coleccionables](./docs/web-coleccionables.md)
+
+[Overlay Notificaciones](./docs/overlay.md)
+
 ## Tecnologías del monorepo
 
 - NX
-- pnpm
+- Bun
 - Docker
 - Github actions
 
 ## Instalación
 
 ```sh
-pnpm install
+bun install
 ```
