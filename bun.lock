@@ -44,6 +44,7 @@
       "name": "overlay-notifications",
       "version": "0.0.0",
       "dependencies": {
+        "@embeejayz/core-accounts": "workspace:*",
         "@embeejayz/core-cards": "workspace:*",
         "@embeejayz/ui-cards": "workspace:*",
         "@embeejayz/ui-kit": "workspace:*",

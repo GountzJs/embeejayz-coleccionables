@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"atropos": "^2.0.2",
+		"@embeejayz/core-accounts": "workspace:*",
 		"@embeejayz/core-cards": "workspace:*",
 		"@embeejayz/ui-cards": "workspace:*",
 		"@embeejayz/ui-kit": "workspace:*",
