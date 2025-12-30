@@ -14,6 +14,7 @@ jobs:
     outputs:
       gountz-bot: ${{ steps.filter.outputs.gountz-bot }}
       web-coleccionables: ${{ steps.filter.outputs.web-coleccionables }}
+      overlay-notifications: ${{ steps.filter.outputs.overlay-notifications }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
