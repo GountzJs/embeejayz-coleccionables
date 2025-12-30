@@ -140,8 +140,8 @@ jobs:
 
       - name: Build overlay-notifications
         env:
-          VITE_PUBLIC_CDN_URL: ${{ secrets.VITE_CDN_URL }}
-          VITE_PUBLIC_API_URL: ${{ secrets.VITE_API_URL }}
+          VITE_CDN_URL: ${{ secrets.VITE_CDN_URL }}
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
           VITE_TWITCH_CHANNEL: ${{ secrets.VITE_TWITCH_CHANNEL }}
         run: bun nx vite:build overlay-notifications
 
