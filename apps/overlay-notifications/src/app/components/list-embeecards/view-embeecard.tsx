@@ -17,6 +17,7 @@ const Button = styled.button`
 `;
 
 interface Props extends EmbeecardEntity {
+	length: number;
 	isDisabled?: boolean;
 	onFlip: () => void;
 	changeToOpen: () => void;
@@ -24,6 +25,7 @@ interface Props extends EmbeecardEntity {
 
 export function ViewEmbeecard({
 	isDisabled = false,
+	length,
 	onFlip,
 	changeToOpen,
 	...props
@@ -41,7 +43,7 @@ export function ViewEmbeecard({
 	}, [timer]);
 
 	const animateCard = () => {
-		if (!btnRef.current) return;
+		if (!btnRef.current || length <= 1) return;
 		btnRef.current.animate(
 			[
 				{ transform: "rotate(0)" },

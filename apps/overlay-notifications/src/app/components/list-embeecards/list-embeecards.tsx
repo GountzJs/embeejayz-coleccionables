@@ -84,6 +84,7 @@ export function ListEmbeecards({ cards }: Props) {
 			{items.map((item, index) => (
 				<ListItem key={item.id} $index={index} $total={items.length}>
 					<ViewEmbeecard
+						length={cards.length}
 						isDisabled={allOpen}
 						onFlip={() => handleClick(index)}
 						changeToOpen={() => changeToOpen(item.id)}
