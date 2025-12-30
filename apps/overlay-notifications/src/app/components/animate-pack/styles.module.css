@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	height: 490px;
+	width: 310px;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+.sobre-top {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-origin: bottom left;
+}
+
+.sobre-bottom {
+	position: absolute;
+	left: 0;
+	top: 69px;
+}

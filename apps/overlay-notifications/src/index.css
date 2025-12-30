@@ -1,4 +1,11 @@
 @import "@embeejayz/ui-kit/fonts.css";
+@import "./assets/fonts.css";
+
+:root {
+	--primary: #e2012d;
+	--secondary: #caaa77;
+	--white: #fff;
+}
 
 * {
 	box-sizing: border-box;
@@ -6,8 +13,13 @@
 
 html,
 body {
+	font-family: "AcuminPro", sans-serif;
+	background-color: transparent;
+	display: flex;
 	margin: 0;
-	height: 100%;
+	flex: 1;
+	height: 100dvh;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -20,4 +32,9 @@ h6,
 p {
 	margin: 0;
 	padding: 0;
+}
+
+#root {
+	display: flex;
+	flex: 1;
 }

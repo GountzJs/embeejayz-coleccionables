@@ -17,7 +17,7 @@
 		"lint": "biome lint --write"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Gountz",
 	"license": "ISC",
 	"devDependencies": {
 		"react": "19.2.3",
