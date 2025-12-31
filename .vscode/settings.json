@@ -15,6 +15,7 @@
 		"ui-borders",
 		"overlay-notifications",
 		"core-cards",
-		"core-accounts"
+		"core-accounts",
+		"back-recompensas"
 	]
 }
