@@ -1,0 +1,194 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Platform {
+  id    String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name   String @unique
+  accounts Account[]
+
+  @@map("platforms")
+}
+
+model Account {
+  id    String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  ref   String @unique
+  isStaff Boolean @map("is_staff")
+  quantity Int @map("quantity")
+  platform Platform @relation(fields: [platformId], references: [id])
+  platformId String @map("platform_id")
+  accountBorders AccountBorder[]
+  accountEmbeecards AccountEmbeecard[]
+  accountStickers AccountSticker[]
+
+  @@map("accounts")
+}
+
+
+model Border {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  cover String
+  name String
+  isSpecial Boolean @map("is_special")
+  accountBorders AccountBorder[]
+
+  @@map("borders")
+}
+
+model Embeecard {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  description String
+  identify String @unique
+  cover String
+  category EmbeecardCategory @relation(fields: [categoryId], references: [id])
+  categoryId String @map("category_id")
+  accountEmbeecards AccountEmbeecard[]
+
+  @@map("embeecards")
+}
+
+
+model EmbeecardCategory {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  embeecards Embeecard[]
+
+  @@map("embeecard_categories")
+}
+
+model AccountBorder {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  quantity Int @default(1) @map("quantity")
+  account Account @relation(fields: [accountId], references: [id])
+  accountId String @map("account_id")
+  border Border @relation(fields: [borderId], references: [id])
+  borderId String @map("border_id")
+
+  @@map("account_borders")
+}
+
+
+model AccountEmbeecard {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  quantity Int @default(1) @map("quantity")
+  account Account @relation(fields: [accountId], references: [id])
+  accountId String @map("account_id")
+  embeecard Embeecard @relation(fields: [embeecardId], references: [id])
+  embeecardId String @map("embeecard_id")
+
+  @@map("account_embeecards")
+}
+
+model Country {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  stickers Sticker[]
+  teams Team[]
+
+  @@map("countries")
+}
+
+model Team {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  seed Int
+  country Country @relation(fields: [countryId], references: [id])
+  countryId String @map("country_id")
+  stickers Sticker[]
+
+  @@map("teams")
+}
+
+model LolRole {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  stickers Sticker[]
+
+  @@map("lolroles")
+}
+
+
+model StickerType {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  orden Int @default(0)
+  stickers Sticker[]
+
+  @@map("sticker_types")
+}
+
+// Una fugurita por album
+model Sticker {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  date String
+  name String
+  cover String
+  country Country @relation(fields: [countryId], references: [id])
+  countryId String @map("country_id")
+  team Team @relation(fields: [teamId], references: [id])
+  teamId String @map("team_id")
+  stickerType StickerType @relation(fields: [stickerTypeId], references: [id])
+  stickerTypeId String @map("sticker_type_id")
+  album Album @relation(fields: [albumId], references: [id])
+  albumId String @map("album_id")
+  accountStickers AccountSticker[]
+  lolRole LolRole @relation(fields: [lolRoleId], references: [id])
+  lolRoleId String @map("lol_role_id")
+
+
+  @@map("stickers")
+}
+
+model Album {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  name String
+  stickers Sticker[]
+
+  @@map("albums")
+}
+
+model AccountSticker {
+  id String @id @default(uuid()) @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  quantity Int @default(1) @map("quantity")
+  account Account @relation(fields: [accountId], references: [id])
+  accountId String @map("account_id")
+  sticker Sticker @relation(fields: [stickerId], references: [id])
+  stickerId String @map("sticker_id")
+
+  @@map("account_stickers")
+}

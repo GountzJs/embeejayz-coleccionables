@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       gountz-bot: ${{ steps.filter.outputs.gountz-bot }}
+      back-recompensas: ${{ steps.filter.outputs.back-recompensas }}
       web-coleccionables: ${{ steps.filter.outputs.web-coleccionables }}
       overlay-notifications: ${{ steps.filter.outputs.overlay-notifications }}
     steps:
@@ -23,6 +24,11 @@ jobs:
           filters: |
             gountz-bot:
               - 'apps/gountz-bot/**'
+              - 'packages/**'
+              - 'package.json'
+              - 'bun.lock'
+            back-recompensas:
+              - 'apps/back-recompensas/**'
               - 'packages/**'
               - 'package.json'
               - 'bun.lock'
@@ -78,6 +84,52 @@ jobs:
         with:
           context: .
           file: apps/gountz-bot/Dockerfile
+          push: true
+          platforms: linux/amd64,linux/arm64
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-build-cache
+          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-build-cache,mode=max
+
+  build-back-recompensas:
+    needs: changes
+    if: ${{ needs.changes.outputs.back-recompensas == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Normalize image name to lowercase
+        run: echo "IMAGE_NAME_LOWER=${IMAGE_NAME,,}" >> $GITHUB_ENV
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels)
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-back-recompensas
+
+      - name: Build and push Back Recompensas
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: apps/back-recompensas/Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}

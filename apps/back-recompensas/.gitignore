@@ -1,0 +1,8 @@
+dist
+node_modules
+/generated/prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations
+.env
+.env.local
