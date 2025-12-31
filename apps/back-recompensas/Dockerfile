@@ -20,7 +20,7 @@ COPY . .
 
 RUN bun install --frozen-lockfile
 
-RUN bun nx generate back-recompensas
+RUN cd apps/back-recompensas && bunx prisma generate
 
 RUN bun nx build back-recompensas
 
