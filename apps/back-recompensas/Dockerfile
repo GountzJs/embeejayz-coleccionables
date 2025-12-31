@@ -20,6 +20,8 @@ COPY . .
 
 RUN bun install --frozen-lockfile
 
-RUN bun back:build
+RUN bun nx generate back-recompensas
+
+RUN bun nx build back-recompensas
 
 CMD ["bun", "run", "./apps/back-recompensas/dist/src/main.js"]
