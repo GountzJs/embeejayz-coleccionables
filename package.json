@@ -14,6 +14,7 @@
     "web:build": "nx vite:build web-coleccionables",
     "bot:serve": "nx serve gountzbot",
     "back:serve": "nx serve back-recompensas",
+    "back:build": "nx build back-recompensas",
     "format": "biome format --write",
     "lint": "biome lint --write"
   },
