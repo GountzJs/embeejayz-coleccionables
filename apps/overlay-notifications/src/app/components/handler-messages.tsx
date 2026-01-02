@@ -48,6 +48,18 @@ export function HandlerTwitchMessages({ children }: Props) {
 					const isNotification = message.startsWith("!notification ");
 					const isMessage = message.startsWith("!message ");
 
+					if (isMessage) {
+						const [_, msg] = message.replace("!message", "").trim().split("-");
+
+						toast.custom(() => (
+							<Snackbar message={msg}>
+								<HeimerdingerIcon />
+							</Snackbar>
+						));
+
+						return;
+					}
+
 					if (isNotification) {
 						const notificationText = message.slice("!notification ".length);
 						const notificationFields = notificationText.split("-");
@@ -95,18 +107,6 @@ export function HandlerTwitchMessages({ children }: Props) {
 							const sizePack = quantity as TSizePackEmbeecard;
 							addPack(sizePack, username);
 						}
-
-						return;
-					}
-
-					if (isMessage) {
-						const [_, msg] = message.replace("!message", "").trim().split("-");
-
-						toast.custom(() => (
-							<Snackbar message={msg}>
-								<HeimerdingerIcon />
-							</Snackbar>
-						));
 
 						return;
 					}
