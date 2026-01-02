@@ -3,6 +3,7 @@ import { EmbeeCardsController } from "./controllers/embeecards.controller";
 import { Worlds2025Controller } from "./controllers/worlds2025.controller";
 import { twitchBotUsername, twitchChannel } from "./core/settings";
 import { User } from "./entities/user.entity";
+import { ContadorMuertesState } from "./lib/contador-muertes-state";
 import { RewardsState } from "./lib/rewards-state";
 import type { TmiClient } from "./lib/twitch-client";
 
@@ -25,6 +26,7 @@ export const handlerOnMessage = (client: TmiClient) => {
 	const bordersController = new BordersController(client);
 	const embeecardsController = new EmbeeCardsController(client);
 	const worlds2025Controller = new Worlds2025Controller(client);
+	const contadorMuertesState = new ContadorMuertesState();
 
 	return client.on("message", (channel, tag, msg, self) => {
 		if (self || !msg?.length) return;
@@ -40,6 +42,23 @@ export const handlerOnMessage = (client: TmiClient) => {
 			return;
 		}
 		const msgLower = msg.toLowerCase();
+
+		if((user.isCreator || user.isMod) && msgLower === "!pit") {
+			contadorMuertesState.increment();
+			client.say(
+				twitchChannel,
+				`Embee va tomando ${contadorMuertesState.getCount()} shots`,
+			);
+			return;	
+		}
+
+		if(msgLower === "!contador") {
+					client.say(
+				twitchChannel,
+				`Embee va tomando ${contadorMuertesState.getCount()} shots`,
+			);
+
+		}
 
 		if (msgLower.includes("onlyfans")) {
 			client.say(
