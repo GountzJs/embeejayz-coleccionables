@@ -2,7 +2,7 @@
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "always",
-		"source.organizeImports": "explicit"
+		"source.organizeImports": "always"
 	},
 	"editor.formatOnSave": true,
 	"conventionalCommits.scopes": [
@@ -16,6 +16,7 @@
 		"overlay-notifications",
 		"core-cards",
 		"core-accounts",
-		"back-recompensas"
+		"back-recompensas",
+		"demo-cards"
 	]
 }

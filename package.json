@@ -12,6 +12,8 @@
     "overlay:build": "nx vite:build overlay-notifications",
     "web:serve": "nx vite:serve web-coleccionables",
     "web:build": "nx vite:build web-coleccionables",
+    "cards:serve": "nx vite:serve demo-cards",
+    "cards:build": "nx vite:build demo-cards",
     "bot:serve": "nx serve gountzbot",
     "back:serve": "nx serve back-recompensas",
     "back:build": "nx build back-recompensas",

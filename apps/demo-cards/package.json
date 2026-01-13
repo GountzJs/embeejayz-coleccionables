@@ -1,0 +1,31 @@
+{
+	"name": "demo-cards",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"dependencies": {
+		"isomorphic-dompurify": "2.34.0",
+		"react-router": "7.11.0",
+		"@embeejayz/ui-kit": "workspace:*",
+		"@embeejayz/core-cards": "workspace:*",
+		"@embeejayz/ui-cards": "workspace:*"
+	},
+	"peerDependencies": {
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"@biomejs/biome": "2.3.8",
+		"typescript": "5.9.3",
+		"vite": "7.2.4"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "4.1.17",
+		"@types/node": "24.10.1",
+		"@types/react": "19.2.5",
+		"@types/react-dom": "19.2.3",
+		"@vitejs/plugin-react": "5.1.1",
+		"babel-plugin-react-compiler": "1.0.0",
+		"msw": "2.12.4",
+		"tailwindcss": "4.1.17",
+		"vite-plugin-sitemap": "0.8.2"
+	}
+}

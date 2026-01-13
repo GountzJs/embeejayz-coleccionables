@@ -1,3 +1,4 @@
+export * from "./animate-pack";
 export * from "./embee-icons";
 export * from "./lolesports-icons";
 export * from "./special-icons";
