@@ -11,6 +11,7 @@ export default function Page() {
 					id={data.id}
 					avatar={data.avatar}
 					username={data.username}
+					team={data.team}
 				/>
 			)}
 		</div>

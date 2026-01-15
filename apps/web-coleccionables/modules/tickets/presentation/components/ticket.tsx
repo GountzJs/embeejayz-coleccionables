@@ -11,7 +11,7 @@ interface Props {
 	date: string;
 	hourArg: string;
 	hourMx: string;
-	team?: string;
+	team: string | null;
 	dateFollow: string | null;
 }
 

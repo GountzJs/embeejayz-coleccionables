@@ -7,9 +7,10 @@ interface Props {
 	id: string;
 	avatar: string;
 	username: string;
+	team: string | null;
 }
 
-export function ListTickets({ id, avatar, username }: Props) {
+export function ListTickets({ id, avatar, username, team }: Props) {
 	const { data: item } = useGetInfoTicketQuery({ username });
 	const { data, isLoading, error } = useGetTicketsQuery({ id });
 
@@ -32,6 +33,7 @@ export function ListTickets({ id, avatar, username }: Props) {
 						hourArg={ticket.hourArg}
 						hourMx={ticket.hourMx}
 						dateFollow={item?.followedAt || null}
+						team={team}
 					/>
 				</li>
 			))}
