@@ -1,12 +1,15 @@
 export class RewardsState {
 	private _idBorder: string;
 	private _idCard: string;
+	private _idTicket: string;
 	borderSpecial: boolean;
 	cardSpecial: boolean;
+	ticket: boolean;
 
 	constructor() {
 		this.borderSpecial = false;
 		this.cardSpecial = false;
+		this.ticket = false;
 	}
 
 	toggleBorderSpecial() {
@@ -17,12 +20,20 @@ export class RewardsState {
 		this.cardSpecial = !this.cardSpecial;
 	}
 
+	toggleTicket() {
+		this.ticket = !this.ticket;
+	}
+
 	get isBorderActive() {
 		return this.borderSpecial;
 	}
 
 	get isCardActive() {
 		return this.cardSpecial;
+	}
+
+	get isTicketActive() {
+		return this.ticket;
 	}
 
 	get idBorder() {
@@ -39,5 +50,13 @@ export class RewardsState {
 
 	set idCard(id: string) {
 		this._idCard = id;
+	}
+
+	set idTicket(id: string) {
+		this._idTicket = id;
+	}
+
+	get idTicket() {
+		return this._idTicket;
 	}
 }

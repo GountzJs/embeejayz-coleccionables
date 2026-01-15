@@ -1,10 +1,12 @@
+/** biome-ignore-all lint/style/useImportType: any */
 import { BordersController } from "./controllers/borders.controller";
 import { EmbeeCardsController } from "./controllers/embeecards.controller";
+import { TicketsContoller } from "./controllers/tickets.controller";
 import { Worlds2025Controller } from "./controllers/worlds2025.controller";
 import { twitchBotUsername, twitchChannel } from "./core/settings";
 import { User } from "./entities/user.entity";
 import { RewardsState } from "./lib/rewards-state";
-import type { TmiClient } from "./lib/twitch-client";
+import { TmiClient } from "./lib/twitch-client";
 
 export const handlerOnProcess = (client: TmiClient) => {
 	process.on("exit", async () => {
@@ -25,6 +27,7 @@ export const handlerOnMessage = (client: TmiClient) => {
 	const bordersController = new BordersController(client);
 	const embeecardsController = new EmbeeCardsController(client);
 	const worlds2025Controller = new Worlds2025Controller(client);
+	const ticketsContoller = new TicketsContoller(client);
 
 	return client.on("message", (channel, tag, msg, self) => {
 		if (self || !msg?.length) return;
@@ -94,7 +97,7 @@ export const handlerOnMessage = (client: TmiClient) => {
 				.trim();
 			const quantity = msg.split("]")[0].replace(/[^0-9]/g, "");
 			const quantityNumber = Number(quantity || 1);
-			if (isNaN(quantityNumber)) {
+			if (Number.isNaN(quantityNumber)) {
 				console.log(
 					`❌ Se intentó asignar un número inválido de bordes al usuario [@${displayName}].`,
 				);
@@ -134,7 +137,7 @@ export const handlerOnMessage = (client: TmiClient) => {
 				.trim();
 			const quantity = msg.split("]")[0].replace(/[^0-9]/g, "");
 			const quantityNumber = Number(quantity || 1);
-			if (isNaN(quantityNumber)) {
+			if (Number.isNaN(quantityNumber)) {
 				console.log(
 					`❌ Se intentó asignar un número inválido de figuritas al usuario [@${displayName}].`,
 				);
@@ -199,25 +202,26 @@ export const handlerOnMessage = (client: TmiClient) => {
 		}
 
 		// Canjeo recompensas gratis
-		if (
-			(rewardsState.isBorderActive || rewardsState.isCardActive) &&
-			msg.toLowerCase() === "!reward"
-		) {
-			if (rewardsState.isBorderActive && rewardsState.isCardActive) {
-				bordersController.insertSpecial(
-					tag["display-name"],
-					rewardsState.idBorder,
-				);
-				// twitchCards.insertSpecial(user, rewardsState.idCard);
-				return;
-			}
-			if (rewardsState.isBorderActive) {
-				bordersController.insertSpecial(
-					tag["display-name"],
-					rewardsState.idBorder,
-				);
-				return;
-			}
+		if (rewardsState.isTicketActive && msg.toLowerCase() === "!reward") {
+			ticketsContoller.insertSpecial(
+				tag["display-name"],
+				rewardsState.idTicket,
+			);
+			// if (rewardsState.isBorderActive && rewardsState.isCardActive) {
+			// 	bordersController.insertSpecial(
+			// 		tag["display-name"],
+			// 		rewardsState.idBorder,
+			// 	);
+			// 	// twitchCards.insertSpecial(user, rewardsState.idCard);
+			// 	return;
+			// }
+			// if (rewardsState.isBorderActive) {
+			// 	bordersController.insertSpecial(
+			// 		tag["display-name"],
+			// 		rewardsState.idBorder,
+			// 	);
+			// 	return;
+			// }
 			// twitchCards.insertSpecial(user, rewardsState.idCard);
 			return;
 		}
@@ -230,15 +234,24 @@ export const handlerOnMessage = (client: TmiClient) => {
 			return;
 		}
 
-		// Activaciones/Desactivaciones de recompensas
+		if ((user.isCreator || user.isMod) && msg.startsWith("!agregar-ticket ")) {
+			const [_, idTicket] = msg.split("!agregar-ticket ");
+			rewardsState.idTicket = idTicket;
+			client.say(
+				`#${twitchBotUsername}`,
+				`🤖 Ticket del enfrentamient agregado!`,
+			);
+			return;
+		}
+
 		if (
 			(user.isCreator || user.isMod) &&
-			msg.toLowerCase() === "!border-special"
+			msg.toLowerCase() === "!ticket-special"
 		) {
-			rewardsState.toggleBorderSpecial();
-			const msg = rewardsState.isBorderActive
-				? `!message success-🤖 Se activó el borde especial del día.`
-				: `!message success-🤖 Se desactivo el borde especial del día.`;
+			rewardsState.toggleTicket();
+			const msg = rewardsState.isTicketActive
+				? `!message success-🤖 Se activó el ticket del enfrentamiento`
+				: `!message success-🤖 Se desactivo el ticket del enfrentamiento.`;
 			client.say(`#${twitchBotUsername}`, msg);
 			return;
 		}
