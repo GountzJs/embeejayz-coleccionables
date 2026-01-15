@@ -5,46 +5,46 @@ import {
   HttpException,
   HttpStatus,
   Param,
-} from '@nestjs/common';
-import { TwitchService, UserTwitch } from '../lib/twitch/twitch.service';
-import { profileAdapter } from './adapters/profile.adapter';
-import { rankingAdapter } from './adapters/ranking.adapter';
-import { AccountNotFoundException } from './errors/account-not-found.error';
-import { AccountNotRegisterException } from './errors/account-not-register.error';
-import { ProfileDTO } from './models/dtos/profile.dto';
-import { AccountImplRepositoryService } from './services/account-impl-respository/account-impl-respository.service';
+} from "@nestjs/common";
+import { TwitchService, UserTwitch } from "../lib/twitch/twitch.service";
+import { profileAdapter } from "./adapters/profile.adapter";
+import { rankingAdapter } from "./adapters/ranking.adapter";
+import { AccountNotFoundException } from "./errors/account-not-found.error";
+import { AccountNotRegisterException } from "./errors/account-not-register.error";
+import { ProfileDTO } from "./models/dtos/profile.dto";
+import { AccountImplRepositoryService } from "./services/account-impl-respository/account-impl-respository.service";
 
-@Controller('accounts')
+@Controller("accounts")
 export class AccountController {
-  constructor(
-    private readonly accountService: AccountImplRepositoryService,
-    private readonly twitchService: TwitchService,
-  ) {}
+	constructor(
+		private readonly accountService: AccountImplRepositoryService,
+		private readonly twitchService: TwitchService,
+	) {}
 
-  @Get('ranking')
-  @HttpCode(HttpStatus.OK)
-  async getRanking() {
-    try {
-      const data = await this.accountService.getRanking();
+	@Get("ranking")
+	@HttpCode(HttpStatus.OK)
+	async getRanking() {
+		try {
+			const data = await this.accountService.getRanking();
 
-      const twitch = await this.twitchService.getByIds(
-        data.map(({ ref }) => ref),
-      );
+			const twitch = await this.twitchService.getByIds(
+				data.map(({ ref }) => ref),
+			);
 
-      const twitchMap = new Map(twitch.map((u) => [u.id, u.display_name]));
+			const twitchMap = new Map(twitch.map((u) => [u.id, u.display_name]));
 
-      return rankingAdapter(data, twitchMap);
-    } catch (err) {
-      console.log(err);
-      throw new HttpException(
-        'Error genérico del sistema',
-        HttpStatus.INTERNAL_SERVER_ERROR,
-        { cause: err },
-      );
-    }
-  }
+			return rankingAdapter(data, twitchMap);
+		} catch (err) {
+			console.log(err);
+			throw new HttpException(
+				"Error genérico del sistema",
+				HttpStatus.INTERNAL_SERVER_ERROR,
+				{ cause: err },
+			);
+		}
+	}
 
-  @Get('twitch/:username')
+	@Get('twitch/:username')
   @HttpCode(HttpStatus.OK)
   async getTwitchUser(@Param() { username }: ProfileDTO) {
     try {
@@ -58,7 +58,22 @@ export class AccountController {
     }
   }
 
-  @Get(':username')
+  @Get('twitch/following/:username')
+  @HttpCode(HttpStatus.OK)
+  async getTwitchFollowing(@Param() { username }: ProfileDTO) {
+    try {
+      const { data } = await this.twitchService.getByUsername(username);
+      const { followed_at } = await this.twitchService.getFollowing(data.id);
+      return { followedAt: followed_at };
+    } catch  {
+      throw new HttpException(
+        'Error genérico del sistema',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+  }
+
+	@Get(':username')
   @HttpCode(HttpStatus.OK)
   async getProfile(@Param() { username }: ProfileDTO) {
     let userData: UserTwitch | null = null;

@@ -5,6 +5,7 @@ import { AccountModule } from "./account/account.module";
 import { BorderModule } from "./border/border.module";
 import { EmbeecardModule } from "./embeecard/embeecard.module";
 import { Worlds2025Module } from "./worlds2025/worlds2025.module";
+import { TicketModule } from "./ticket/ticket.module";
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { Worlds2025Module } from "./worlds2025/worlds2025.module";
     BorderModule,
     EmbeecardModule,
     Worlds2025Module,
+    TicketModule
   ],
 })
 export class AppModule {}

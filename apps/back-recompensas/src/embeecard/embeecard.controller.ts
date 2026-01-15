@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/style/useImportType: any */
 import {
   Controller,
   Get,
