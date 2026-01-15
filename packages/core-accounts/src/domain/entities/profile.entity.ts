@@ -4,6 +4,7 @@ export type ProfileEntity = {
 	id: string;
 	avatar: string;
 	username: string;
+	team: string | null;
 	rank: TRank;
 	total: {
 		borders: number;
