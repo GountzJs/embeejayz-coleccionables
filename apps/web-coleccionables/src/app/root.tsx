@@ -9,6 +9,7 @@ import { EmbeeCardsPage } from "./[username]/embeecards";
 import { LoadingEmbeeCardsPage } from "./[username]/embeecards/loading";
 import { UserLayout } from "./[username]/layout";
 import { LoadingBordersPage } from "./[username]/loading";
+import { TicketsPage } from "./[username]/tickets";
 import { Worlds2025Page } from "./[username]/worlds2025";
 import { ClasificatoriaPage } from "./clasificatoria";
 import { LoadingRankingPage } from "./clasificatoria/loading";
@@ -48,6 +49,10 @@ export function Root() {
 								fallback={<LoadingBordersPage />}
 							/>
 						}
+					/>
+					<Route
+						path="tickets"
+						element={<WrapperSuspense element={<TicketsPage />} />}
 					/>
 					<Route
 						path="embeecards"

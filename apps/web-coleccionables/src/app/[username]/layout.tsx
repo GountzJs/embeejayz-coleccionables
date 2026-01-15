@@ -48,6 +48,15 @@ function Tabs() {
 				</span>
 				<span
 					className={`font-semibold transition-colors duration-300 underline-red-500 decoration-3 underline-offset-8 ${
+						isActive(`/usuarios/${username}/tickets`)
+							? "text-red-500"
+							: "text-white"
+					}`}
+				>
+					Tickets
+				</span>
+				<span
+					className={`font-semibold transition-colors duration-300 underline-red-500 decoration-3 underline-offset-8 ${
 						isActive(`/usuarios/${username}/embeecards`)
 							? "text-red-500"
 							: "text-white"
@@ -70,6 +79,7 @@ function Tabs() {
 	return (
 		<nav className="flex items-end gap-4 w-full border-b border-b-gray-light/20 py-1">
 			<TabLink href={`/usuarios/${username}`}>Bordes</TabLink>
+			<TabLink href={`/usuarios/${username}/tickets`}>Tickets</TabLink>
 			<TabLink href={`/usuarios/${username}/embeecards`}>Cartas</TabLink>
 			<TabLink href={`/usuarios/${username}/worlds2025`}>
 				Álbum Worlds 2025

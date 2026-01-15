@@ -4,18 +4,21 @@
 	"version": "0.0.0",
 	"type": "module",
 	"dependencies": {
+		"@embeejayz/core-accounts": "workspace:*",
+		"@embeejayz/core-albums": "workspace:*",
+		"@embeejayz/core-borders": "workspace:*",
+		"@embeejayz/core-cards": "workspace:*",
+		"@embeejayz/ui-borders": "workspace:*",
+		"@embeejayz/ui-cards": "workspace:*",
+		"@embeejayz/ui-kit": "workspace:*",
 		"@tanstack/react-query": "5.90.12",
+		"atropos": "2.0.2",
 		"formik": "2.4.9",
 		"html2canvas": "1.4.1",
 		"isomorphic-dompurify": "2.34.0",
+		"react-parallax-tilt": "1.7.315",
 		"react-router": "7.11.0",
-		"@embeejayz/ui-kit": "workspace:*",
-		"@embeejayz/core-borders": "workspace:*",
-		"@embeejayz/core-accounts": "workspace:*",
-		"@embeejayz/core-albums": "workspace:*",
-		"@embeejayz/core-cards": "workspace:*",
-		"@embeejayz/ui-cards": "workspace:*",
-		"@embeejayz/ui-borders": "workspace:*"
+		"uuid": "13.0.0"
 	},
 	"peerDependencies": {
 		"react": "19.2.3",
