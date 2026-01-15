@@ -58,7 +58,7 @@ export class AccountController {
     }
   }
 
-  @Get('twitch/following/:username')
+	@Get('twitch/following/:username')
   @HttpCode(HttpStatus.OK)
   async getTwitchFollowing(@Param() { username }: ProfileDTO) {
     try {
@@ -87,6 +87,7 @@ export class AccountController {
         id: user.id,
         avatar: data.profile_image_url,
         username: data.display_name,
+        team: user.team,
         total,
       });
     } catch (err) {
@@ -95,6 +96,7 @@ export class AccountController {
           id: userData.id,
           avatar: userData.profile_image_url,
           username: userData.display_name,
+          team: null,
           total: {
             borders: 0,
             cards: 0,
