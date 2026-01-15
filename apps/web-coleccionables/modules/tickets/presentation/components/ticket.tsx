@@ -1,5 +1,6 @@
 // biome-ignore assist/source/organizeImports: Autosave import
 import { cdnUrl } from "@/core/settings";
+import dayjs from "dayjs";
 import { useState } from "react";
 import { TicketTilt } from "./ticket-tilt";
 
@@ -11,7 +12,7 @@ interface Props {
 	hourArg: string;
 	hourMx: string;
 	team?: string;
-	dateFollow?: string;
+	dateFollow: string | null;
 }
 
 export function Ticket({
@@ -94,7 +95,7 @@ export function Ticket({
 									<p className="text-left text-[10px] font-regular text-black/80 w-full">
 										Siguiendo:{" "}
 										<b className="text-black font-semibold">
-											{dateFollow || "?"}
+											{dateFollow ? dayjs(dateFollow).format("DD/MM/YY") : "?"}
 										</b>
 									</p>
 									<p className="text-left text-[10px] font-regular text-black/80 w-full">

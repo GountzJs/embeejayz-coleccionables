@@ -1,4 +1,5 @@
 import { v4 } from "uuid";
+import { useGetInfoTicketQuery } from "../queries/get-info-ticket.query";
 import { useGetTicketsQuery } from "../queries/get-tickets.query";
 import { Ticket } from "./ticket";
 
@@ -9,6 +10,7 @@ interface Props {
 }
 
 export function ListTickets({ id, avatar, username }: Props) {
+	const { data: item } = useGetInfoTicketQuery({ username });
 	const { data, isLoading, error } = useGetTicketsQuery({ id });
 
 	if (isLoading) return <p>Buscando tickets...</p>;
@@ -29,6 +31,7 @@ export function ListTickets({ id, avatar, username }: Props) {
 						date={ticket.date}
 						hourArg={ticket.hourArg}
 						hourMx={ticket.hourMx}
+						dateFollow={item?.followedAt || null}
 					/>
 				</li>
 			))}
