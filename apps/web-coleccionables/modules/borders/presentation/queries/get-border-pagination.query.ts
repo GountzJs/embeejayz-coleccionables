@@ -31,7 +31,7 @@ export function useGetBordersPaginationQuery({
 			}),
 		getNextPageParam: (lastPage) => {
 			const currentPage = Number(lastPage.actualPage);
-			const totalPages = lastPage.total.pages;
+			const totalPages = lastPage.total?.pages;
 
 			return currentPage < totalPages ? currentPage + 1 : undefined;
 		},
@@ -39,8 +39,8 @@ export function useGetBordersPaginationQuery({
 
 	const borders = data?.pages.flatMap((page) => page.items) ?? [];
 
-	const totalItems = data?.pages[0]?.total.items ?? 0;
-	const totalPages = data?.pages[0]?.total.pages ?? 0;
+	const totalItems = data?.pages[0]?.total?.items ?? 0;
+	const totalPages = data?.pages[0]?.total?.pages ?? 0;
 
 	return {
 		borders,

@@ -34,8 +34,8 @@ export function useGetEmbeeCardsPaginationQuery({ id }: Props) {
 
 	const embeecards = data?.pages.flatMap((page) => page.data) ?? [];
 
-	const totalItems = data?.pages[0]?.total.items ?? 0;
-	const totalPages = data?.pages[0]?.total.pages ?? 0;
+	const totalItems = data?.pages[0]?.total?.items ?? 0;
+	const totalPages = data?.pages[0]?.total?.pages ?? 0;
 
 	return {
 		embeecards,
