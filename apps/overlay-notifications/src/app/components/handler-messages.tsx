@@ -113,6 +113,8 @@ export function HandlerTwitchMessages({ children }: Props) {
 				},
 			);
 		}
+
+		return () => twitchImplRepository.removeAllListeners();
 	}, [isConnected, addPack, togglePreview]);
 
 	return (
