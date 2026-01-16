@@ -5,20 +5,20 @@ export class AccountBorderQueries {
 	async insertOrIncrement(accountId: string, borderId: string) {
 		const { rows } = await turso.execute({
 			sql: `
-        SELECT quantity
-        FROM account_borders
-        WHERE account_id = ? AND border_id = ?
-        LIMIT 1;
-      `,
+				SELECT quantity
+				FROM account_borders
+				WHERE account_id = ? AND border_id = ?
+				LIMIT 1;
+			`,
 			args: [accountId, borderId],
 		});
 
 		if (!rows.length) {
 			await turso.execute({
 				sql: `
-          INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
-          VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-        `,
+					INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
+					VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+				`,
 				args: [uuid(), accountId, borderId],
 			});
 
@@ -27,11 +27,11 @@ export class AccountBorderQueries {
 
 		await turso.execute({
 			sql: `
-        UPDATE account_borders
-        SET quantity = quantity + 1,
-            updated_at = CURRENT_TIMESTAMP
-        WHERE account_id = ? AND border_id = ?;
-      `,
+				UPDATE account_borders
+				SET quantity = quantity + 1,
+					updated_at = CURRENT_TIMESTAMP
+				WHERE account_id = ? AND border_id = ?;
+			`,
 			args: [accountId, borderId],
 		});
 
@@ -45,15 +45,15 @@ export class AccountBorderQueries {
 	async getRandom(accountId: string): Promise<string> {
 		const { rows } = await turso.execute({
 			sql: `
-        SELECT b.id AS border_id
-        FROM borders b
-        LEFT JOIN account_borders ab
-          ON ab.border_id = b.id AND ab.account_id = ?
-        WHERE b.is_special = false
-          AND (ab.id IS NULL OR ab.quantity < 7)
-        ORDER BY RANDOM()
-        LIMIT 1;
-      `,
+				SELECT b.id AS border_id
+				FROM borders b
+				LEFT JOIN account_borders ab
+				ON ab.border_id = b.id AND ab.account_id = ?
+				WHERE b.is_special = false
+				AND (ab.id IS NULL OR ab.quantity < 7)
+				ORDER BY RANDOM()
+				LIMIT 1;
+			`,
 			args: [accountId],
 		});
 
@@ -67,10 +67,10 @@ export class AccountBorderQueries {
 	async assignSpecial(accountId: string, borderId: string) {
 		const { rows } = await turso.execute({
 			sql: `
-        SELECT id
-        FROM account_borders
-        WHERE account_id = ? AND border_id = ?;
-      `,
+				SELECT id
+				FROM account_borders
+				WHERE account_id = ? AND border_id = ?;
+			`,
 			args: [accountId, borderId],
 		});
 
@@ -80,9 +80,9 @@ export class AccountBorderQueries {
 
 		await turso.execute({
 			sql: `
-        INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
-        VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-      `,
+				INSERT INTO account_borders (id, account_id, border_id, quantity, created_at, updated_at)
+				VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+			`,
 			args: [uuid(), accountId, borderId],
 		});
 

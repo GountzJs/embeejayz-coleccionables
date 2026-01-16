@@ -2,9 +2,7 @@
 import { twitchBotUsername } from "../core/settings";
 import { TmiClient } from "../lib/twitch-client";
 import { AccountQueries } from "../queries/account";
-import {
-	AccountTicketQueries,
-} from "../queries/account-ticket";
+import { AccountTicketQueries } from "../queries/account-ticket";
 import { TwitchServices } from "../services/twitch.services";
 
 export class TicketsContoller {
@@ -34,6 +32,24 @@ export class TicketsContoller {
 			this.client.say(
 				`#${twitchBotUsername}`,
 				`!message error-@${username}: ${errorMessage}`,
+			);
+		}
+	}
+
+	async addTeam(team: string, username: string) {
+		try {
+			const twitchUser = await this.twitchServices.getByUsername(username);
+			const accountId =
+				await this.accountQueries.getOrCreateAccount(twitchUser);
+			await this.accountQueries.addTeam(accountId, team);
+			this.client.say(
+				`#${twitchBotUsername}`,
+				`!message success-@${username}: Equipo asignado correctamente`,
+			);
+		} catch {
+			this.client.say(
+				`#${twitchBotUsername}`,
+				`!message error-@${username}: No pudimos asignar tu equipo, vuelva a intentarlo más tarde`,
 			);
 		}
 	}

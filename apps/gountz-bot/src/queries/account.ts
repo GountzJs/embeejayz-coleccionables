@@ -13,11 +13,11 @@ export class AccountQueries {
 		const platformId = platforms[0]?.id;
 		const { rows } = await turso.execute({
 			sql: `
-        INSERT INTO accounts (id, ref, is_staff, quantity, platform_id, created_at, updated_at)
-        VALUES (?, ?, false, 0, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
-        ON CONFLICT(ref) DO NOTHING
-        RETURNING id;
-      `,
+				INSERT INTO accounts (id, ref, is_staff, quantity, platform_id, created_at, updated_at)
+				VALUES (?, ?, false, 0, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+				ON CONFLICT(ref) DO NOTHING
+				RETURNING id;
+			`,
 			args: [id, ref, platformId],
 		});
 
@@ -31,5 +31,17 @@ export class AccountQueries {
 		});
 
 		return existing[0]?.id as string;
+	}
+
+	async addTeam(ref: string, team: string) {
+		await turso.execute({
+			sql: `
+				UPDATE accounts 
+				SET team = ?
+				WHERE ref = ?
+			`,
+			args: [team, ref],
+		});
+		return;
 	}
 }

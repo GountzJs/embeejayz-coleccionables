@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noExplicitAny: any */
 import { Client, type Events } from "tmi.js";
 import {
 	debug,
@@ -36,12 +37,13 @@ export class TmiClient {
 
 	disconnect() {
 		if (!this._isConnected) return;
-		return this.client?.disconnect().then(() => (this._isConnected = false));
+		return this.client?.disconnect().then(() => {
+			this._isConnected = false;
+		});
 	}
 
 	on<K extends keyof Events>(
 		key: K,
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		callback: (...args: any[]) => void,
 	): Client | undefined {
 		return this.client?.on(key, callback);

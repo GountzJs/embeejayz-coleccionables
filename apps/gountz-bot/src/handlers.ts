@@ -3,6 +3,7 @@ import { BordersController } from "./controllers/borders.controller";
 import { EmbeeCardsController } from "./controllers/embeecards.controller";
 import { TicketsContoller } from "./controllers/tickets.controller";
 import { Worlds2025Controller } from "./controllers/worlds2025.controller";
+import { lolTeams, TLolTeams } from "./core/const";
 import { twitchBotUsername, twitchChannel } from "./core/settings";
 import { User } from "./entities/user.entity";
 import { RewardsState } from "./lib/rewards-state";
@@ -34,9 +35,24 @@ export const handlerOnMessage = (client: TmiClient) => {
 
 		const user = new User();
 		user.ref = tag["user-id"];
-		user.isMod = tag["mod"];
+		user.isMod = tag.mod;
 		user.isCreator = tag["display-name"] === channel;
-		user.platform = tag["platform"];
+		user.platform = tag.platform;
+
+		if (msg.startsWith("!mi-equipo ")) {
+			const [_, team] = msg.trim().split(" ");
+			const newTeam = team.toUpperCase();
+			const validTeams = Object.values(lolTeams);
+
+			if (!validTeams.includes(newTeam as TLolTeams)) {
+				client.say(
+					twitchChannel,
+					`🤖 @${tag["display-name"]}: El equipo que ingresaste no es válido.`,
+				);
+				return;
+			}
+			ticketsContoller.addTeam(newTeam, tag["display-name"]);
+		}
 
 		if ((user.isCreator || user.isMod) && msg.toLowerCase() === "!ping") {
 			client.say(twitchChannel, `🤖 @${tag["display-name"]}: Pong`);
