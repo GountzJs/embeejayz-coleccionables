@@ -33,14 +33,14 @@ export class AccountQueries {
 		return existing[0]?.id as string;
 	}
 
-	async addTeam(ref: string, team: string) {
+	async addTeam(id: string, team: string) {
 		await turso.execute({
 			sql: `
 				UPDATE accounts 
 				SET team = ?
-				WHERE ref = ?
+				WHERE id = ?
 			`,
-			args: [team, ref],
+			args: [team, id],
 		});
 		return;
 	}
