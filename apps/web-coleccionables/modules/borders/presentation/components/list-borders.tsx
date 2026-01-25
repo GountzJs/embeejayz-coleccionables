@@ -52,7 +52,7 @@ export function ListBorders({ id, avatarUrl, username }: Props) {
 						username={username}
 						avatarUrl={avatarUrl}
 						cdnUrl={cdnUrl}
-						rank={getRankByQuantity(border.quantity, border.isSpecial)}
+						rank={getRankByQuantity(border?.quantity || 0, border.isSpecial)}
 						leftIcon={leftIcon}
 						rightIcon={rightIcon}
 					/>
