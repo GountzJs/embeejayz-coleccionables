@@ -37,7 +37,7 @@ export function useGetBordersPaginationQuery({
 		},
 	});
 
-	const borders = data?.pages.flatMap((page) => page.items) ?? [];
+	const borders = data?.pages.flatMap((page) => page.items ?? []) ?? [];
 
 	const totalItems = data?.pages[0]?.total?.items ?? 0;
 	const totalPages = data?.pages[0]?.total?.pages ?? 0;
