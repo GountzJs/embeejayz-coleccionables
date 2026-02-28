@@ -7,6 +7,7 @@ type Ticket =  {
     hourMx: string;
     hourArg: string;
     date: string;
+    url: string;
 }
 
 @Injectable()
@@ -23,7 +24,8 @@ export class AccountTicketImplRepositoryService {
                         name: true,
                         hourMx: true,
                         hourArg: true,
-                        date: true
+                        date: true,
+                        url: true
                     }
                 }
             }
