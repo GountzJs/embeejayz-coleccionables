@@ -13,6 +13,7 @@ interface Props {
 	hourMx: string;
 	team: string | null;
 	dateFollow: string | null;
+	url: string;
 }
 
 export function Ticket({
@@ -24,6 +25,7 @@ export function Ticket({
 	hourMx,
 	team,
 	dateFollow,
+	url,
 }: Props) {
 	const [isFlipped, setIsFlipped] = useState(false);
 
@@ -109,7 +111,7 @@ export function Ticket({
 				</div>
 				<div className="absolute top-0 left-0 h-full w-full backface-hidden rounded-md shadow-[0_10px_20px_rgba(0, 0, 0, 0.2)] rotate-y-180">
 					<img
-						src={`${cdnUrl}/tickets/lck-cup-2026/back.png`}
+						src={`${cdnUrl}${url}`}
 						alt="Back"
 						className="w-full h-full object-cover rounded-lg"
 					/>

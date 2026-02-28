@@ -4,4 +4,5 @@ export type TicketEntity = {
 	hourMx: string;
 	hourArg: string;
 	date: string;
+	url: string;
 };

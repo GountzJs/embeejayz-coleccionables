@@ -26,6 +26,7 @@ export function ListTickets({ id, avatar, username, team }: Props) {
 			{data?.map((ticket) => (
 				<li key={v4()}>
 					<Ticket
+						url={ticket.url}
 						avatar={avatar}
 						username={username}
 						frontUrl={ticket.cover}
