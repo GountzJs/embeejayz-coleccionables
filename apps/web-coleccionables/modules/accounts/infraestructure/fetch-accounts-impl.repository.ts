@@ -19,7 +19,7 @@ export class FetchAccountsImplRepository implements AccountsRepository {
 		if (!response.ok) {
 			throw data;
 		}
-		return data.data;
+		return data.ranking;
 	}
 
 	async getProfile(username: string): Promise<ProfileEntity> {
@@ -28,7 +28,7 @@ export class FetchAccountsImplRepository implements AccountsRepository {
 				"Content-Type": "application/json",
 			},
 		});
-		const { data } = await response.json();
+		const data = await response.json();
 
 		if (!response.ok) {
 			throw new Error(

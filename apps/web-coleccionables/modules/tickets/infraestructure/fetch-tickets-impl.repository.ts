@@ -23,7 +23,7 @@ export class FetchTicketsImplRepository implements TicketRepository {
 	}
 
 	async getAll(id: string): Promise<TicketEntity[]> {
-		const response = await fetch(`${this.apiUrl}/tickets/${id}`, {
+		const response = await fetch(`${this.apiUrl}/v1/tickets/users/${id}`, {
 			headers: {
 				"Content-Type": "application/json",
 			},
