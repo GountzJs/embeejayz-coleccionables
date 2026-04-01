@@ -7,7 +7,7 @@ export class FetchTicketsImplRepository implements TicketRepository {
 
 	async getInfo(username: string): Promise<InfoTicketEntity> {
 		const response = await fetch(
-			`${this.apiUrl}/accounts/twitch/following/${username}`,
+			`${this.apiUrl}/v1/accounts/twitch/following/${username}`,
 			{
 				headers: {
 					"Content-Type": "application/json",
