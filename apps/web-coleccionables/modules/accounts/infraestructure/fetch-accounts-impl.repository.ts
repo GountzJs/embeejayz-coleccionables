@@ -14,7 +14,7 @@ export class FetchAccountsImplRepository implements AccountsRepository {
 		throw new Error("Method not implemented.");
 	}
 	async getAll(): Promise<RankingEntity[]> {
-		const response = await fetch(`${this.apiUrl}/accounts/ranking`);
+		const response = await fetch(`${this.apiUrl}/v1/accounts/ranking`);
 		const data = await response.json();
 		if (!response.ok) {
 			throw data;
@@ -23,7 +23,7 @@ export class FetchAccountsImplRepository implements AccountsRepository {
 	}
 
 	async getProfile(username: string): Promise<ProfileEntity> {
-		const response = await fetch(`${this.apiUrl}/accounts/${username}`, {
+		const response = await fetch(`${this.apiUrl}/v1/accounts/${username}`, {
 			headers: {
 				"Content-Type": "application/json",
 			},

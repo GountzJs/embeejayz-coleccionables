@@ -15,7 +15,7 @@ export class FetchEmbeecardsImplRepository implements EmbeeCardsRepository {
 		if (page) searchParams.set("page", page.toString());
 
 		const response = await fetch(
-			`${this.apiUrl}/embeecards/users/${id}?${searchParams.toString()}`,
+			`${this.apiUrl}/v1/embeecards/users/${id}?${searchParams.toString()}`,
 			{
 				headers: {
 					"Content-Type": "application/json",

@@ -17,12 +17,12 @@ export class FetchBordersImplRepository implements BordersRepository {
 		const searchParams = new URLSearchParams();
 
 		if (page) searchParams.set("page", page.toString());
-		if (orderBy) searchParams.set("orderBy", orderBy.toString());
+		if (orderBy) searchParams.set("order", orderBy.toString());
 		if (sort) searchParams.set("sort", sort.toString());
 		if (name) searchParams.set("name", name);
 
 		const res = await fetch(
-			`${this.apiUrl}/borders/users/${id}?${searchParams.toString()}`,
+			`${this.apiUrl}/v1/borders/users/${id}?${searchParams.toString()}`,
 			{
 				headers: {
 					"Content-Type": "application/json",
